@@ -38,14 +38,18 @@ class MayakobaUnifiedHandler(SimpleHTTPRequestHandler):
 
         # 1. Ruta raíz -> Frontend principal
         if clean_path in ["/", "/index.html"]:
-            self._serve_file(os.path.join(BASE_DIR, "frontend", "index.html"), "text/html; charset=utf-8")
+            root_html = os.path.join(BASE_DIR, "index.html")
+            if os.path.isfile(root_html):
+                self._serve_file(root_html, "text/html; charset=utf-8")
+            else:
+                self._serve_file(os.path.join(BASE_DIR, "frontend", "index.html"), "text/html; charset=utf-8")
             return
 
-        if clean_path == "/styles.css":
+        if clean_path in ["/styles.css", "/frontend/styles.css"]:
             self._serve_file(os.path.join(BASE_DIR, "frontend", "styles.css"), "text/css; charset=utf-8")
             return
 
-        if clean_path == "/app.js":
+        if clean_path in ["/app.js", "/frontend/app.js"]:
             self._serve_file(os.path.join(BASE_DIR, "frontend", "app.js"), "application/javascript; charset=utf-8")
             return
 

@@ -3,506 +3,986 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Especialista en Ciudad Mayakoba | Inversión Inmobiliaria Riviera Maya</title>
+    <title>Especialista en Ciudad Mayakoba | Asesoría Inmobiliaria Certificada Riviera Maya</title>
     <meta name="description" content="Asesoría patrimonial independiente en Ciudad Mayakoba. Accede al inventario oficial de Bosques, Jardines, Senderos, Country Club y The Reserve con certeza jurídica NOM-247 y cero comisión al comprador.">
+    <link rel="icon" type="image/webp" href="./Imagenes_Descargadas/logo.webp">
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome 6 CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        .radar-pulse {
-            box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
-            animation: pulse-green 2s infinite;
-        }
-        @keyframes pulse-green {
-            0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
-            70% { box-shadow: 0 0 0 15px rgba(16, 185, 129, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
-        }
-    </style>
+    <!-- Estilos de Lujo y Microinteracciones -->
+    <link rel="stylesheet" href="./frontend/styles.css">
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-emerald-100 selection:text-emerald-900">
 
-    <!-- TOPBAR TRANSPARENCIA & NOM-247 -->
+    <!-- TOPBAR DE TRANSPARENCIA, NOM-247 & CONTACTO DIRECTO -->
     <div class="bg-slate-950 text-slate-400 text-xs py-2 px-4 border-b border-emerald-900/40">
         <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
-            <div class="flex items-center gap-2">
+            <div class="flex items-center gap-2 text-[11px] sm:text-xs">
                 <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
-                <span class="font-medium text-emerald-300">Asesoría Inmobiliaria Independiente Certificada</span>
+                <span class="font-semibold text-emerald-300">Asesoría Patrimonial Independiente Certificada</span>
                 <span class="text-slate-600">|</span>
                 <span>Contratos Adheridos ante PROFECO & NOM-247-SE-2021</span>
             </div>
-            <div class="flex items-center gap-4 text-slate-400 text-[11px]">
-                <span><i class="fa-solid fa-location-dot text-emerald-400 mr-1"></i> Playa del Carmen, Q. Roo</span>
-                <a href="#footer-legal" class="hover:text-emerald-300 transition underline decoration-emerald-500/40">Garantías Legales & Razones Sociales</a>
+            <div class="flex items-center gap-4 text-[11px] text-slate-400">
+                <span><i class="fa-solid fa-phone text-emerald-400 mr-1"></i> +52 984 177 0320</span>
+                <span><i class="fa-solid fa-location-dot text-emerald-400 mr-1"></i> Playa del Carmen, Riviera Maya</span>
+                <a href="#footer-legal" class="hover:text-emerald-300 transition underline decoration-emerald-500/40">Razones Sociales</a>
             </div>
         </div>
     </div>
 
-    <!-- HEADER / NAVBAR -->
+    <!-- HEADER / NAVBAR CON IDENTIDAD PROPIA & LOGO OFICIAL -->
     <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <a href="#" class="flex items-center space-x-3">
-                <div class="bg-emerald-700 text-white p-2.5 rounded-xl font-extrabold text-xl tracking-wider shadow-md">CM</div>
-                <div>
-                    <span class="block font-bold text-slate-900 leading-tight text-base sm:text-lg">Ciudad Mayakoba</span>
-                    <span class="text-xs text-emerald-700 font-semibold uppercase tracking-wider">Especialista Inmobiliario Certificado</span>
+            <a href="#" class="flex items-center space-x-3 group">
+                <img src="./Imagenes_Descargadas/logo.svg" alt="Ciudad Mayakoba" class="h-10 sm:h-12 w-auto object-contain transition-transform group-hover:scale-105" onerror="this.src='./Imagenes_Descargadas/logo.webp'">
+                <div class="border-l border-slate-300 pl-3">
+                    <span class="block font-extrabold text-slate-900 leading-tight text-sm sm:text-base tracking-tight">Especialista Independiente</span>
+                    <span class="text-[10px] sm:text-xs text-emerald-700 font-bold uppercase tracking-wider block">Riviera Maya • 0% Comisión</span>
                 </div>
             </a>
-            <nav class="hidden md:flex space-x-8 text-sm font-semibold text-slate-600">
+            <nav class="hidden xl:flex space-x-6 text-xs sm:text-sm font-semibold text-slate-600">
                 <a href="#desarrollos" class="hover:text-emerald-700 transition">Desarrollos</a>
-                <a href="#quiz-section" class="hover:text-emerald-700 transition">Asesor Rápido</a>
-                <a href="#autoridad" class="hover:text-emerald-700 transition">Garantía & Transparencia</a>
+                <a href="#masterplan" class="hover:text-emerald-700 transition">Masterplan</a>
+                <a href="#macro-amenidades" class="hover:text-emerald-700 transition">Macro-Amenidades</a>
+                <a href="#amenidades-catalogo" class="hover:text-emerald-700 transition">21 Amenidades</a>
+                <a href="#expat-hub" class="hover:text-emerald-700 transition">Expat & Inversión</a>
+                <a href="#testimonios" class="hover:text-emerald-700 transition">Reseñas</a>
                 <a href="#footer-legal" class="hover:text-emerald-700 transition">NOM-247</a>
             </nav>
-            <a href="#quiz-section" class="bg-emerald-700 hover:bg-emerald-800 text-white px-5 py-2.5 rounded-xl font-semibold text-sm transition shadow-lg shadow-emerald-700/20 flex items-center">
-                <i class="fa-brands fa-whatsapp mr-2 text-base"></i> Asesoría Experta
-            </a>
+            <div class="flex items-center gap-3">
+                <a href="#quiz-section" class="bg-emerald-700 hover:bg-emerald-800 text-white px-4 sm:px-5 py-2.5 rounded-xl font-bold text-xs sm:text-sm transition shadow-lg shadow-emerald-700/20 flex items-center">
+                    <i class="fa-solid fa-compass mr-2 text-sm"></i> Test de Compatibilidad
+                </a>
+            </div>
         </div>
     </header>
 
-    <!-- HERO SECTION -->
-    <section class="relative bg-gradient-to-br from-slate-900 via-slate-800 to-emerald-950 text-white py-16 lg:py-24 overflow-hidden">
-        <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#10b981_1px,transparent_1px)] [background-size:16px_16px]"></div>
+    <!-- HERO SECTION CINEMATOGRÁFICO CON LIFESTYLE HERO & CRO QUIZ -->
+    <section class="relative bg-slate-950 text-white py-16 lg:py-24 overflow-hidden">
+        <!-- Fondo Fotográfico Oficial -->
+        <div class="absolute inset-0 z-0">
+            <img src="./Imagenes_Descargadas/lifestyle-hero.jpg" alt="Estilo de Vida Ciudad Mayakoba" class="w-full h-full object-cover object-center opacity-30 brightness-75 scale-105">
+            <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/90 to-emerald-950/80"></div>
+        </div>
         
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid lg:grid-cols-12 gap-12 items-center">
             
             <div class="lg:col-span-7 space-y-6">
-                <span class="inline-flex items-center space-x-2 bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 text-xs font-semibold px-3.5 py-1.5 rounded-full">
-                    <i class="fa-solid fa-shield-halved"></i> <span>Inventario Verificado & Directo de Desarrollador</span>
-                </span>
-                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                <div class="inline-flex items-center space-x-2 bg-emerald-500/20 border border-emerald-500/40 text-emerald-300 text-xs font-bold px-3.5 py-1.5 rounded-full backdrop-blur-md">
+                    <i class="fa-solid fa-shield-halved text-emerald-400"></i> 
+                    <span>Inventario Verificado • Precios Oficiales Directos de Desarrollador</span>
+                </div>
+                
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight">
                     Tu Nuevo Patrimonio o Inversión en <span class="text-emerald-400">Ciudad Mayakoba</span>
                 </h1>
-                <p class="text-base sm:text-lg text-slate-300 max-w-2xl leading-relaxed">
-                    Accede al inventario exclusivo de <strong class="text-white">Bosques</strong>, <strong class="text-white">Jardines</strong>, <strong class="text-white">Senderos</strong>, <strong class="text-white">Mayakoba Country Club</strong> y <strong class="text-white">The Reserve</strong> con asesoría patrimonial independiente, 0% comisión para el comprador y total certeza jurídica en la Riviera Maya.
+                
+                <p class="text-sm sm:text-base text-slate-300 max-w-2xl leading-relaxed">
+                    Compara con total objetividad todo el inventario de <strong class="text-white">Bosques</strong>, <strong class="text-white">Jardines</strong>, <strong class="text-white">Senderos</strong>, <strong class="text-white">Mayakoba Country Club</strong>, <strong class="text-white">Lagunas</strong> y <strong class="text-white">The Reserve</strong>. Asesoría inmobiliaria imparcial, 0% comisión cobrada al comprador y estricta certeza jurídica NOM-247.
                 </p>
 
-                <!-- Trust Metrics -->
-                <div class="grid grid-cols-3 gap-4 pt-6 border-t border-slate-700/60">
-                    <div>
-                        <div class="text-2xl sm:text-3xl font-extrabold text-emerald-400 font-mono">+4,000</div>
-                        <div class="text-xs text-slate-400 mt-1 font-medium">Unidades Integradas</div>
-                    </div>
-                    <div>
-                        <div class="text-2xl sm:text-3xl font-extrabold text-emerald-400 font-mono">40+ Hectáreas</div>
-                        <div class="text-xs text-slate-400 mt-1 font-medium">Áreas Verdes y Senderos</div>
-                    </div>
-                    <div>
-                        <div class="text-2xl sm:text-3xl font-extrabold text-emerald-400 font-mono">100%</div>
-                        <div class="text-xs text-slate-400 mt-1 font-medium">Seguridad y Plusvalía</div>
+                <!-- Distintivos de Desarrollos -->
+                <div class="pt-2">
+                    <span class="text-xs uppercase tracking-wider text-slate-400 font-bold block mb-3">Desarrollos del Ecosistema:</span>
+                    <div class="flex flex-wrap items-center gap-3">
+                        <a href="#desarrollos" class="bg-white/10 hover:bg-white/20 border border-white/20 px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-2 transition">
+                            <img src="./Imagenes_Descargadas/bosques.png" class="h-4 w-auto brightness-200" alt="Bosques"> Bosques
+                        </a>
+                        <a href="#desarrollos" class="bg-white/10 hover:bg-white/20 border border-white/20 px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-2 transition">
+                            <img src="./Imagenes_Descargadas/jardines.png" class="h-4 w-auto brightness-200" alt="Jardines"> Jardines
+                        </a>
+                        <a href="#desarrollos" class="bg-white/10 hover:bg-white/20 border border-white/20 px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-2 transition">
+                            <img src="./Imagenes_Descargadas/senderos.png" class="h-4 w-auto brightness-200" alt="Senderos"> Senderos
+                        </a>
+                        <a href="#desarrollos" class="bg-white/10 hover:bg-white/20 border border-white/20 px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-2 transition">
+                            <img src="./Imagenes_Descargadas/country-club.png" class="h-4 w-auto brightness-200" alt="Country Club"> Country Club
+                        </a>
+                        <a href="#desarrollos" class="bg-white/10 hover:bg-white/20 border border-white/20 px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-2 transition">
+                            <img src="./Imagenes_Descargadas/the-reserve.png" class="h-4 w-auto brightness-200" alt="The Reserve"> The Reserve
+                        </a>
                     </div>
                 </div>
 
-                <div class="pt-2 flex items-center gap-4 text-xs text-slate-400">
+                <!-- Métricas Clave de Confianza -->
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-slate-800">
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-extrabold text-emerald-400 font-mono">+4,000</div>
+                        <div class="text-[11px] text-slate-400 font-medium">Familias e Inversionistas</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-extrabold text-emerald-400 font-mono">+1,000,000 m²</div>
+                        <div class="text-[11px] text-slate-400 font-medium">Áreas Verdes y Selva</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-extrabold text-emerald-400 font-mono">+16%</div>
+                        <div class="text-[11px] text-slate-400 font-medium">Plusvalía Anual Promedio</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-extrabold text-emerald-400 font-mono">0%</div>
+                        <div class="text-[11px] text-slate-400 font-medium">Comisión al Comprador</div>
+                    </div>
+                </div>
+
+                <div class="pt-2 flex flex-wrap items-center gap-4 text-xs text-slate-400">
                     <span><i class="fa-solid fa-check text-emerald-400 mr-1"></i> Precios Oficiales de Lista</span>
-                    <span><i class="fa-solid fa-check text-emerald-400 mr-1"></i> Sin Intermediarios Abusivos</span>
+                    <span><i class="fa-solid fa-check text-emerald-400 mr-1"></i> Asesoría Imparcial</span>
                     <span><i class="fa-solid fa-check text-emerald-400 mr-1"></i> Respaldo NOM-247</span>
                 </div>
             </div>
 
-            <!-- QUIZ WIDGET CARD -->
-            <div id="quiz-section" class="lg:col-span-5 bg-white text-slate-800 rounded-2xl shadow-2xl p-6 sm:p-8 border border-slate-100 relative">
+            <!-- QUIZ INTERACTIVO PREDICTIVO DE 5 PASOS -->
+            <div id="quiz-section" class="lg:col-span-5 bg-white text-slate-800 rounded-3xl shadow-2xl p-6 sm:p-8 border border-slate-100 relative">
                 
                 <div id="quiz-header-wrapper" class="mb-6">
-                    <div class="flex justify-between text-xs font-bold text-emerald-700 mb-2">
-                        <span id="step-indicator">PASO 1 DE 5</span>
-                        <span id="step-title-tracker">Tipo de Propiedad</span>
+                    <div class="flex justify-between items-center text-xs font-bold text-emerald-800 mb-2">
+                        <span id="step-indicator" class="bg-emerald-50 px-2.5 py-1 rounded-md border border-emerald-200">PASO 1 DE 5</span>
+                        <span id="step-title-tracker" class="text-slate-600 font-semibold">Tipo de Propiedad</span>
                     </div>
-                    <div class="w-full bg-slate-100 h-2.5 rounded-full overflow-hidden">
+                    <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
                         <div id="progress-bar" class="bg-emerald-600 h-full w-1/5 transition-all duration-300"></div>
                     </div>
                 </div>
 
                 <form id="lead-quiz-form" onsubmit="handleQuizSubmit(event)">
-                    <!-- STEP 1 -->
+                    <!-- PASO 1 -->
                     <div class="quiz-step space-y-4" data-step="1">
-                        <h3 class="text-lg sm:text-xl font-bold text-slate-900">¿Qué tipo de propiedad buscas?</h3>
-                        <p class="text-xs text-slate-500">Selecciona el formato ideal para tu plan:</p>
+                        <h3 class="text-lg font-bold text-slate-900">¿Qué tipo de propiedad estás buscando?</h3>
+                        <p class="text-xs text-slate-500">Selecciona la tipología que mejor se adapte a tu plan en la Riviera Maya.</p>
+                        
                         <div class="space-y-2.5">
-                            <label class="flex items-center p-3.5 border border-slate-200 rounded-xl hover:border-emerald-600 cursor-pointer transition hover:bg-emerald-50/40">
-                                <input type="radio" name="cm_tipo_interes" value="Departamento" class="text-emerald-600 focus:ring-emerald-500 w-4 h-4" required>
-                                <div class="ml-3">
-                                    <span class="block font-bold text-sm text-slate-800">Departamento</span>
-                                    <span class="text-xs text-slate-500">Condominios y residencias verticales (Bosques / The Reserve)</span>
+                            <label class="quiz-option-card flex items-center p-3.5 rounded-xl cursor-pointer bg-slate-50">
+                                <input type="radio" name="cm_tipo_interes" value="Departamento" required class="text-emerald-600 focus:ring-emerald-500 mr-3">
+                                <div>
+                                    <span class="block font-bold text-xs sm:text-sm text-slate-800">Departamento Residencial</span>
+                                    <span class="block text-[11px] text-slate-500">2 y 3 recámaras con amenidades de resort (Bosques / Lagunas / Jardines)</span>
                                 </div>
                             </label>
-                            <label class="flex items-center p-3.5 border border-slate-200 rounded-xl hover:border-emerald-600 cursor-pointer transition hover:bg-emerald-50/40">
-                                <input type="radio" name="cm_tipo_interes" value="Casa" class="text-emerald-600 focus:ring-emerald-500 w-4 h-4">
-                                <div class="ml-3">
-                                    <span class="block font-bold text-sm text-slate-800">Casa / Residencia</span>
-                                    <span class="text-xs text-slate-500">Villas terminadas con amenidades familiares (Jardines / Bosques)</span>
+                            
+                            <label class="quiz-option-card flex items-center p-3.5 rounded-xl cursor-pointer bg-slate-50">
+                                <input type="radio" name="cm_tipo_interes" value="Casa" class="text-emerald-600 focus:ring-emerald-500 mr-3">
+                                <div>
+                                    <span class="block font-bold text-xs sm:text-sm text-slate-800">Casa o Villa Independiente</span>
+                                    <span class="block text-[11px] text-slate-500">Vivienda unifamiliar con jardín privado y terraza (Jardines / Country Club)</span>
                                 </div>
                             </label>
-                            <label class="flex items-center p-3.5 border border-slate-200 rounded-xl hover:border-emerald-600 cursor-pointer transition hover:bg-emerald-50/40">
-                                <input type="radio" name="cm_tipo_interes" value="Lote" class="text-emerald-600 focus:ring-emerald-500 w-4 h-4">
-                                <div class="ml-3">
-                                    <span class="block font-bold text-sm text-slate-800">Lote Residencial / Campestre</span>
-                                    <span class="text-xs text-slate-500">Terrenos urbanizados (Senderos / Mayakoba Country Club)</span>
+                            
+                            <label class="quiz-option-card flex items-center p-3.5 rounded-xl cursor-pointer bg-slate-50">
+                                <input type="radio" name="cm_tipo_interes" value="Lote" class="text-emerald-600 focus:ring-emerald-500 mr-3">
+                                <div>
+                                    <span class="block font-bold text-xs sm:text-sm text-slate-800">Lote Residencial Urbanizado</span>
+                                    <span class="block text-[11px] text-slate-500">160 m² a 900 m² para construir a tu ritmo (Senderos / Mayakoba Country Club)</span>
                                 </div>
                             </label>
-                        </div>
-                        <button type="button" onclick="nextStep(2)" class="w-full bg-emerald-700 hover:bg-emerald-800 text-white font-bold py-3.5 rounded-xl transition shadow-md flex items-center justify-center gap-2">
-                            <span>Siguiente</span> <i class="fa-solid fa-arrow-right text-xs"></i>
-                        </button>
-                    </div>
 
-                    <!-- STEP 2 -->
-                    <div class="quiz-step hidden space-y-4" data-step="2">
-                        <h3 class="text-lg sm:text-xl font-bold text-slate-900">¿Cuál es tu objetivo principal?</h3>
-                        <p class="text-xs text-slate-500">Priorizaremos los proyectos de mayor afinidad:</p>
-                        <div class="space-y-2.5">
-                            <label class="flex items-center p-3.5 border border-slate-200 rounded-xl hover:border-emerald-600 cursor-pointer transition hover:bg-emerald-50/40">
-                                <input type="radio" name="cm_objetivo" value="Vivir / Residencial" class="text-emerald-600 focus:ring-emerald-500 w-4 h-4" required>
-                                <div class="ml-3">
-                                    <span class="block font-bold text-sm text-slate-800">Vivir / Residencia Principal</span>
-                                    <span class="text-xs text-slate-500">Seguridad, colegios (Laurea School) y vida en comunidad</span>
-                                </div>
-                            </label>
-                            <label class="flex items-center p-3.5 border border-slate-200 rounded-xl hover:border-emerald-600 cursor-pointer transition hover:bg-emerald-50/40">
-                                <input type="radio" name="cm_objetivo" value="Inversión Renta Vacacional" class="text-emerald-600 focus:ring-emerald-500 w-4 h-4">
-                                <div class="ml-3">
-                                    <span class="block font-bold text-sm text-slate-800">Inversión para Renta Vacacional</span>
-                                    <span class="text-xs text-slate-500">Flujo recurrente de efectivo y alto ROI en Riviera Maya</span>
-                                </div>
-                            </label>
-                            <label class="flex items-center p-3.5 border border-slate-200 rounded-xl hover:border-emerald-600 cursor-pointer transition hover:bg-emerald-50/40">
-                                <input type="radio" name="cm_objetivo" value="Plusvalía Patrimonial" class="text-emerald-600 focus:ring-emerald-500 w-4 h-4">
-                                <div class="ml-3">
-                                    <span class="block font-bold text-sm text-slate-800">Plusvalía a Largo Plazo</span>
-                                    <span class="text-xs text-slate-500">Resguardo de capital y revalorización en zona de alta demanda</span>
+                            <label class="quiz-option-card flex items-center p-3.5 rounded-xl cursor-pointer bg-slate-50">
+                                <input type="radio" name="cm_tipo_interes" value="UltraLujo" class="text-emerald-600 focus:ring-emerald-500 mr-3">
+                                <div>
+                                    <span class="block font-bold text-xs sm:text-sm text-slate-800">Branded Residence / Ultra-Lujo</span>
+                                    <span class="block text-[11px] text-slate-500">Residencias de ultra-lujo frente a canales navegables (The Reserve)</span>
                                 </div>
                             </label>
                         </div>
-                        <div class="flex space-x-3">
-                            <button type="button" onclick="prevStep(1)" class="w-1/2 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold py-3.5 rounded-xl transition">Atrás</button>
-                            <button type="button" onclick="nextStep(3)" class="w-1/2 bg-emerald-700 hover:bg-emerald-800 text-white font-bold py-3.5 rounded-xl transition">Siguiente</button>
+                        
+                        <div class="pt-4">
+                            <button type="button" onclick="nextStep(2)" class="w-full py-3 bg-emerald-700 hover:bg-emerald-800 text-white font-bold rounded-xl text-xs sm:text-sm transition shadow-md">
+                                Continuar <i class="fa-solid fa-arrow-right ml-1"></i>
+                            </button>
                         </div>
                     </div>
 
-                    <!-- STEP 3 -->
-                    <div class="quiz-step hidden space-y-4" data-step="3">
-                        <h3 class="text-lg sm:text-xl font-bold text-slate-900">¿Cuál es tu rango de inversión?</h3>
-                        <p class="text-xs text-slate-500">Precios oficiales en Pesos Mexicanos (MXN):</p>
+                    <!-- PASO 2 -->
+                    <div class="quiz-step space-y-4 hidden" data-step="2">
+                        <h3 class="text-lg font-bold text-slate-900">¿Cuál es el objetivo principal de compra?</h3>
+                        <p class="text-xs text-slate-500">Esto determinará el análisis de retorno y el régimen condominial óptimo.</p>
+                        
                         <div class="space-y-2.5">
-                            <label class="flex items-center p-3.5 border border-slate-200 rounded-xl hover:border-emerald-600 cursor-pointer transition hover:bg-emerald-50/40">
-                                <input type="radio" name="cm_rango_presupuesto" value="$1.5M - $3M MXN" class="text-emerald-600 focus:ring-emerald-500 w-4 h-4" required>
-                                <div class="ml-3">
-                                    <span class="block font-bold text-sm text-slate-800">$1.5M - $3M MXN</span>
-                                    <span class="text-xs text-emerald-700 font-semibold">Jardines de Mayakoba ($1.6M - $1.8M)</span>
+                            <label class="quiz-option-card flex items-center p-3.5 rounded-xl cursor-pointer bg-slate-50">
+                                <input type="radio" name="cm_objetivo" value="Inversión Renta Vacacional" required class="text-emerald-600 mr-3">
+                                <div>
+                                    <span class="block font-bold text-xs sm:text-sm text-slate-800">Renta Vacacional & Rendimiento (Airbnb)</span>
+                                    <span class="block text-[11px] text-slate-500">Generación de flujos de efectivo en dólares y alta ocupación turística</span>
                                 </div>
                             </label>
-                            <label class="flex items-center p-3.5 border border-slate-200 rounded-xl hover:border-emerald-600 cursor-pointer transition hover:bg-emerald-50/40">
-                                <input type="radio" name="cm_rango_presupuesto" value="$3M - $6M MXN" class="text-emerald-600 focus:ring-emerald-500 w-4 h-4">
-                                <div class="ml-3">
-                                    <span class="block font-bold text-sm text-slate-800">$3M - $6M MXN</span>
-                                    <span class="text-xs text-emerald-700 font-semibold">Senderos ($3.2M+) / Bosques ($5.8M - $6.5M)</span>
+                            <label class="quiz-option-card flex items-center p-3.5 rounded-xl cursor-pointer bg-slate-50">
+                                <input type="radio" name="cm_objetivo" value="Vivienda Principal" class="text-emerald-600 mr-3">
+                                <div>
+                                    <span class="block font-bold text-xs sm:text-sm text-slate-800">Vivir en la Riviera Maya</span>
+                                    <span class="block text-[11px] text-slate-500">Residencia familiar con escuelas internacionales (Colegio Laurea)</span>
                                 </div>
                             </label>
-                            <label class="flex items-center p-3.5 border border-slate-200 rounded-xl hover:border-emerald-600 cursor-pointer transition hover:bg-emerald-50/40">
-                                <input type="radio" name="cm_rango_presupuesto" value="$6M+ MXN" class="text-emerald-600 focus:ring-emerald-500 w-4 h-4">
-                                <div class="ml-3">
-                                    <span class="block font-bold text-sm text-slate-800">$6M+ MXN</span>
-                                    <span class="text-xs text-amber-700 font-semibold">Mayakoba Country Club / The Reserve</span>
+                            <label class="quiz-option-card flex items-center p-3.5 rounded-xl cursor-pointer bg-slate-50">
+                                <input type="radio" name="cm_objetivo" value="Patrimonio a Largo Plazo" class="text-emerald-600 mr-3">
+                                <div>
+                                    <span class="block font-bold text-xs sm:text-sm text-slate-800">Plusvalía & Reserva Patrimonial</span>
+                                    <span class="block text-[11px] text-slate-500">Asegurar plusvalía por desarrollo de infraestructura en Playa del Carmen</span>
                                 </div>
                             </label>
                         </div>
-                        <div class="flex space-x-3">
-                            <button type="button" onclick="prevStep(2)" class="w-1/2 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold py-3.5 rounded-xl transition">Atrás</button>
-                            <button type="button" onclick="nextStep(4)" class="w-1/2 bg-emerald-700 hover:bg-emerald-800 text-white font-bold py-3.5 rounded-xl transition">Siguiente</button>
+                        
+                        <div class="pt-4 flex gap-2">
+                            <button type="button" onclick="prevStep(1)" class="w-1/3 py-3 border border-slate-300 text-slate-600 font-bold rounded-xl text-xs transition hover:bg-slate-100">Atrás</button>
+                            <button type="button" onclick="nextStep(3)" class="w-2/3 py-3 bg-emerald-700 hover:bg-emerald-800 text-white font-bold rounded-xl text-xs sm:text-sm transition">Continuar <i class="fa-solid fa-arrow-right ml-1"></i></button>
                         </div>
                     </div>
 
-                    <!-- STEP 4 -->
-                    <div class="quiz-step hidden space-y-4" data-step="4">
-                        <h3 class="text-lg sm:text-xl font-bold text-slate-900">¿Cuándo planeas realizar la compra?</h3>
-                        <p class="text-xs text-slate-500">Nos permite gestionar promociones de temporada:</p>
+                    <!-- PASO 3 -->
+                    <div class="quiz-step space-y-4 hidden" data-step="3">
+                        <h3 class="text-lg font-bold text-slate-900">¿Qué rango de presupuesto tienes contemplado?</h3>
+                        <p class="text-xs text-slate-500">Precios normalizados y directos de lista de desarrollador.</p>
+                        
                         <div class="space-y-2.5">
-                            <label class="flex items-center p-3.5 border border-slate-200 rounded-xl hover:border-emerald-600 cursor-pointer transition hover:bg-emerald-50/40">
-                                <input type="radio" name="cm_plazo_compra" value="Inmediato" class="text-emerald-600 focus:ring-emerald-500 w-4 h-4" required>
-                                <div class="ml-3">
-                                    <span class="block font-bold text-sm text-slate-800">Inmediato (0 - 30 días)</span>
-                                    <span class="text-xs text-slate-500">Listo para reservar o escriturar de inmediato</span>
+                            <label class="quiz-option-card flex items-center p-3.5 rounded-xl cursor-pointer bg-slate-50">
+                                <input type="radio" name="cm_rango_presupuesto" value="$1.5M - $3M MXN" required class="text-emerald-600 mr-3">
+                                <div>
+                                    <span class="block font-bold text-xs sm:text-sm text-slate-800">$1.5M a $3.0M MXN</span>
+                                    <span class="block text-[11px] text-slate-500">Perfil ideal para Jardines de Mayakoba (Apto crédito Infonavit / Bancario)</span>
                                 </div>
                             </label>
-                            <label class="flex items-center p-3.5 border border-slate-200 rounded-xl hover:border-emerald-600 cursor-pointer transition hover:bg-emerald-50/40">
-                                <input type="radio" name="cm_plazo_compra" value="1-3 meses" class="text-emerald-600 focus:ring-emerald-500 w-4 h-4">
-                                <div class="ml-3">
-                                    <span class="block font-bold text-sm text-slate-800">1 a 3 meses</span>
-                                    <span class="text-xs text-slate-500">Planificando visita a Playa del Carmen o financiamiento</span>
+                            <label class="quiz-option-card flex items-center p-3.5 rounded-xl cursor-pointer bg-slate-50">
+                                <input type="radio" name="cm_rango_presupuesto" value="$3M - $6M MXN" class="text-emerald-600 mr-3">
+                                <div>
+                                    <span class="block font-bold text-xs sm:text-sm text-slate-800">$3.0M a $6.0M MXN</span>
+                                    <span class="block text-[11px] text-slate-500">Perfil ideal para Bosques, Senderos o Lagunas</span>
                                 </div>
                             </label>
-                            <label class="flex items-center p-3.5 border border-slate-200 rounded-xl hover:border-emerald-600 cursor-pointer transition hover:bg-emerald-50/40">
-                                <input type="radio" name="cm_plazo_compra" value="6+ meses" class="text-emerald-600 focus:ring-emerald-500 w-4 h-4">
-                                <div class="ml-3">
-                                    <span class="block font-bold text-sm text-slate-800">Más de 6 meses / Explorando</span>
-                                    <span class="text-xs text-slate-500">Buscando planes de preventa con pagos diferidos</span>
+                            <label class="quiz-option-card flex items-center p-3.5 rounded-xl cursor-pointer bg-slate-50">
+                                <input type="radio" name="cm_rango_presupuesto" value="$6M+ MXN" class="text-emerald-600 mr-3">
+                                <div>
+                                    <span class="block font-bold text-xs sm:text-sm text-slate-800">Más de $6.0M MXN</span>
+                                    <span class="block text-[11px] text-slate-500">Perfil ideal para Mayakoba Country Club o The Reserve</span>
                                 </div>
                             </label>
                         </div>
-                        <div class="flex space-x-3">
-                            <button type="button" onclick="prevStep(3)" class="w-1/2 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold py-3.5 rounded-xl transition">Atrás</button>
-                            <button type="button" onclick="nextStep(5)" class="w-1/2 bg-emerald-700 hover:bg-emerald-800 text-white font-bold py-3.5 rounded-xl transition">Siguiente</button>
+                        
+                        <div class="pt-4 flex gap-2">
+                            <button type="button" onclick="prevStep(2)" class="w-1/3 py-3 border border-slate-300 text-slate-600 font-bold rounded-xl text-xs transition hover:bg-slate-100">Atrás</button>
+                            <button type="button" onclick="nextStep(4)" class="w-2/3 py-3 bg-emerald-700 hover:bg-emerald-800 text-white font-bold rounded-xl text-xs sm:text-sm transition">Continuar <i class="fa-solid fa-arrow-right ml-1"></i></button>
                         </div>
                     </div>
 
-                    <!-- STEP 5 -->
-                    <div class="quiz-step hidden space-y-4" data-step="5">
-                        <h3 class="text-lg sm:text-xl font-bold text-slate-900">¿A dónde te enviamos la asesoría y brochure?</h3>
-                        <p class="text-xs text-slate-500">Recibirás acceso al dossier oficial con planos y disponibilidad:</p>
+                    <!-- PASO 4 -->
+                    <div class="quiz-step space-y-4 hidden" data-step="4">
+                        <h3 class="text-lg font-bold text-slate-900">¿En qué plazo estimas formalizar tu compra?</h3>
+                        <p class="text-xs text-slate-500">Para filtrar unidades listas para entrega o preventas fase cero.</p>
+                        
+                        <div class="space-y-2.5">
+                            <label class="quiz-option-card flex items-center p-3.5 rounded-xl cursor-pointer bg-slate-50">
+                                <input type="radio" name="cm_plazo_compra" value="Inmediato" required class="text-emerald-600 mr-3">
+                                <div>
+                                    <span class="block font-bold text-xs sm:text-sm text-slate-800">Inmediato (0 a 30 días)</span>
+                                    <span class="block text-[11px] text-slate-500">Unidades para escrituración inmediata y entrega de llaves</span>
+                                </div>
+                            </label>
+                            <label class="quiz-option-card flex items-center p-3.5 rounded-xl cursor-pointer bg-slate-50">
+                                <input type="radio" name="cm_plazo_compra" value="1-3 meses" class="text-emerald-600 mr-3">
+                                <div>
+                                    <span class="block font-bold text-xs sm:text-sm text-slate-800">Corto plazo (1 a 3 meses)</span>
+                                    <span class="block text-[11px] text-slate-500">Oportunidades en proceso de cierre o precalificación hipotecaria</span>
+                                </div>
+                            </label>
+                            <label class="quiz-option-card flex items-center p-3.5 rounded-xl cursor-pointer bg-slate-50">
+                                <input type="radio" name="cm_plazo_compra" value="6+ meses" class="text-emerald-600 mr-3">
+                                <div>
+                                    <span class="block font-bold text-xs sm:text-sm text-slate-800">Preventa (6 meses en adelante)</span>
+                                    <span class="block text-[11px] text-slate-500">Esquemas de pagos diferidos con mayor margen de plusvalía</span>
+                                </div>
+                            </label>
+                        </div>
+                        
+                        <div class="pt-4 flex gap-2">
+                            <button type="button" onclick="prevStep(3)" class="w-1/3 py-3 border border-slate-300 text-slate-600 font-bold rounded-xl text-xs transition hover:bg-slate-100">Atrás</button>
+                            <button type="button" onclick="nextStep(5)" class="w-2/3 py-3 bg-emerald-700 hover:bg-emerald-800 text-white font-bold rounded-xl text-xs sm:text-sm transition">Continuar <i class="fa-solid fa-arrow-right ml-1"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- PASO 5 -->
+                    <div class="quiz-step space-y-4 hidden" data-step="5">
+                        <h3 class="text-lg font-bold text-slate-900">¿A dónde te enviamos tu diagnóstico de compatibilidad?</h3>
+                        <p class="text-xs text-slate-500">Recibirás la ficha técnica del desarrollo correspondiente, precios de lista y planos en PDF.</p>
+                        
                         <div class="space-y-3">
                             <div>
-                                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Nombre Completo *</label>
-                                <input type="text" name="nombre" placeholder="Tu nombre" class="w-full px-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:outline-none text-sm" required>
+                                <label class="block text-xs font-bold text-slate-700 mb-1">Nombre Completo *</label>
+                                <input type="text" name="nombre" required placeholder="Ej. Carlos Mendoza" class="w-full p-3 rounded-xl border border-slate-200 text-xs focus:ring-2 focus:ring-emerald-500 focus:outline-none">
                             </div>
                             <div>
-                                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">WhatsApp (con lada de 10 dígitos) *</label>
-                                <input type="tel" name="telefono" placeholder="+52 984 123 4567" class="w-full px-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:outline-none text-sm font-mono" required>
+                                <label class="block text-xs font-bold text-slate-700 mb-1">WhatsApp (con código de área) *</label>
+                                <input type="tel" name="telefono" required placeholder="Ej. 9841234567" class="w-full p-3 rounded-xl border border-slate-200 text-xs focus:ring-2 focus:ring-emerald-500 focus:outline-none">
+                                <span class="text-[10px] text-slate-400">Te contactaremos por WhatsApp con el dossier oficial.</span>
                             </div>
                             <div>
-                                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Correo Electrónico *</label>
-                                <input type="email" name="email" placeholder="tucorreo@email.com" class="w-full px-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:outline-none text-sm" required>
-                            </div>
-                            <div class="pt-1">
-                                <label class="flex items-start gap-2 cursor-pointer">
-                                    <input type="checkbox" name="consentimiento_nom247" checked class="mt-1 text-emerald-600 rounded focus:ring-emerald-500 w-3.5 h-3.5" required>
-                                    <span class="text-[11px] text-slate-500 leading-tight">
-                                        Acepto recibir la propuesta y el contacto del <strong class="text-slate-700">Especialista en Ciudad Mayakoba</strong> conforme al Aviso de Privacidad y la <strong class="text-slate-700">NOM-247-SE-2021</strong>.
-                                    </span>
-                                </label>
+                                <label class="block text-xs font-bold text-slate-700 mb-1">Correo Electrónico *</label>
+                                <input type="email" name="email" required placeholder="carlos.mendoza@ejemplo.com" class="w-full p-3 rounded-xl border border-slate-200 text-xs focus:ring-2 focus:ring-emerald-500 focus:outline-none">
                             </div>
                         </div>
-                        <div class="flex space-x-3 pt-2">
-                            <button type="button" onclick="prevStep(4)" class="w-1/2 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold py-3.5 rounded-xl transition">Atrás</button>
-                            <button type="submit" id="btn-submit-quiz" class="w-1/2 bg-emerald-700 hover:bg-emerald-800 text-white font-bold py-3.5 rounded-xl transition shadow-lg shadow-emerald-700/30">
-                                Ver Opciones
+
+                        <div class="p-3 bg-emerald-50 rounded-xl border border-emerald-200 flex items-start gap-2 text-[11px] text-emerald-800">
+                            <i class="fa-solid fa-lock mt-0.5 text-emerald-600"></i>
+                            <span>Tus datos están protegidos bajo la Ley Federal de Protección de Datos Personales y la NOM-247-SE-2021. Cero spam.</span>
+                        </div>
+                        
+                        <div class="pt-2 flex gap-2">
+                            <button type="button" onclick="prevStep(4)" class="w-1/3 py-3 border border-slate-300 text-slate-600 font-bold rounded-xl text-xs transition hover:bg-slate-100">Atrás</button>
+                            <button type="submit" id="btn-submit-quiz" class="w-2/3 py-3 bg-emerald-700 hover:bg-emerald-800 text-white font-bold rounded-xl text-xs sm:text-sm transition shadow-lg shadow-emerald-700/20">
+                                Ver Mi Desarrollo Ideal <i class="fa-solid fa-sparkles ml-1"></i>
                             </button>
                         </div>
                     </div>
                 </form>
 
-                <!-- RESULT PANE (Aparece al enviar el formulario) -->
+                <!-- PANEL DINÁMICO DE RESULTADOS (OCULTO INICIALMENTE) -->
                 <div id="quiz-result-pane" class="hidden space-y-4 pt-2">
-                    <div class="text-center">
-                        <span class="px-3 py-1 bg-emerald-100 text-emerald-800 text-xs font-extrabold uppercase tracking-wider rounded-full inline-block mb-2">
-                            ¡Match Encontrado! (98% Compatibilidad)
-                        </span>
-                        <h4 class="text-xl font-bold text-slate-900" id="match-dev-name">Bosques Ciudad Mayakoba</h4>
+                    <div class="text-center space-y-1">
+                        <span class="inline-block px-3 py-1 bg-emerald-100 text-emerald-800 rounded-full text-xs font-bold">¡Compatibilidad 98%!</span>
+                        <h4 class="text-xl font-extrabold text-slate-900" id="match-dev-name">Bosques Ciudad Mayakoba</h4>
+                        <p class="text-xs text-slate-500">Basado en tus preferencias de presupuesto y estilo de vida.</p>
                     </div>
 
-                    <div class="rounded-xl overflow-hidden border border-slate-200 bg-slate-50">
-                        <img id="match-dev-img" src="../Database web anterior/Imagenes_Descargadas/bosques-10.webp" alt="Desarrollo sugerido" class="w-full h-44 object-cover">
-                        <div class="p-4 space-y-2">
-                            <div class="flex justify-between items-center">
-                                <span class="text-xs font-bold text-emerald-700" id="match-dev-price">$5.8 MDP - $6.5 MDP MXN</span>
-                                <span class="text-[11px] px-2 py-0.5 rounded font-mono bg-white border border-slate-200" id="match-dev-social">CEIBA</span>
-                            </div>
-                            <p class="text-xs text-slate-600 leading-relaxed" id="match-dev-desc">
-                                Residencias boutique listas para habitar con alberca semiolímpica privada y parques familiares.
-                            </p>
-                            <div class="text-[11px] text-slate-500 bg-white p-2 rounded border border-slate-100">
-                                <strong>Tipologías:</strong> <span id="match-dev-tipologias">Ceiba, Roble</span>
-                            </div>
+                    <div class="rounded-2xl overflow-hidden border border-slate-200 bg-slate-900 relative">
+                        <img id="match-dev-img" src="./Imagenes_Descargadas/bosques-10.webp" alt="Desarrollo Recomendado" class="w-full h-48 object-cover">
+                        <div class="absolute bottom-2 left-2 bg-emerald-950/80 backdrop-blur text-white px-3 py-1 rounded-lg text-xs font-bold font-mono" id="match-dev-price">
+                            $5.8 MDP - $6.5 MDP MXN
                         </div>
                     </div>
 
-                    <a id="btn-redirect-whatsapp" href="#" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3.5 px-4 rounded-xl flex items-center justify-center gap-2 text-sm shadow-lg transition">
-                        <i class="fa-brands fa-whatsapp text-lg"></i>
-                        <span>Recibir Brochure y Ficha Técnica</span>
-                    </a>
-                    <button type="button" onclick="location.reload()" class="w-full text-center text-xs text-slate-400 hover:text-slate-700 underline pt-1">
-                        Hacer otra consulta
-                    </button>
+                    <div class="space-y-2 text-xs">
+                        <div class="p-3 bg-slate-50 rounded-xl border border-slate-100">
+                            <span class="block text-slate-400 text-[10px] uppercase font-bold">Razón Social Responsable:</span>
+                            <span class="font-bold text-slate-800" id="match-dev-social">La Ceiba DCM, S.A. de C.V. (CEIBA)</span>
+                        </div>
+                        <div class="p-3 bg-slate-50 rounded-xl border border-slate-100">
+                            <span class="block text-slate-400 text-[10px] uppercase font-bold">Tipologías Recomendadas:</span>
+                            <span class="font-semibold text-slate-800" id="match-dev-tipologias">Ceiba (128 m²) • Roble (185 m²)</span>
+                        </div>
+                        <p class="text-slate-600 leading-relaxed text-[11px]" id="match-dev-desc">
+                            Desarrollo residencial óptimo para habitar de inmediato con amenidades de club privado y máxima plusvalía.
+                        </p>
+                    </div>
+
+                    <div class="pt-2 space-y-2">
+                        <a id="btn-redirect-whatsapp" href="#" target="_blank" class="w-full py-3.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-xl text-xs sm:text-sm flex items-center justify-center gap-2 transition shadow-lg shadow-emerald-600/30">
+                            <i class="fa-brands fa-whatsapp text-lg"></i> Recibir Dossier y Planos por WhatsApp
+                        </a>
+                        <button type="button" onclick="location.reload()" class="w-full py-2 text-slate-400 hover:text-slate-600 text-xs font-semibold">
+                            Volver a consultar el cuestionario
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECCIÓN AUTORIDAD & COMPARATIVA: ¿POR QUÉ UN ASESOR INDEPENDIENTE? -->
+    <section id="autoridad" class="py-20 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <span class="text-xs font-extrabold uppercase tracking-widest text-emerald-700">Garantía & Transparencia</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                    ¿Por Qué Comprar a Través de un Especialista Independiente?
+                </h2>
+                <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
+                    Un asesor independiente no responde a la cuota de ventas de una sola constructora: analiza tu perfil patrimonial con total imparcialidad para asegurar tu dinero en el proyecto que realmente te conviene.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 items-stretch">
+                <!-- Vendedor Tradicional de Caseta -->
+                <div class="bg-slate-50 rounded-3xl p-8 border border-slate-200 space-y-6 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-rose-100 text-rose-600 flex items-center justify-center font-bold text-lg"><i class="fa-solid fa-xmark"></i></div>
+                            <h3 class="text-lg font-bold text-slate-800">Caseta de Ventas Tradicional</h3>
+                        </div>
+                        <ul class="space-y-3 text-xs sm:text-sm text-slate-600">
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-circle-xmark text-rose-500 mt-1"></i> <span>Obligados a vender solo su propio desarrollo, aunque no cumpla tus metas de inversión.</span></li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-circle-xmark text-rose-500 mt-1"></i> <span>Sin comparativas objetivas de plusvalía o costos de mantenimiento frente a otros condominios.</span></li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-circle-xmark text-rose-500 mt-1"></i> <span>Presión constante por apartados inmediatos con poca claridad en contratos NOM-247.</span></li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-circle-xmark text-rose-500 mt-1"></i> <span>No gestionan fideicomisos extranjeros ni precalificación bancaria multientidad.</span></li>
+                        </ul>
+                    </div>
+                    <div class="p-4 bg-rose-50 rounded-2xl border border-rose-100 text-xs text-rose-800">
+                        Resultado: Inversiones sesgadas con mayor riesgo y menor flexibilidad financiera.
+                    </div>
+                </div>
+
+                <!-- Especialista en Ciudad Mayakoba -->
+                <div class="bg-gradient-to-br from-emerald-950 via-slate-900 to-slate-900 text-white rounded-3xl p-8 border border-emerald-500/30 shadow-2xl space-y-6 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-lg"><i class="fa-solid fa-check"></i></div>
+                            <div>
+                                <h3 class="text-lg font-bold text-white">Especialista en Ciudad Mayakoba</h3>
+                                <span class="text-[11px] text-emerald-400 font-semibold">Servicio 100% Gratuito para el Comprador</span>
+                            </div>
+                        </div>
+                        <ul class="space-y-3 text-xs sm:text-sm text-slate-300">
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-emerald-400 mt-1"></i> <span><strong>Total Imparcialidad:</strong> Comparamos Bosques, Jardines, Senderos, Country Club, Lagunas y The Reserve según tu ROI deseado.</span></li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-emerald-400 mt-1"></i> <span><strong>Precios Oficiales de Lista:</strong> Los desarrolladores nos pagan sus honorarios; tú pagas exactamente el precio directo de lista sin ningún sobreprecio.</span></li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-emerald-400 mt-1"></i> <span><strong>Auditoría Contractual NOM-247:</strong> Revisión de licencias, títulos de propiedad y contratos registrados ante PROFECO.</span></li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-emerald-400 mt-1"></i> <span><strong>Brokers Hipotecarios & Fideicomiso:</strong> Asesoría especializada para inversionistas de México, EE.UU. y Canadá.</span></li>
+                        </ul>
+                    </div>
+                    <div class="p-4 bg-emerald-900/40 rounded-2xl border border-emerald-500/40 text-xs text-emerald-200">
+                        Garantía: Tranquilidad jurídica absoluta y acceso preferente a preventas fase cero.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN MASTERPLAN & CONECTIVIDAD URBANA DE PRIMER MUNDO -->
+    <section id="masterplan" class="py-20 bg-slate-900 text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-16">
+            
+            <div class="text-center max-w-3xl mx-auto space-y-3">
+                <span class="text-xs font-extrabold uppercase tracking-widest text-emerald-400">Plan Maestro Integral</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">
+                    Infraestructura Urbana de Primer Mundo en la Riviera Maya
+                </h2>
+                <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
+                    Una comunidad integralmente planeada de más de 400 hectáreas donde la arquitectura y el confort coexisten en equilibrio con la selva tropical nativa.
+                </p>
+            </div>
+
+            <!-- Gráfico del Masterplan con disparador Lightbox -->
+            <div class="bg-slate-950 p-4 sm:p-6 rounded-3xl border border-slate-800 shadow-2xl relative group cursor-pointer" onclick="openLightbox('./Imagenes_Descargadas/map-graphic.jpg', 'Plano Maestro Oficial - Ciudad Mayakoba')">
+                <div class="relative overflow-hidden rounded-2xl">
+                    <img src="./Imagenes_Descargadas/map-graphic.jpg" alt="Master Plan Ciudad Mayakoba" class="w-full h-auto object-cover max-h-[550px] transition-transform duration-700 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <span class="bg-emerald-600 text-white px-5 py-2.5 rounded-xl font-bold text-xs shadow-lg flex items-center gap-2">
+                            <i class="fa-solid fa-magnifying-glass-plus text-base"></i> Clic para Ampliar Masterplan en Alta Definición
+                        </span>
+                    </div>
+                </div>
+                <div class="mt-4 flex flex-wrap justify-between items-center text-xs text-slate-400 px-2">
+                    <span><i class="fa-solid fa-circle-info text-emerald-400 mr-1"></i> Mapa Oficial y Ubicación de las Privadas Residenciales</span>
+                    <span class="text-emerald-400 font-semibold">Resolución Ultra-HD</span>
+                </div>
+            </div>
+
+            <!-- Pilares de Infraestructura Urbana (Extraídos de las capturas originales) -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-slate-800/60 p-6 rounded-2xl border border-slate-700 space-y-3">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-road"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-white">Concreto Hidráulico</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Calles y avenidas de alta resistencia con instalaciones 100% subterráneas (luz, agua, gas y fibra óptica) para una estética limpia sin cables aéreos.
+                    </p>
+                </div>
+
+                <div class="bg-slate-800/60 p-6 rounded-2xl border border-slate-700 space-y-3">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-person-walking"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-white">27 km de Andadores</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Senderos peatonales arbolados y 24 km de ciclovías exclusivas que interconectan residencias, colegios, áreas deportivas y zonas comerciales.
+                    </p>
+                </div>
+
+                <div class="bg-slate-800/60 p-6 rounded-2xl border border-slate-700 space-y-3">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-paw"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-white">Pasos de Fauna Nativos</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Túneles subterráneos y pasos aéreos para preservar el libre tránsito de monos araña, coatíes y fauna protegida de la selva maya.
+                    </p>
+                </div>
+
+                <div class="bg-slate-800/60 p-6 rounded-2xl border border-slate-700 space-y-3">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-camera"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-white">Seguridad Biométrica</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Doble caseta de acceso controlado, reconocimiento facial biométrico, radares de velocidad inteligentes y patrullaje especializado 24/7.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Conectividad y Distancias Estratégicas -->
+            <div class="bg-emerald-950/60 border border-emerald-800/60 rounded-3xl p-8 grid md:grid-cols-3 gap-8 text-center">
+                <div class="space-y-2">
+                    <div class="text-3xl font-extrabold text-emerald-400 font-mono">10 min (6 km)</div>
+                    <h4 class="text-sm font-bold text-white">Playa del Carmen & 5ta Avenida</h4>
+                    <p class="text-xs text-slate-400">Restaurantes de clase mundial, vida nocturna y clubes de playa.</p>
+                </div>
+                <div class="space-y-2 border-y md:border-y-0 md:border-x border-emerald-800/60 py-4 md:py-0">
+                    <div class="text-3xl font-extrabold text-emerald-400 font-mono">35 min (50 km)</div>
+                    <h4 class="text-sm font-bold text-white">Aeropuerto Cancún (CUN)</h4>
+                    <p class="text-xs text-slate-400">Conexión internacional directa con más de 120 ciudades del mundo.</p>
+                </div>
+                <div class="space-y-2">
+                    <div class="text-3xl font-extrabold text-emerald-400 font-mono">45 min (65 km)</div>
+                    <h4 class="text-sm font-bold text-white">Tulum & Zona Arqueológica</h4>
+                    <p class="text-xs text-slate-400">Acceso expedito por autopista federal hacia la costa sur del Caribe.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECCIÓN LAS 4 MACRO-AMENIDADES ICÓNICAS -->
+    <section id="macro-amenidades" class="py-20 bg-slate-50 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+            
+            <div class="text-center max-w-3xl mx-auto space-y-3">
+                <span class="text-xs font-extrabold uppercase tracking-widest text-emerald-700">Equipamiento de Nivel Internacional</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                    Las 4 Macro-Amenidades de Ciudad Mayakoba
+                </h2>
+                <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
+                    Más allá de las amenidades de cada privada, Ciudad Mayakoba ofrece un ecosistema de servicios de clase mundial que maximizan el estilo de vida y la plusvalía inmobiliaria.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <!-- 1. CLUB DE PLAYA PRIVADO (PETIT LAFITTE) -->
+                <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+                    <div class="relative h-64 overflow-hidden cursor-pointer" onclick="openLightbox('./Imagenes_Descargadas/club-playa-4.webp', 'Club de Playa Petit Lafitte - Ciudad Mayakoba')">
+                        <img src="./Imagenes_Descargadas/club-playa-4.webp" alt="Club de Playa Ciudad Mayakoba" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                        <div class="absolute top-4 left-4 bg-white/95 backdrop-blur px-3 py-1.5 rounded-xl text-xs font-bold text-emerald-900 flex items-center gap-2 shadow">
+                            <img src="./Imagenes_Descargadas/icon-beach.svg" class="w-5 h-5" alt="Beach Icon">
+                            <span>Club de Playa Privado</span>
+                        </div>
+                        <div class="absolute bottom-4 left-4 right-4 text-white">
+                            <h3 class="text-xl font-bold">Club de Playa Petit Lafitte</h3>
+                            <p class="text-xs text-slate-200">Frente a las aguas turquesa del Caribe Mexicano</p>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Acceso exclusivo para residentes con albercas infinity, camas balinesas, servicio de toallas, restaurante gourmet con mariscos frescos, coctelería de autor y deportes acuáticos sin aglomeraciones turísticas.
+                        </p>
+                        <div class="flex items-center gap-2 pt-2 border-t border-slate-100">
+                            <button onclick="openLightbox('./Imagenes_Descargadas/club-playa-6.webp', 'Club de Playa - Albercas')" class="text-xs font-bold text-emerald-700 hover:text-emerald-800 flex items-center gap-1">
+                                <i class="fa-solid fa-images"></i> Ver Galería de Fotos
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. MAYAKOBA COUNTRY CLUB & GOLF NICK PRICE -->
+                <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+                    <div class="relative h-64 overflow-hidden cursor-pointer" onclick="openLightbox('./Imagenes_Descargadas/country-club-5.webp', 'Mayakoba Country Club - Campo de Golf Nick Price')">
+                        <img src="./Imagenes_Descargadas/country-club-5.webp" alt="Mayakoba Country Club Golf" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                        <div class="absolute top-4 left-4 bg-white/95 backdrop-blur px-3 py-1.5 rounded-xl text-xs font-bold text-emerald-900 flex items-center gap-2 shadow">
+                            <img src="./Imagenes_Descargadas/icon-tee.svg" class="w-5 h-5" alt="Golf Icon">
+                            <span>Golf & Country Club</span>
+                        </div>
+                        <div class="absolute bottom-4 left-4 right-4 text-white">
+                            <h3 class="text-xl font-bold">Campo de Golf Nick Price & Casa Club</h3>
+                            <p class="text-xs text-slate-200">18 hoyos par 72 con Casa Club de más de 4,000 m²</p>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Diseñado por la leyenda Nick Price. Casa Club deportiva con canchas de tenis y pádel profesionales, alberca semiolímpica, spa con vapor, gimnasio de alto rendimiento y pro-shop.
+                        </p>
+                        <div class="flex items-center gap-2 pt-2 border-t border-slate-100">
+                            <button onclick="openLightbox('./Imagenes_Descargadas/country-club-9.webp', 'Mayakoba Country Club - Casa Club')" class="text-xs font-bold text-emerald-700 hover:text-emerald-800 flex items-center gap-1">
+                                <i class="fa-solid fa-images"></i> Ver Galería de Fotos
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. COLEGIO LAUREA INTERNATIONAL SCHOOL -->
+                <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+                    <div class="relative h-64 overflow-hidden cursor-pointer" onclick="openLightbox('./Imagenes_Descargadas/laurea-school-4.webp', 'Colegio Laurea International School - Campus Ciudad Mayakoba')">
+                        <img src="./Imagenes_Descargadas/laurea-school-4.webp" alt="Colegio Laurea Ciudad Mayakoba" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                        <div class="absolute top-4 left-4 bg-white/95 backdrop-blur px-3 py-1.5 rounded-xl text-xs font-bold text-emerald-900 flex items-center gap-2 shadow">
+                            <img src="./Imagenes_Descargadas/icon-kids.svg" class="w-5 h-5" alt="School Icon">
+                            <span>Educación K-12</span>
+                        </div>
+                        <div class="absolute bottom-4 left-4 right-4 text-white">
+                            <h3 class="text-xl font-bold">Colegio Laurea International School</h3>
+                            <p class="text-xs text-slate-200">Educación bilingüe desde preescolar hasta preparatoria</p>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Tus hijos pueden ir a la escuela en bicicleta sin salir de la seguridad perimetral de Ciudad Mayakoba. Instalaciones de estándar global con canchas deportivas, laboratorios STEM y arte.
+                        </p>
+                        <div class="flex items-center gap-2 pt-2 border-t border-slate-100">
+                            <button onclick="openLightbox('./Imagenes_Descargadas/laurea-school-6.webp', 'Colegio Laurea - Instalaciones')" class="text-xs font-bold text-emerald-700 hover:text-emerald-800 flex items-center gap-1">
+                                <i class="fa-solid fa-images"></i> Ver Galería de Fotos
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. GRAN PARQUE METROPOLITANO & RESERVA NATURAL -->
+                <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+                    <div class="relative h-64 overflow-hidden cursor-pointer" onclick="openLightbox('./Imagenes_Descargadas/sustentabilidad-5.webp', 'Parque Metropolitano & Reserva Natural Ciudad Mayakoba')">
+                        <img src="./Imagenes_Descargadas/sustentabilidad-5.webp" alt="Parque Metropolitano Mayakoba" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                        <div class="absolute top-4 left-4 bg-white/95 backdrop-blur px-3 py-1.5 rounded-xl text-xs font-bold text-emerald-900 flex items-center gap-2 shadow">
+                            <img src="./Imagenes_Descargadas/icon-park.svg" class="w-5 h-5" alt="Park Icon">
+                            <span>Sustentabilidad</span>
+                        </div>
+                        <div class="absolute bottom-4 left-4 right-4 text-white">
+                            <h3 class="text-xl font-bold">Parque Metropolitano (10 Hectáreas)</h3>
+                            <p class="text-xs text-slate-200">+36,000 m² de reserva natural con cenotes protegidos</p>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Pulmón ecológico con circuito de kayak en lagunas naturales, pet park para mascotas, anfiteatro al aire libre, áreas de picnic y observatorio botánico de especies tropicales.
+                        </p>
+                        <div class="flex items-center gap-2 pt-2 border-t border-slate-100">
+                            <button onclick="openLightbox('./Imagenes_Descargadas/sustentabilidad-7.webp', 'Fauna y Selva Protegida')" class="text-xs font-bold text-emerald-700 hover:text-emerald-800 flex items-center gap-1">
+                                <i class="fa-solid fa-images"></i> Ver Galería de Fotos
+                            </button>
+                        </div>
+                    </div>
                 </div>
 
             </div>
         </div>
     </section>
 
-    <!-- SHOWCASE DE DESARROLLOS (CATÁLOGO COMPARATIVO CON RUTAS REALES) -->
-    <section id="desarrollos" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-14">
-                <span class="text-xs font-bold uppercase tracking-widest text-emerald-700 bg-emerald-50 border border-emerald-200 px-3.5 py-1.5 rounded-full inline-block mb-3">
-                    Inventario Unificado 2026
-                </span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-                    Catálogo Oficial de Desarrollos en Ciudad Mayakoba
-                </h2>
-                <p class="text-slate-500 text-sm mt-3 leading-relaxed">
-                    Compara precios normalizados, tipologías y razones sociales operativas con respaldo documental y certeza jurídica.
-                </p>
+    <!-- SECCIÓN SHOWCASE: CATÁLOGO COMPLETO DE LOS 6 DESARROLLOS -->
+    <section id="desarrollos" class="py-20 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+                <div class="space-y-3">
+                    <span class="text-xs font-extrabold uppercase tracking-widest text-emerald-700">Inventario Oficial Actualizado</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                        Catálogo de Desarrollos en Ciudad Mayakoba
+                    </h2>
+                    <p class="text-xs sm:text-sm text-slate-500">
+                        Precios de lista vigentes normalizados en pesos mexicanos (MXN) con desglose de razón social y tipologías.
+                    </p>
+                </div>
+
+                <!-- Tabs de Filtro de Proyectos -->
+                <div class="flex flex-wrap gap-2">
+                    <button onclick="filterProjects('all')" class="filter-tab-btn px-4 py-2 rounded-xl text-xs font-bold bg-emerald-700 text-white transition shadow-sm" data-category="all">Todos (6)</button>
+                    <button onclick="filterProjects('vivienda')" class="filter-tab-btn px-4 py-2 rounded-xl text-xs font-bold bg-slate-100 text-slate-600 hover:bg-slate-200 transition" data-category="vivienda">Departamentos & Casas</button>
+                    <button onclick="filterProjects('lotes')" class="filter-tab-btn px-4 py-2 rounded-xl text-xs font-bold bg-slate-100 text-slate-600 hover:bg-slate-200 transition" data-category="lotes">Lotes Residenciales</button>
+                    <button onclick="filterProjects('lujo')" class="filter-tab-btn px-4 py-2 rounded-xl text-xs font-bold bg-slate-100 text-slate-600 hover:bg-slate-200 transition" data-category="lujo">Ultra-Lujo</button>
+                </div>
             </div>
 
-            <!-- Grid con los 5 desarrollos -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Grilla de Tarjetas de Desarrollos -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
-                <!-- 1. BOSQUES DE MAYAKOBA -->
-                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
-                    <div class="relative h-56 overflow-hidden bg-slate-900">
+                <!-- 1. BOSQUES CIUDAD MAYAKOBA -->
+                <div class="project-card bg-slate-50 rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="vivienda">
+                    <div class="relative h-60 overflow-hidden bg-slate-900 cursor-pointer" onclick="openLightbox('./Imagenes_Descargadas/bosques-10.webp', 'Bosques Ciudad Mayakoba')">
                         <img src="./Imagenes_Descargadas/bosques-10.webp" alt="Bosques Ciudad Mayakoba" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
                         <div class="absolute top-3 left-3 flex gap-2">
-                            <span class="px-2.5 py-1 rounded-md text-[11px] font-bold bg-emerald-900/90 text-white">Vivienda</span>
-                            <span class="px-2.5 py-1 rounded-md text-[11px] font-bold bg-emerald-500 text-white">Vigente</span>
+                            <span class="px-2.5 py-1 rounded-lg text-[11px] font-bold bg-emerald-900/90 text-white shadow">Vivienda</span>
+                            <span class="px-2.5 py-1 rounded-lg text-[11px] font-bold bg-emerald-500 text-white shadow">Vigente</span>
+                        </div>
+                        <div class="absolute top-3 right-3 bg-white/90 backdrop-blur p-1.5 rounded-lg shadow">
+                            <img src="./Imagenes_Descargadas/bosques.png" class="h-6 w-auto" alt="Logo Bosques">
                         </div>
                         <div class="absolute bottom-3 left-3 right-3 text-white">
-                            <span class="text-[11px] text-emerald-300 font-semibold">Precio Oficial Normalizado</span>
+                            <span class="text-[11px] text-emerald-300 font-semibold block">Precio Oficial de Lista</span>
                             <p class="text-xl font-bold font-mono">$5.8 MDP - $6.5 MDP MXN</p>
                         </div>
                     </div>
-                    <div class="p-6 flex-1 flex flex-col justify-between">
+                    
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
                         <div class="space-y-3">
                             <div class="flex justify-between items-center">
-                                <h3 class="text-lg font-bold text-slate-900">Bosques Ciudad Mayakoba</h3>
-                                <span class="text-xs px-2 py-0.5 rounded font-mono bg-blue-50 text-blue-700 border border-blue-200 font-semibold">✓ Apto Crédito</span>
+                                <h3 class="text-lg font-bold text-slate-900">Bosques de Mayakoba</h3>
+                                <span class="text-xs px-2.5 py-1 rounded-md font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200">✓ Apto Crédito</span>
                             </div>
-                            <p class="text-xs text-slate-500">Razón Social: <strong class="text-slate-700">CEIBA (La Ceiba DCM, S.A. de C.V.)</strong></p>
-                            <p class="text-xs text-slate-600 leading-relaxed">Residencias boutique listas para habitar rodeadas de selva protegida, con alberca semiolímpica privada y gimnasio.</p>
-                            <div class="bg-white p-3 rounded-xl border border-slate-200 text-xs">
-                                <span class="block text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-1">Tipologías:</span>
-                                <span class="font-semibold text-slate-800">Ceiba • Roble (128 a 185 m²)</span>
+                            <p class="text-xs text-slate-500">Razón Social: <strong class="text-slate-800">La Ceiba DCM, S.A. de C.V. (CEIBA)</strong></p>
+                            <p class="text-xs text-slate-600 leading-relaxed">
+                                Departamentos premium de 3 recámaras rodeados de 36,000 m² de selva protegida, con alberca semiolímpica y 3 canchas de pádel.
+                            </p>
+                            
+                            <div class="bg-white p-3 rounded-xl border border-slate-200 space-y-1 text-xs">
+                                <span class="block text-[10px] font-bold text-slate-400 uppercase tracking-wider">Modelos Disponibles:</span>
+                                <span class="font-bold text-slate-800">Ceiba (128 m²) • Roble (185 m²)</span>
+                            </div>
+                            
+                            <div class="flex flex-wrap gap-2 pt-1 text-[11px] text-slate-600">
+                                <span class="flex items-center gap-1 bg-slate-100 px-2.5 py-1 rounded-md"><img src="./Imagenes_Descargadas/icon-semiolimpica.svg" class="w-3.5 h-3.5"> Semiolímpica</span>
+                                <span class="flex items-center gap-1 bg-slate-100 px-2.5 py-1 rounded-md"><img src="./Imagenes_Descargadas/icon-padel.svg" class="w-3.5 h-3.5"> 3 Pádel</span>
+                                <span class="flex items-center gap-1 bg-slate-100 px-2.5 py-1 rounded-md"><img src="./Imagenes_Descargadas/icon-gym.svg" class="w-3.5 h-3.5"> 2 Gimnasios</span>
                             </div>
                         </div>
-                        <div class="pt-5 mt-4 border-t border-slate-200 flex gap-2">
+
+                        <div class="pt-4 border-t border-slate-200 flex gap-2">
+                            <button onclick="openLightbox('./Imagenes_Descargadas/bosques-16.webp', 'Bosques Mayakoba - Amenidades')" class="p-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-xl transition text-xs font-bold flex items-center justify-center gap-1" title="Ver Fotos">
+                                <i class="fa-solid fa-images"></i>
+                            </button>
                             <a href="#quiz-section" class="flex-1 text-center py-2.5 px-3 bg-emerald-700 hover:bg-emerald-800 text-white rounded-xl text-xs font-bold transition">Consultar en Quiz</a>
-                            <a href="https://wa.me/529841234567?text=Hola%20Especialista%20Mayakoba%2C%20solicito%20informaci%C3%B3n%20de%20Bosques%20Mayakoba." target="_blank" class="p-2.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 rounded-xl border border-emerald-200 flex items-center justify-center transition" title="Consultar por WhatsApp"><i class="fa-brands fa-whatsapp text-lg"></i></a>
+                            <a href="https://wa.me/529841770320?text=Hola%20Especialista%20Mayakoba%2C%20solicito%20informaci%C3%B3n%20y%20precios%20de%20Bosques%20Mayakoba." target="_blank" class="p-2.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 rounded-xl border border-emerald-200 flex items-center justify-center transition" title="Consultar por WhatsApp"><i class="fa-brands fa-whatsapp text-base"></i></a>
                         </div>
                     </div>
                 </div>
 
                 <!-- 2. JARDINES DE MAYAKOBA -->
-                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
-                    <div class="relative h-56 overflow-hidden bg-slate-900">
+                <div class="project-card bg-slate-50 rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="vivienda">
+                    <div class="relative h-60 overflow-hidden bg-slate-900 cursor-pointer" onclick="openLightbox('./Imagenes_Descargadas/jardines1.webp', 'Jardines Ciudad Mayakoba')">
                         <img src="./Imagenes_Descargadas/jardines1.webp" alt="Jardines Ciudad Mayakoba" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
                         <div class="absolute top-3 left-3 flex gap-2">
-                            <span class="px-2.5 py-1 rounded-md text-[11px] font-bold bg-emerald-900/90 text-white">Vivienda</span>
-                            <span class="px-2.5 py-1 rounded-md text-[11px] font-bold bg-emerald-500 text-white">Vigente</span>
+                            <span class="px-2.5 py-1 rounded-lg text-[11px] font-bold bg-emerald-900/90 text-white shadow">Vivienda</span>
+                            <span class="px-2.5 py-1 rounded-lg text-[11px] font-bold bg-emerald-500 text-white shadow">Vigente</span>
+                        </div>
+                        <div class="absolute top-3 right-3 bg-white/90 backdrop-blur p-1.5 rounded-lg shadow">
+                            <img src="./Imagenes_Descargadas/jardines.png" class="h-6 w-auto" alt="Logo Jardines">
                         </div>
                         <div class="absolute bottom-3 left-3 right-3 text-white">
-                            <span class="text-[11px] text-emerald-300 font-semibold">Precio Oficial Normalizado</span>
+                            <span class="text-[11px] text-emerald-300 font-semibold block">Precio Oficial de Lista</span>
                             <p class="text-xl font-bold font-mono">$1.6 MDP - $1.8 MDP MXN</p>
+                            <span class="text-[10px] text-emerald-200 font-bold block">Aparta tu unidad desde $6,000 MXN</span>
                         </div>
                     </div>
-                    <div class="p-6 flex-1 flex flex-col justify-between">
+                    
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
                         <div class="space-y-3">
                             <div class="flex justify-between items-center">
-                                <h3 class="text-lg font-bold text-slate-900">Jardines Ciudad Mayakoba</h3>
-                                <span class="text-xs px-2 py-0.5 rounded font-mono bg-blue-50 text-blue-700 border border-blue-200 font-semibold">✓ Apto Crédito</span>
+                                <h3 class="text-lg font-bold text-slate-900">Jardines de Mayakoba</h3>
+                                <span class="text-xs px-2.5 py-1 rounded-md font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200">✓ Infonavit / Banco</span>
                             </div>
-                            <p class="text-xs text-slate-500">Razón Social: <strong class="text-slate-700">OPLK / NTCA (Novaterra Caribe)</strong></p>
-                            <p class="text-xs text-slate-600 leading-relaxed">El ticket de entrada más accesible y rentable del ecosistema Mayakoba, con alta demanda de arrendamiento.</p>
-                            <div class="bg-white p-3 rounded-xl border border-slate-200 text-xs">
-                                <span class="block text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-1">Tipologías:</span>
-                                <span class="font-semibold text-slate-800">Anturio • Lantana (52 a 78 m²)</span>
+                            <p class="text-xs text-slate-500">Razón Social: <strong class="text-slate-800">Novaterra Caribe (NTCA) / OPLK</strong></p>
+                            <p class="text-xs text-slate-600 leading-relaxed">
+                                El ticket de entrada más accesible del desarrollo. Alta demanda de arrendamiento para residentes y trabajadores de la zona hotelera.
+                            </p>
+                            
+                            <div class="bg-white p-3 rounded-xl border border-slate-200 space-y-1 text-xs">
+                                <span class="block text-[10px] font-bold text-slate-400 uppercase tracking-wider">Modelos Disponibles:</span>
+                                <span class="font-bold text-slate-800">Anturio (52 m²) • Lantana (78 m²)</span>
+                            </div>
+                            
+                            <div class="flex flex-wrap gap-2 pt-1 text-[11px] text-slate-600">
+                                <span class="flex items-center gap-1 bg-slate-100 px-2.5 py-1 rounded-md"><img src="./Imagenes_Descargadas/icon-alberca.svg" class="w-3.5 h-3.5"> Alberca</span>
+                                <span class="flex items-center gap-1 bg-slate-100 px-2.5 py-1 rounded-md"><img src="./Imagenes_Descargadas/icon-pista.svg" class="w-3.5 h-3.5"> Jogging</span>
+                                <span class="flex items-center gap-1 bg-slate-100 px-2.5 py-1 rounded-md"><img src="./Imagenes_Descargadas/icon-pet.svg" class="w-3.5 h-3.5"> Pet Park</span>
                             </div>
                         </div>
-                        <div class="pt-5 mt-4 border-t border-slate-200 flex gap-2">
+
+                        <div class="pt-4 border-t border-slate-200 flex gap-2">
+                            <button onclick="openLightbox('./Imagenes_Descargadas/jardines-3.webp', 'Jardines Mayakoba - Privada')" class="p-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-xl transition text-xs font-bold flex items-center justify-center gap-1" title="Ver Fotos">
+                                <i class="fa-solid fa-images"></i>
+                            </button>
                             <a href="#quiz-section" class="flex-1 text-center py-2.5 px-3 bg-emerald-700 hover:bg-emerald-800 text-white rounded-xl text-xs font-bold transition">Consultar en Quiz</a>
-                            <a href="https://wa.me/529841234567?text=Hola%20Especialista%20Mayakoba%2C%20solicito%20informaci%C3%B3n%20de%20Jardines%20Mayakoba." target="_blank" class="p-2.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 rounded-xl border border-emerald-200 flex items-center justify-center transition" title="Consultar por WhatsApp"><i class="fa-brands fa-whatsapp text-lg"></i></a>
+                            <a href="https://wa.me/529841770320?text=Hola%20Especialista%20Mayakoba%2C%20solicito%20informaci%C3%B3n%20y%20precios%20de%20Jardines%20Mayakoba." target="_blank" class="p-2.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 rounded-xl border border-emerald-200 flex items-center justify-center transition" title="Consultar por WhatsApp"><i class="fa-brands fa-whatsapp text-base"></i></a>
                         </div>
                     </div>
                 </div>
 
                 <!-- 3. SENDEROS & SENDEROS PONIENTE -->
-                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
-                    <div class="relative h-56 overflow-hidden bg-slate-900">
-                        <img src="./Imagenes_Descargadas/senderos1.webp" alt="Senderos Mayakoba" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+                <div class="project-card bg-slate-50 rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="lotes">
+                    <div class="relative h-60 overflow-hidden bg-slate-900 cursor-pointer" onclick="openLightbox('./Imagenes_Descargadas/senderos1.webp', 'Senderos Ciudad Mayakoba')">
+                        <img src="./Imagenes_Descargadas/senderos1.webp" alt="Senderos Ciudad Mayakoba" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
                         <div class="absolute top-3 left-3 flex gap-2">
-                            <span class="px-2.5 py-1 rounded-md text-[11px] font-bold bg-slate-900/90 text-white">Lote Residencial</span>
-                            <span class="px-2.5 py-1 rounded-md text-[11px] font-bold bg-emerald-500 text-white">Vigente</span>
+                            <span class="px-2.5 py-1 rounded-lg text-[11px] font-bold bg-slate-900/90 text-white shadow">Lotes</span>
+                            <span class="px-2.5 py-1 rounded-lg text-[11px] font-bold bg-emerald-500 text-white shadow">Vigente</span>
+                        </div>
+                        <div class="absolute top-3 right-3 bg-white/90 backdrop-blur p-1.5 rounded-lg shadow">
+                            <img src="./Imagenes_Descargadas/senderos.png" class="h-6 w-auto" alt="Logo Senderos">
                         </div>
                         <div class="absolute bottom-3 left-3 right-3 text-white">
-                            <span class="text-[11px] text-emerald-300 font-semibold">Precio Oficial Normalizado</span>
+                            <span class="text-[11px] text-emerald-300 font-semibold block">Precio Oficial de Lista</span>
                             <p class="text-xl font-bold font-mono">$3.2 MDP - $5.5 MDP MXN</p>
                         </div>
                     </div>
-                    <div class="p-6 flex-1 flex flex-col justify-between">
+                    
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
                         <div class="space-y-3">
                             <div class="flex justify-between items-center">
                                 <h3 class="text-lg font-bold text-slate-900">Senderos & Senderos Poniente</h3>
-                                <span class="text-xs px-2 py-0.5 rounded font-mono bg-blue-50 text-blue-700 border border-blue-200 font-semibold">✓ Apto Crédito</span>
+                                <span class="text-xs px-2.5 py-1 rounded-md font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200">✓ Apto Crédito</span>
                             </div>
-                            <p class="text-xs text-slate-500">Razón Social: <strong class="text-slate-700">OPLK (Operadora Lakahn, S.A. de C.V.)</strong></p>
-                            <p class="text-xs text-slate-600 leading-relaxed">Lotes residenciales urbanizados inmersos en la selva maya con cenote natural protegido, ciclovías y casa club.</p>
-                            <div class="bg-white p-3 rounded-xl border border-slate-200 text-xs">
-                                <span class="block text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-1">Tipologías:</span>
-                                <span class="font-semibold text-slate-800">Lote 160m² • Lote 200m² • Lote Selva 320m²</span>
+                            <p class="text-xs text-slate-500">Razón Social: <strong class="text-slate-800">Operadora Lakahn, S.A. de C.V. (OPLK)</strong></p>
+                            <p class="text-xs text-slate-600 leading-relaxed">
+                                Lotes residenciales urbanizados con cenote natural privado protegido, casa club, alberca y conexión directa a 5 km de ciclovías.
+                            </p>
+                            
+                            <div class="bg-white p-3 rounded-xl border border-slate-200 space-y-1 text-xs">
+                                <span class="block text-[10px] font-bold text-slate-400 uppercase tracking-wider">Superficies Disponibles:</span>
+                                <span class="font-bold text-slate-800">160 m² • 200 m² • Lote Selva 320 m²</span>
+                            </div>
+                            
+                            <div class="flex flex-wrap gap-2 pt-1 text-[11px] text-slate-600">
+                                <span class="flex items-center gap-1 bg-slate-100 px-2.5 py-1 rounded-md"><img src="./Imagenes_Descargadas/icon-lagunas.svg" class="w-3.5 h-3.5"> Cenote</span>
+                                <span class="flex items-center gap-1 bg-slate-100 px-2.5 py-1 rounded-md"><img src="./Imagenes_Descargadas/icon-club.svg" class="w-3.5 h-3.5"> Casa Club</span>
+                                <span class="flex items-center gap-1 bg-slate-100 px-2.5 py-1 rounded-md"><img src="./Imagenes_Descargadas/icon-padel.svg" class="w-3.5 h-3.5"> Pádel</span>
                             </div>
                         </div>
-                        <div class="pt-5 mt-4 border-t border-slate-200 flex gap-2">
+
+                        <div class="pt-4 border-t border-slate-200 flex gap-2">
+                            <button onclick="openLightbox('./Imagenes_Descargadas/senderos-3.webp', 'Senderos Mayakoba - Casa Club y Selva')" class="p-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-xl transition text-xs font-bold flex items-center justify-center gap-1" title="Ver Fotos">
+                                <i class="fa-solid fa-images"></i>
+                            </button>
                             <a href="#quiz-section" class="flex-1 text-center py-2.5 px-3 bg-emerald-700 hover:bg-emerald-800 text-white rounded-xl text-xs font-bold transition">Consultar en Quiz</a>
-                            <a href="https://wa.me/529841234567?text=Hola%20Especialista%20Mayakoba%2C%20solicito%20informaci%C3%B3n%20de%20Senderos%20Mayakoba." target="_blank" class="p-2.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 rounded-xl border border-emerald-200 flex items-center justify-center transition" title="Consultar por WhatsApp"><i class="fa-brands fa-whatsapp text-lg"></i></a>
+                            <a href="https://wa.me/529841770320?text=Hola%20Especialista%20Mayakoba%2C%20solicito%20informaci%C3%B3n%20y%20precios%20de%20Senderos%20Mayakoba." target="_blank" class="p-2.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 rounded-xl border border-emerald-200 flex items-center justify-center transition" title="Consultar por WhatsApp"><i class="fa-brands fa-whatsapp text-base"></i></a>
                         </div>
                     </div>
                 </div>
 
                 <!-- 4. MAYAKOBA COUNTRY CLUB -->
-                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
-                    <div class="relative h-56 overflow-hidden bg-slate-900">
+                <div class="project-card bg-slate-50 rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="lotes">
+                    <div class="relative h-60 overflow-hidden bg-slate-900 cursor-pointer" onclick="openLightbox('./Imagenes_Descargadas/country-club1.webp', 'Mayakoba Country Club')">
                         <img src="./Imagenes_Descargadas/country-club1.webp" alt="Mayakoba Country Club" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
                         <div class="absolute top-3 left-3 flex gap-2">
-                            <span class="px-2.5 py-1 rounded-md text-[11px] font-bold bg-slate-900/90 text-white">Lote Residencial</span>
-                            <span class="px-2.5 py-1 rounded-md text-[11px] font-bold bg-emerald-500 text-white">Vigente</span>
+                            <span class="px-2.5 py-1 rounded-lg text-[11px] font-bold bg-slate-900/90 text-white shadow">Lotes Golf</span>
+                            <span class="px-2.5 py-1 rounded-lg text-[11px] font-bold bg-emerald-500 text-white shadow">Vigente</span>
+                        </div>
+                        <div class="absolute top-3 right-3 bg-white/90 backdrop-blur p-1.5 rounded-lg shadow">
+                            <img src="./Imagenes_Descargadas/country-club.png" class="h-6 w-auto" alt="Logo Country Club">
                         </div>
                         <div class="absolute bottom-3 left-3 right-3 text-white">
-                            <span class="text-[11px] text-emerald-300 font-semibold">Precio Oficial Normalizado</span>
+                            <span class="text-[11px] text-emerald-300 font-semibold block">Precio Oficial de Lista</span>
                             <p class="text-xl font-bold font-mono">$4.5 MDP - $12.0 MDP MXN</p>
                         </div>
                     </div>
-                    <div class="p-6 flex-1 flex flex-col justify-between">
+                    
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
                         <div class="space-y-3">
                             <div class="flex justify-between items-center">
                                 <h3 class="text-lg font-bold text-slate-900">Mayakoba Country Club</h3>
-                                <span class="text-xs px-2 py-0.5 rounded font-mono bg-blue-50 text-blue-700 border border-blue-200 font-semibold">✓ Apto Crédito</span>
+                                <span class="text-xs px-2.5 py-1 rounded-md font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200">✓ Apto Crédito</span>
                             </div>
-                            <p class="text-xs text-slate-500">Razón Social: <strong class="text-slate-700">OPLK (Operadora Lakahn, S.A. de C.V.)</strong></p>
-                            <p class="text-xs text-slate-600 leading-relaxed">Lotes y villas frente a campo de golf de 9 hoyos y Club de Playa privado sobre el Mar Caribe.</p>
-                            <div class="bg-white p-3 rounded-xl border border-slate-200 text-xs">
-                                <span class="block text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-1">Tipologías:</span>
-                                <span class="font-semibold text-slate-800">Lotes Golf 300-500m² • Villas Boutique</span>
+                            <p class="text-xs text-slate-500">Razón Social: <strong class="text-slate-800">Operadora Lakahn, S.A. de C.V. (OPLK)</strong></p>
+                            <p class="text-xs text-slate-600 leading-relaxed">
+                                Lotes residenciales de élite frente a campo de golf Nick Price y Club de Playa privado. Membresía a Casa Club de 4,000 m².
+                            </p>
+                            
+                            <div class="bg-white p-3 rounded-xl border border-slate-200 space-y-1 text-xs">
+                                <span class="block text-[10px] font-bold text-slate-400 uppercase tracking-wider">Superficies Disponibles:</span>
+                                <span class="font-bold text-slate-800">Lotes Golf 300-500 m² • Country 600-900 m²</span>
+                            </div>
+                            
+                            <div class="flex flex-wrap gap-2 pt-1 text-[11px] text-slate-600">
+                                <span class="flex items-center gap-1 bg-slate-100 px-2.5 py-1 rounded-md"><img src="./Imagenes_Descargadas/icon-tee.svg" class="w-3.5 h-3.5"> Golf 18 Hoyos</span>
+                                <span class="flex items-center gap-1 bg-slate-100 px-2.5 py-1 rounded-md"><img src="./Imagenes_Descargadas/icon-beach.svg" class="w-3.5 h-3.5"> Beach Club</span>
+                                <span class="flex items-center gap-1 bg-slate-100 px-2.5 py-1 rounded-md"><img src="./Imagenes_Descargadas/icon-tenis.svg" class="w-3.5 h-3.5"> Tenis Pro</span>
                             </div>
                         </div>
-                        <div class="pt-5 mt-4 border-t border-slate-200 flex gap-2">
+
+                        <div class="pt-4 border-t border-slate-200 flex gap-2">
+                            <button onclick="openLightbox('./Imagenes_Descargadas/country-club-3.webp', 'Mayakoba Country Club - Vistas de Golf')" class="p-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-xl transition text-xs font-bold flex items-center justify-center gap-1" title="Ver Fotos">
+                                <i class="fa-solid fa-images"></i>
+                            </button>
                             <a href="#quiz-section" class="flex-1 text-center py-2.5 px-3 bg-emerald-700 hover:bg-emerald-800 text-white rounded-xl text-xs font-bold transition">Consultar en Quiz</a>
-                            <a href="https://wa.me/529841234567?text=Hola%20Especialista%20Mayakoba%2C%20solicito%20informaci%C3%B3n%20de%20Mayakoba%20Country%20Club." target="_blank" class="p-2.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 rounded-xl border border-emerald-200 flex items-center justify-center transition" title="Consultar por WhatsApp"><i class="fa-brands fa-whatsapp text-lg"></i></a>
+                            <a href="https://wa.me/529841770320?text=Hola%20Especialista%20Mayakoba%2C%20solicito%20informaci%C3%B3n%20y%20precios%20de%20Mayakoba%20Country%20Club." target="_blank" class="p-2.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 rounded-xl border border-emerald-200 flex items-center justify-center transition" title="Consultar por WhatsApp"><i class="fa-brands fa-whatsapp text-base"></i></a>
                         </div>
                     </div>
                 </div>
 
                 <!-- 5. THE RESERVE AT MAYAKOBA -->
-                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
-                    <div class="relative h-56 overflow-hidden bg-slate-900">
+                <div class="project-card bg-slate-50 rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="lujo">
+                    <div class="relative h-60 overflow-hidden bg-slate-900 cursor-pointer" onclick="openLightbox('./Imagenes_Descargadas/the-reserve1.webp', 'The Reserve at Mayakoba')">
                         <img src="./Imagenes_Descargadas/the-reserve1.webp" alt="The Reserve at Mayakoba" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
                         <div class="absolute top-3 left-3 flex gap-2">
-                            <span class="px-2.5 py-1 rounded-md text-[11px] font-bold bg-amber-900/90 text-white">Ultra-Lujo</span>
-                            <span class="px-2.5 py-1 rounded-md text-[11px] font-bold bg-emerald-500 text-white">Vigente</span>
+                            <span class="px-2.5 py-1 rounded-lg text-[11px] font-bold bg-amber-600 text-white shadow">Ultra-Lujo</span>
+                            <span class="px-2.5 py-1 rounded-lg text-[11px] font-bold bg-emerald-500 text-white shadow">Vigente</span>
+                        </div>
+                        <div class="absolute top-3 right-3 bg-white/90 backdrop-blur p-1.5 rounded-lg shadow">
+                            <img src="./Imagenes_Descargadas/the-reserve.png" class="h-6 w-auto" alt="Logo The Reserve">
                         </div>
                         <div class="absolute bottom-3 left-3 right-3 text-white">
-                            <span class="text-[11px] text-amber-300 font-semibold">Precio Oficial Normalizado</span>
+                            <span class="text-[11px] text-emerald-300 font-semibold block">Precio Oficial de Lista</span>
                             <p class="text-xl font-bold font-mono">$12.0 MDP - $28.0 MDP MXN</p>
                         </div>
                     </div>
-                    <div class="p-6 flex-1 flex flex-col justify-between">
+                    
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
                         <div class="space-y-3">
                             <div class="flex justify-between items-center">
                                 <h3 class="text-lg font-bold text-slate-900">The Reserve at Mayakoba</h3>
-                                <span class="text-xs px-2 py-0.5 rounded font-mono bg-amber-50 text-amber-800 border border-amber-200 font-semibold">Patrimonial / Contado</span>
+                                <span class="text-xs px-2.5 py-1 rounded-md font-semibold bg-amber-50 text-amber-900 border border-amber-200">Branded Residence</span>
                             </div>
-                            <p class="text-xs text-slate-500">Razón Social: <strong class="text-slate-700">TRAM (Inmobilia Funds / Lote 4-5)</strong></p>
-                            <p class="text-xs text-slate-600 leading-relaxed">La cúspide del ultra-lujo residencial frente a canales navegables, con concierge de hospitalidad 5 estrellas.</p>
-                            <div class="bg-white p-3 rounded-xl border border-slate-200 text-xs">
-                                <span class="block text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-1">Tipologías:</span>
-                                <span class="font-semibold text-slate-800">Garden Residence • Sky Condos • Canal Villa</span>
+                            <p class="text-xs text-slate-500">Razón Social: <strong class="text-slate-800">Inmobilia Funds / Lote 4-5 (TRAM)</strong></p>
+                            <p class="text-xs text-slate-600 leading-relaxed">
+                                Cúspide del ultra-lujo residencial sobre canales de agua turquesa diseñados por Sordo Madaleno Arquitectos con privilegios en hoteles Mayakoba.
+                            </p>
+                            
+                            <div class="bg-white p-3 rounded-xl border border-slate-200 space-y-1 text-xs">
+                                <span class="block text-[10px] font-bold text-slate-400 uppercase tracking-wider">Modelos Disponibles:</span>
+                                <span class="font-bold text-slate-800">Garden Residence (2 Rec) • Sky Condos • Canal Villas</span>
+                            </div>
+                            
+                            <div class="flex flex-wrap gap-2 pt-1 text-[11px] text-slate-600">
+                                <span class="flex items-center gap-1 bg-slate-100 px-2.5 py-1 rounded-md"><img src="./Imagenes_Descargadas/icon-kayak.svg" class="w-3.5 h-3.5"> Canales</span>
+                                <span class="flex items-center gap-1 bg-slate-100 px-2.5 py-1 rounded-md"><img src="./Imagenes_Descargadas/icon-business.svg" class="w-3.5 h-3.5"> Concierge 24/7</span>
+                                <span class="flex items-center gap-1 bg-slate-100 px-2.5 py-1 rounded-md"><img src="./Imagenes_Descargadas/icon-restaurant.svg" class="w-3.5 h-3.5"> Hoteles VIP</span>
                             </div>
                         </div>
-                        <div class="pt-5 mt-4 border-t border-slate-200 flex gap-2">
+
+                        <div class="pt-4 border-t border-slate-200 flex gap-2">
+                            <button onclick="openLightbox('./Imagenes_Descargadas/the-reserve-12.webp', 'The Reserve - Canales y Terrazas')" class="p-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-xl transition text-xs font-bold flex items-center justify-center gap-1" title="Ver Fotos">
+                                <i class="fa-solid fa-images"></i>
+                            </button>
                             <a href="#quiz-section" class="flex-1 text-center py-2.5 px-3 bg-emerald-700 hover:bg-emerald-800 text-white rounded-xl text-xs font-bold transition">Consultar en Quiz</a>
-                            <a href="https://wa.me/529841234567?text=Hola%20Especialista%20Mayakoba%2C%20solicito%20informaci%C3%B3n%20de%20The%20Reserve." target="_blank" class="p-2.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 rounded-xl border border-emerald-200 flex items-center justify-center transition" title="Consultar por WhatsApp"><i class="fa-brands fa-whatsapp text-lg"></i></a>
+                            <a href="https://wa.me/529841770320?text=Hola%20Especialista%20Mayakoba%2C%20solicito%20informaci%C3%B3n%20y%20precios%20de%20The%20Reserve%20Mayakoba." target="_blank" class="p-2.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 rounded-xl border border-emerald-200 flex items-center justify-center transition" title="Consultar por WhatsApp"><i class="fa-brands fa-whatsapp text-base"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. LAGUNAS DE MAYAKOBA -->
+                <div class="project-card bg-slate-50 rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="vivienda">
+                    <div class="relative h-60 overflow-hidden bg-slate-900 cursor-pointer" onclick="openLightbox('./Imagenes_Descargadas/lagunas1.webp', 'Lagunas de Mayakoba')">
+                        <img src="./Imagenes_Descargadas/lagunas1.webp" alt="Lagunas de Mayakoba" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                        <div class="absolute top-3 left-3 flex gap-2">
+                            <span class="px-2.5 py-1 rounded-lg text-[11px] font-bold bg-emerald-900/90 text-white shadow">Condos</span>
+                            <span class="px-2.5 py-1 rounded-lg text-[11px] font-bold bg-emerald-500 text-white shadow">Vigente</span>
+                        </div>
+                        <div class="absolute top-3 right-3 bg-white/90 backdrop-blur p-1.5 rounded-lg shadow">
+                            <img src="./Imagenes_Descargadas/lagunas.png" class="h-6 w-auto" alt="Logo Lagunas">
+                        </div>
+                        <div class="absolute bottom-3 left-3 right-3 text-white">
+                            <span class="text-[11px] text-emerald-300 font-semibold block">Precio Oficial de Lista</span>
+                            <p class="text-xl font-bold font-mono">$3.8 MDP - $5.2 MDP MXN</p>
+                        </div>
+                    </div>
+                    
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div class="space-y-3">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-lg font-bold text-slate-900">Lagunas de Mayakoba</h3>
+                                <span class="text-xs px-2.5 py-1 rounded-md font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200">✓ Apto Crédito</span>
+                            </div>
+                            <p class="text-xs text-slate-500">Razón Social: <strong class="text-slate-800">Operadora Lakahn, S.A. de C.V. (OPLK)</strong></p>
+                            <p class="text-xs text-slate-600 leading-relaxed">
+                                Condominios familiares rodeados de lagunas de agua dulce cristalina, albercas infinity, fitness center y kayaks para navegación recreativa.
+                            </p>
+                            
+                            <div class="bg-white p-3 rounded-xl border border-slate-200 space-y-1 text-xs">
+                                <span class="block text-[10px] font-bold text-slate-400 uppercase tracking-wider">Tipologías Disponibles:</span>
+                                <span class="font-bold text-slate-800">Condos 2 y 3 Recámaras con terrazas privadas</span>
+                            </div>
+                            
+                            <div class="flex flex-wrap gap-2 pt-1 text-[11px] text-slate-600">
+                                <span class="flex items-center gap-1 bg-slate-100 px-2.5 py-1 rounded-md"><img src="./Imagenes_Descargadas/icon-lagunas.svg" class="w-3.5 h-3.5"> Lagunas</span>
+                                <span class="flex items-center gap-1 bg-slate-100 px-2.5 py-1 rounded-md"><img src="./Imagenes_Descargadas/icon-kayak.svg" class="w-3.5 h-3.5"> Kayaks</span>
+                                <span class="flex items-center gap-1 bg-slate-100 px-2.5 py-1 rounded-md"><img src="./Imagenes_Descargadas/icon-rooftop.svg" class="w-3.5 h-3.5"> Rooftop</span>
+                            </div>
+                        </div>
+
+                        <div class="pt-4 border-t border-slate-200 flex gap-2">
+                            <button onclick="openLightbox('./Imagenes_Descargadas/lagunas-3.webp', 'Lagunas Mayakoba - Vistas Acuáticas')" class="p-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-xl transition text-xs font-bold flex items-center justify-center gap-1" title="Ver Fotos">
+                                <i class="fa-solid fa-images"></i>
+                            </button>
+                            <a href="#quiz-section" class="flex-1 text-center py-2.5 px-3 bg-emerald-700 hover:bg-emerald-800 text-white rounded-xl text-xs font-bold transition">Consultar en Quiz</a>
+                            <a href="https://wa.me/529841770320?text=Hola%20Especialista%20Mayakoba%2C%20solicito%20informaci%C3%B3n%20y%20precios%20de%20Lagunas%20Mayakoba." target="_blank" class="p-2.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 rounded-xl border border-emerald-200 flex items-center justify-center transition" title="Consultar por WhatsApp"><i class="fa-brands fa-whatsapp text-base"></i></a>
                         </div>
                     </div>
                 </div>
@@ -511,323 +991,590 @@
         </div>
     </section>
 
-    <!-- AUTORIDAD Y TRANSPARENCIA -->
-    <section id="autoridad" class="py-20 bg-slate-900 text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-12 gap-12 items-center">
-                <div class="lg:col-span-5 relative">
-                    <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-slate-800 relative max-w-sm mx-auto">
-                        <img src="./Imagenes_Descargadas/teams-image.jpg" alt="Consultor Inmobiliario Especialista en Ciudad Mayakoba" class="w-full h-auto object-cover">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-                        <div class="absolute bottom-6 left-6 right-6">
-                            <span class="text-xs font-bold text-emerald-400 uppercase tracking-wider">Asesor Patrimonial</span>
-                            <h4 class="text-xl font-bold">Especialista en Ciudad Mayakoba</h4>
-                            <p class="text-xs text-slate-300">+7 años guiando a inversores en la Riviera Maya</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="lg:col-span-7 space-y-6">
-                    <span class="inline-flex items-center space-x-2 bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 text-xs font-semibold px-3 py-1 rounded-full">
-                        <i class="fa-solid fa-handshake-angle"></i> <span>Garantía de Servicio Independiente</span>
-                    </span>
-                    <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">
-                        ¿Por qué comprar a través de tu Especialista Independiente?
-                    </h2>
-                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
-                        Mi compromiso no es con las agencias intermediarias, sino con la protección y rentabilidad de tu patrimonio. Te garantizo:
-                    </p>
-
-                    <div class="space-y-4 pt-2">
-                        <div class="flex items-start gap-3">
-                            <div class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">✓</div>
-                            <div>
-                                <h4 class="font-bold text-sm text-white">0% Comisión para el Comprador</h4>
-                                <p class="text-xs text-slate-400">Honorarios cubiertos por los fondos desarrolladores. Pagas exactamente el precio de lista oficial o menor.</p>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start gap-3">
-                            <div class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">✓</div>
-                            <div>
-                                <h4 class="font-bold text-sm text-white">Auditoría Contractual y Cumplimiento NOM-247</h4>
-                                <p class="text-xs text-slate-400">Revisión exhaustiva de contratos de adhesión registrados ante PROFECO, régimen de propiedad en condominio y títulos de propiedad.</p>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start gap-3">
-                            <div class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">✓</div>
-                            <div>
-                                <h4 class="font-bold text-sm text-white">Acceso a Preventas Fase Cero y Unidades Privilegiadas</h4>
-                                <p class="text-xs text-slate-400">Selección de las mejores ubicaciones frente a parques, cenotes o canales antes de su apertura a portales públicos.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="pt-4 flex flex-wrap gap-4 items-center">
-                        <a href="https://wa.me/529841234567?text=Hola%20Especialista%20Mayakoba%2C%20deseo%20agendar%20una%20sesi%C3%B3n%20de%20asesor%C3%ADa%20personalizada." target="_blank" class="px-6 py-3.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-xl text-xs uppercase tracking-wider transition shadow-lg shadow-emerald-600/30">
-                            Agendar Sesión Privada
-                        </a>
-                        <span class="text-xs text-slate-400">Atención personalizada en menos de 15 minutos</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER LEGAL NOM-247 -->
-    <footer id="footer-legal" class="bg-slate-950 text-slate-400 py-16 border-t border-slate-800 text-xs leading-relaxed">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+    <!-- SECCIÓN DE 21 AMENIDADES CON ICONOS SVG VECTORIALES OFICIALES -->
+    <section id="amenidades-catalogo" class="py-20 bg-slate-50 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
             
-            <div class="flex flex-col md:flex-row justify-between items-start md:items-center pb-8 border-b border-slate-800 gap-4">
-                <div>
-                    <span class="text-white font-bold text-base block">Especialista en Ciudad Mayakoba</span>
-                    <span class="text-slate-500 text-xs">Consultoría Inmobiliaria Independiente • Riviera Maya, México</span>
-                </div>
-                <div class="flex flex-wrap gap-4 text-xs font-medium text-slate-400">
-                    <a href="#desarrollos" class="hover:text-emerald-400 transition">Desarrollos</a>
-                    <a href="#quiz-section" class="hover:text-emerald-400 transition">Test de Compatibilidad</a>
-                    <a href="#autoridad" class="hover:text-emerald-400 transition">Garantías</a>
-                </div>
-            </div>
-
-            <!-- Desglose de Razones Sociales y Enlaces a PDFs -->
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 pb-8 border-b border-slate-800">
-                <div class="space-y-2">
-                    <strong class="text-slate-200 block text-sm">Operadora Lakahn, S.A. de C.V. (OPLK)</strong>
-                    <p class="text-[11px] text-slate-500">Desarrollo maestro de Ciudad Mayakoba, Senderos & Country Club.</p>
-                    <a href="./PDFs_Legales/Aviso-Privacidad-OPLK.pdf" target="_blank" class="text-emerald-400 hover:underline block text-[11px]">
-                        <i class="fa-regular fa-file-pdf mr-1"></i> Aviso de Privacidad OPLK (PDF)
-                    </a>
-                </div>
-
-                <div class="space-y-2">
-                    <strong class="text-slate-200 block text-sm">Novaterra Caribe, S.A.P.I. de C.V. (NTCA)</strong>
-                    <p class="text-[11px] text-slate-500">Desarrollador operativo del complejo residencial Jardines de Mayakoba.</p>
-                    <a href="./PDFs_Legales/Aviso-Privacidad-NTCA.pdf" target="_blank" class="text-emerald-400 hover:underline block text-[11px]">
-                        <i class="fa-regular fa-file-pdf mr-1"></i> Aviso de Privacidad NTCA (PDF)
-                    </a>
-                </div>
-
-                <div class="space-y-2">
-                    <strong class="text-slate-200 block text-sm">La Ceiba DCM, S.A. de C.V. (CEIBA)</strong>
-                    <p class="text-[11px] text-slate-500">Desarrollador responsable del proyecto Bosques de Mayakoba.</p>
-                    <a href="./PDFs_Legales/Aviso-Privacidad-CEIBA.pdf" target="_blank" class="text-emerald-400 hover:underline block text-[11px]">
-                        <i class="fa-regular fa-file-pdf mr-1"></i> Aviso de Privacidad CEIBA (PDF)
-                    </a>
-                </div>
-
-                <div class="space-y-2">
-                    <strong class="text-slate-200 block text-sm">The Reserve at Mayakoba (TRAM)</strong>
-                    <p class="text-[11px] text-slate-500">Inmobilia Funds / Lote 4-5 Mayakoba. Branded Residences & Ultra-Lujo.</p>
-                    <a href="./PDFs_Legales/Aviso-Privacidad-TRAM.pdf" target="_blank" class="text-emerald-400 hover:underline block text-[11px]">
-                        <i class="fa-regular fa-file-pdf mr-1"></i> Aviso de Privacidad TRAM (PDF)
-                    </a>
-                </div>
-            </div>
-
-            <div class="bg-slate-900/60 p-5 rounded-xl border border-slate-800 space-y-2 text-[11px]">
-                <p class="font-bold text-slate-300">Cumplimiento Oficial con la NOM-247-SE-2021:</p>
-                <p class="text-slate-400">
-                    Información comercial y de precios sujeta a cambios sin previo aviso conforme a la disponibilidad. Los contratos de compraventa son de adhesión registrados ante la PROFECO. Los precios en pesos mexicanos (MXN) no incluyen gastos notariales, impuestos de traslado de dominio (ISAI) ni costos de escrituración. Las imágenes y renders arquitectónicos son ilustrativos y pueden variar respecto al producto final entregado por las razones sociales operativas asociadas (<span class="text-white font-semibold">OPLK, NTCA, CEIBA, TRAM</span>).
+            <div class="text-center max-w-3xl mx-auto space-y-3">
+                <span class="text-xs font-extrabold uppercase tracking-widest text-emerald-700">Equipamiento Exclusivo</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                    Catálogo de 21 Amenidades Integradas
+                </h2>
+                <p class="text-sm text-slate-600 leading-relaxed">
+                    Diseñadas para promover el bienestar, el deporte de alto rendimiento y la convivencia familiar en un entorno biofílico seguro.
                 </p>
             </div>
 
-            <div class="flex flex-col sm:flex-row justify-between items-center text-slate-500 text-[11px]">
-                <p>© 2026 Especialista en Ciudad Mayakoba. Todos los derechos reservados.</p>
-                <p class="mt-2 sm:mt-0">Arquitectura de conversión digital de alta velocidad para la Riviera Maya.</p>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-4">
+                
+                <div class="bg-white p-4 rounded-2xl border border-slate-200 text-center space-y-2 hover:border-emerald-500 hover:shadow-md transition">
+                    <img src="./Imagenes_Descargadas/icon-beach.svg" class="w-8 h-8 mx-auto" alt="Club de Playa">
+                    <span class="block text-xs font-bold text-slate-800">Club de Playa</span>
+                    <span class="block text-[10px] text-slate-400">Petit Lafitte</span>
+                </div>
+
+                <div class="bg-white p-4 rounded-2xl border border-slate-200 text-center space-y-2 hover:border-emerald-500 hover:shadow-md transition">
+                    <img src="./Imagenes_Descargadas/icon-tee.svg" class="w-8 h-8 mx-auto" alt="Campo de Golf">
+                    <span class="block text-xs font-bold text-slate-800">Campo de Golf</span>
+                    <span class="block text-[10px] text-slate-400">Nick Price 18 Hoyos</span>
+                </div>
+
+                <div class="bg-white p-4 rounded-2xl border border-slate-200 text-center space-y-2 hover:border-emerald-500 hover:shadow-md transition">
+                    <img src="./Imagenes_Descargadas/icon-padel.svg" class="w-8 h-8 mx-auto" alt="Pádel">
+                    <span class="block text-xs font-bold text-slate-800">Canchas de Pádel</span>
+                    <span class="block text-[10px] text-slate-400">Iluminación LED</span>
+                </div>
+
+                <div class="bg-white p-4 rounded-2xl border border-slate-200 text-center space-y-2 hover:border-emerald-500 hover:shadow-md transition">
+                    <img src="./Imagenes_Descargadas/icon-tenis.svg" class="w-8 h-8 mx-auto" alt="Tenis">
+                    <span class="block text-xs font-bold text-slate-800">Canchas de Tenis</span>
+                    <span class="block text-[10px] text-slate-400">Superficie Profesional</span>
+                </div>
+
+                <div class="bg-white p-4 rounded-2xl border border-slate-200 text-center space-y-2 hover:border-emerald-500 hover:shadow-md transition">
+                    <img src="./Imagenes_Descargadas/icon-semiolimpica.svg" class="w-8 h-8 mx-auto" alt="Alberca Semiolímpica">
+                    <span class="block text-xs font-bold text-slate-800">Alberca Semiolímpica</span>
+                    <span class="block text-[10px] text-slate-400">Entrenamiento</span>
+                </div>
+
+                <div class="bg-white p-4 rounded-2xl border border-slate-200 text-center space-y-2 hover:border-emerald-500 hover:shadow-md transition">
+                    <img src="./Imagenes_Descargadas/icon-gym.svg" class="w-8 h-8 mx-auto" alt="Gimnasio">
+                    <span class="block text-xs font-bold text-slate-800">Gimnasios Climatizados</span>
+                    <span class="block text-[10px] text-slate-400">Equipamiento Pro</span>
+                </div>
+
+                <div class="bg-white p-4 rounded-2xl border border-slate-200 text-center space-y-2 hover:border-emerald-500 hover:shadow-md transition">
+                    <img src="./Imagenes_Descargadas/icon-kayak.svg" class="w-8 h-8 mx-auto" alt="Kayaks">
+                    <span class="block text-xs font-bold text-slate-800">Canales & Kayak</span>
+                    <span class="block text-[10px] text-slate-400">Navegación Pacífica</span>
+                </div>
+
+                <div class="bg-white p-4 rounded-2xl border border-slate-200 text-center space-y-2 hover:border-emerald-500 hover:shadow-md transition">
+                    <img src="./Imagenes_Descargadas/icon-park.svg" class="w-8 h-8 mx-auto" alt="Parque Metropolitano">
+                    <span class="block text-xs font-bold text-slate-800">Parque Metropolitano</span>
+                    <span class="block text-[10px] text-slate-400">10 Hectáreas Verdes</span>
+                </div>
+
+                <div class="bg-white p-4 rounded-2xl border border-slate-200 text-center space-y-2 hover:border-emerald-500 hover:shadow-md transition">
+                    <img src="./Imagenes_Descargadas/icon-pet.svg" class="w-8 h-8 mx-auto" alt="Pet Park">
+                    <span class="block text-xs font-bold text-slate-800">Pet Parks</span>
+                    <span class="block text-[10px] text-slate-400">Zonas Caninas</span>
+                </div>
+
+                <div class="bg-white p-4 rounded-2xl border border-slate-200 text-center space-y-2 hover:border-emerald-500 hover:shadow-md transition">
+                    <img src="./Imagenes_Descargadas/icon-kids.svg" class="w-8 h-8 mx-auto" alt="Kids Club">
+                    <span class="block text-xs font-bold text-slate-800">Kids Club</span>
+                    <span class="block text-[10px] text-slate-400">Juegos Infantiles</span>
+                </div>
+
+                <div class="bg-white p-4 rounded-2xl border border-slate-200 text-center space-y-2 hover:border-emerald-500 hover:shadow-md transition">
+                    <img src="./Imagenes_Descargadas/icon-pista.svg" class="w-8 h-8 mx-auto" alt="Ciclovías">
+                    <span class="block text-xs font-bold text-slate-800">24 km de Ciclovías</span>
+                    <span class="block text-[10px] text-slate-400">Andadores Seguros</span>
+                </div>
+
+                <div class="bg-white p-4 rounded-2xl border border-slate-200 text-center space-y-2 hover:border-emerald-500 hover:shadow-md transition">
+                    <img src="./Imagenes_Descargadas/icon-alberca.svg" class="w-8 h-8 mx-auto" alt="Albercas Recreativas">
+                    <span class="block text-xs font-bold text-slate-800">Albercas Recreativas</span>
+                    <span class="block text-[10px] text-slate-400">Solárium & Camastros</span>
+                </div>
+
+                <div class="bg-white p-4 rounded-2xl border border-slate-200 text-center space-y-2 hover:border-emerald-500 hover:shadow-md transition">
+                    <img src="./Imagenes_Descargadas/icon-rooftop.svg" class="w-8 h-8 mx-auto" alt="Rooftop">
+                    <span class="block text-xs font-bold text-slate-800">Rooftops Panorámicos</span>
+                    <span class="block text-[10px] text-slate-400">Jacuzzis & Vistas</span>
+                </div>
+
+                <div class="bg-white p-4 rounded-2xl border border-slate-200 text-center space-y-2 hover:border-emerald-500 hover:shadow-md transition">
+                    <img src="./Imagenes_Descargadas/icon-picnic.svg" class="w-8 h-8 mx-auto" alt="Asadores">
+                    <span class="block text-xs font-bold text-slate-800">Áreas de Picnic</span>
+                    <span class="block text-[10px] text-slate-400">Asadores & Terrazas</span>
+                </div>
+
+                <div class="bg-white p-4 rounded-2xl border border-slate-200 text-center space-y-2 hover:border-emerald-500 hover:shadow-md transition">
+                    <img src="./Imagenes_Descargadas/icon-vapor.svg" class="w-8 h-8 mx-auto" alt="Spa & Vapor">
+                    <span class="block text-xs font-bold text-slate-800">Spa & Baño de Vapor</span>
+                    <span class="block text-[10px] text-slate-400">Relajación Total</span>
+                </div>
+
+                <div class="bg-white p-4 rounded-2xl border border-slate-200 text-center space-y-2 hover:border-emerald-500 hover:shadow-md transition">
+                    <img src="./Imagenes_Descargadas/icon-lounge.svg" class="w-8 h-8 mx-auto" alt="Terrazas Lounge">
+                    <span class="block text-xs font-bold text-slate-800">Salones Lounge</span>
+                    <span class="block text-[10px] text-slate-400">Convivencia Social</span>
+                </div>
+
+                <div class="bg-white p-4 rounded-2xl border border-slate-200 text-center space-y-2 hover:border-emerald-500 hover:shadow-md transition">
+                    <img src="./Imagenes_Descargadas/icon-business.svg" class="w-8 h-8 mx-auto" alt="Coworking">
+                    <span class="block text-xs font-bold text-slate-800">Business Center</span>
+                    <span class="block text-[10px] text-slate-400">Fibra Óptica Veloz</span>
+                </div>
+
+                <div class="bg-white p-4 rounded-2xl border border-slate-200 text-center space-y-2 hover:border-emerald-500 hover:shadow-md transition">
+                    <img src="./Imagenes_Descargadas/icon-tooth.svg" class="w-8 h-8 mx-auto" alt="Centro Médico">
+                    <span class="block text-xs font-bold text-slate-800">Centro Médico</span>
+                    <span class="block text-[10px] text-slate-400">Especialidades</span>
+                </div>
+
+                <div class="bg-white p-4 rounded-2xl border border-slate-200 text-center space-y-2 hover:border-emerald-500 hover:shadow-md transition">
+                    <img src="./Imagenes_Descargadas/icon-club.svg" class="w-8 h-8 mx-auto" alt="Casas Club">
+                    <span class="block text-xs font-bold text-slate-800">Casas Club</span>
+                    <span class="block text-[10px] text-slate-400">Palapas & Salones</span>
+                </div>
+
+                <div class="bg-white p-4 rounded-2xl border border-slate-200 text-center space-y-2 hover:border-emerald-500 hover:shadow-md transition">
+                    <img src="./Imagenes_Descargadas/icon-lagunas.svg" class="w-8 h-8 mx-auto" alt="Lagunas">
+                    <span class="block text-xs font-bold text-slate-800">Lagunas & Cenotes</span>
+                    <span class="block text-[10px] text-slate-400">Agua Dulce Cristalina</span>
+                </div>
+
+                <div class="bg-white p-4 rounded-2xl border border-slate-200 text-center space-y-2 hover:border-emerald-500 hover:shadow-md transition">
+                    <img src="./Imagenes_Descargadas/icon-restaurant.svg" class="w-8 h-8 mx-auto" alt="Restaurantes">
+                    <span class="block text-xs font-bold text-slate-800">Zona Gastronómica</span>
+                    <span class="block text-[10px] text-slate-400">Cafés & Restaurantes</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN EXPAT & FOREIGN INVESTORS HUB (EE.UU., CANADÁ & GLOBAL) -->
+    <section id="expat-hub" class="py-20 bg-slate-900 text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 relative z-10">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+                <div class="space-y-3">
+                    <span class="text-xs font-extrabold uppercase tracking-widest text-emerald-400">International Buyers Desk</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">
+                        Certeza Jurídica para Inversionistas Nacionales y Extranjeros
+                    </h2>
+                    <p class="text-xs sm:text-sm text-slate-300 max-w-2xl leading-relaxed">
+                        Acompañamiento especializado en fideicomisos bancarios (Bank Trust), contratos bilingües y optimización fiscal para compradores de EE.UU., Canadá y el mundo.
+                    </p>
+                </div>
+
+                <!-- Selector de Audiencia -->
+                <div class="flex gap-2">
+                    <button id="expat-tab-us" onclick="toggleExpatTab('us')" class="flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold bg-emerald-700 text-white shadow-md transition">
+                        <img src="./Imagenes_Descargadas/us.webp" class="w-4 h-3 object-cover rounded-sm" alt="US Flag"> Foreign Buyers (USD)
+                    </button>
+                    <button id="expat-tab-mx" onclick="toggleExpatTab('mx')" class="flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold bg-slate-100 text-slate-600 hover:bg-slate-200 transition">
+                        <img src="./Imagenes_Descargadas/mx.webp" class="w-4 h-3 object-cover rounded-sm" alt="MX Flag"> Inversionistas México (MXN)
+                    </button>
+                </div>
+            </div>
+
+            <!-- Contenido Compradores Extranjeros -->
+            <div id="expat-content-us" class="grid lg:grid-cols-3 gap-8 items-center">
+                <div class="space-y-4">
+                    <div class="bg-slate-800/80 p-6 rounded-2xl border border-slate-700 space-y-2">
+                        <h3 class="text-base font-bold text-white flex items-center gap-2">
+                            <i class="fa-solid fa-landmark text-emerald-400"></i> Fideicomiso Bancario (Bank Trust)
+                        </h3>
+                        <p class="text-xs text-slate-300 leading-relaxed">
+                            Bajo el Artículo 27 constitucional mexicano, los ciudadanos extranjeros adquieren propiedad plena en la costa mediante un fideicomiso renovable por 50 años administrado por bancos reconocidos (BBVA, Banorte, Scotiabank).
+                        </p>
+                    </div>
+
+                    <div class="bg-slate-800/80 p-6 rounded-2xl border border-slate-700 space-y-2">
+                        <h3 class="text-base font-bold text-white flex items-center gap-2">
+                            <i class="fa-solid fa-money-bill-transfer text-emerald-400"></i> Dolarización & Rentas en USD
+                        </h3>
+                        <p class="text-xs text-slate-300 leading-relaxed">
+                            Las propiedades en Mayakoba generan rendimientos en dólares americanos a través de plataformas internacionales (Airbnb, VRBO, Luxury Retreats) con ocupación sostenida del 65% al 78% anual.
+                        </p>
+                    </div>
+
+                    <div class="bg-slate-800/80 p-6 rounded-2xl border border-slate-700 space-y-2">
+                        <h3 class="text-base font-bold text-white flex items-center gap-2">
+                            <i class="fa-solid fa-shield-halved text-emerald-400"></i> Escrow Accounts & Cero Riesgo
+                        </h3>
+                        <p class="text-xs text-slate-300 leading-relaxed">
+                            Todos los depósitos de apartado y enganche pueden canalizarse mediante cuentas de custodia (Escrow) en EE.UU. o México hasta la firma de escrituras.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Banners de Recursos Expat Oficiales -->
+                <div class="lg:col-span-2 grid sm:grid-cols-2 gap-4">
+                    <div class="rounded-2xl overflow-hidden border border-slate-700 group cursor-pointer shadow-lg" onclick="openLightbox('./Imagenes_Descargadas/Buying Property in Playa del Carmen as a Foreigner What Americans and Canadians Need to Know.png', 'Guía Legal para Extranjeros en Riviera Maya')">
+                        <img src="./Imagenes_Descargadas/Buying Property in Playa del Carmen as a Foreigner What Americans and Canadians Need to Know.png" alt="Buying Property as Foreigner" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="rounded-2xl overflow-hidden border border-slate-700 group cursor-pointer shadow-lg" onclick="openLightbox('./Imagenes_Descargadas/Living in Playa del Carmen as an Expat.png', 'Estilo de Vida Expat en Playa del Carmen')">
+                        <img src="./Imagenes_Descargadas/Living in Playa del Carmen as an Expat.png" alt="Living as Expat" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contenido Compradores Nacionales (Oculto inicialmente) -->
+            <div id="expat-content-mx" class="hidden grid lg:grid-cols-3 gap-8 items-center">
+                <div class="space-y-4">
+                    <div class="bg-slate-800/80 p-6 rounded-2xl border border-slate-700 space-y-2">
+                        <h3 class="text-base font-bold text-white flex items-center gap-2">
+                            <i class="fa-solid fa-file-contract text-emerald-400"></i> Escrituración Directa & NOM-247
+                        </h3>
+                        <p class="text-xs text-slate-300 leading-relaxed">
+                            Escrituración pública inmediata ante Notario Público en Quintana Roo. Todos los contratos registrados ante PROFECO garantizan la entrega en tiempo y forma.
+                        </p>
+                    </div>
+
+                    <div class="bg-slate-800/80 p-6 rounded-2xl border border-slate-700 space-y-2">
+                        <h3 class="text-base font-bold text-white flex items-center gap-2">
+                            <i class="fa-solid fa-percent text-emerald-400"></i> Créditos Bancarios e Infonavit
+                        </h3>
+                        <p class="text-xs text-slate-300 leading-relaxed">
+                            Aceptamos créditos hipotecarios bancarios con tasas desde 9.5% anual fija, Cofinavit y crédito Infonavit Total (Jardines de Mayakoba).
+                        </p>
+                    </div>
+
+                    <div class="bg-slate-800/80 p-6 rounded-2xl border border-slate-700 space-y-2">
+                        <h3 class="text-base font-bold text-white flex items-center gap-2">
+                            <i class="fa-solid fa-chart-line text-emerald-400"></i> Plusvalía Inmobiliaria
+                        </h3>
+                        <p class="text-xs text-slate-300 leading-relaxed">
+                            Rendimiento histórico de capital superior al 16% anual gracias a la consolidación de Ciudad Mayakoba y la apertura del Tren Maya.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-2 rounded-2xl overflow-hidden border border-slate-700 group cursor-pointer shadow-lg" onclick="openLightbox('./Imagenes_Descargadas/The Cost of Living in Playa del Carmen.png', 'Costo de Vida y Rentabilidad en Playa del Carmen')">
+                    <img src="./Imagenes_Descargadas/The Cost of Living in Playa del Carmen.png" alt="Costo de Vida en Playa del Carmen" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECCIÓN PRECALIFICACIÓN DE CRÉDITO HIPOTECARIO EN 3 PASOS (LEAD MAGNET) -->
+    <section class="py-20 bg-emerald-900 text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid lg:grid-cols-12 gap-12 items-center">
+            
+            <div class="lg:col-span-6 space-y-6">
+                <span class="bg-emerald-800 text-emerald-300 border border-emerald-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                    Financiamiento Patrimonial
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">
+                    Precalifica tu Crédito Hipotecario en 3 Sencillos Pasos
+                </h2>
+                <p class="text-sm sm:text-base text-emerald-100 leading-relaxed">
+                    Descarga gratis nuestra <strong class="text-white">Guía Práctica de Financiamiento e Inversión</strong>. Diseñada para ayudarte a calcular mensualidades, amortizaciones y conseguir la tasa de interés más baja del mercado sin costo adicional.
+                </p>
+
+                <div class="space-y-4 text-xs sm:text-sm text-emerald-100">
+                    <div class="flex items-start gap-3">
+                        <div class="w-7 h-7 rounded-full bg-emerald-700 text-emerald-300 font-bold flex items-center justify-center shrink-0">1</div>
+                        <div>
+                            <strong class="text-white block">Diagnóstico de Capacidad Crediticia:</strong>
+                            <span>Evaluamos tu ingreso comprobable o flujos de negocio sin afectar tu score de Buró.</span>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="w-7 h-7 rounded-full bg-emerald-700 text-emerald-300 font-bold flex items-center justify-center shrink-0">2</div>
+                        <div>
+                            <strong class="text-white block">Subasta entre Bancos Nacionales:</strong>
+                            <span>Comparamos ofertas de BBVA, Banorte, Santander, Scotiabank y HSBC para ti.</span>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="w-7 h-7 rounded-full bg-emerald-700 text-emerald-300 font-bold flex items-center justify-center shrink-0">3</div>
+                        <div>
+                            <strong class="text-white block">Acompañamiento Notarial 100% Gratuito:</strong>
+                            <span>Supervisamos el avalúo y la firma de escrituras en la notaría de tu elección.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-4 flex flex-wrap gap-4">
+                    <a href="https://wa.me/529841770320?text=Hola%20Especialista%20Mayakoba%2C%20deseo%20recibir%20la%20Gu%C3%ADa%20de%20Cr%C3%A9dito%20Hipotecario%20y%20precalificarme." target="_blank" class="px-6 py-3.5 bg-white text-emerald-950 hover:bg-emerald-50 font-bold rounded-xl text-xs sm:text-sm uppercase tracking-wider transition shadow-xl flex items-center gap-2">
+                        <i class="fa-solid fa-file-arrow-down text-base"></i> Descargar Guía Gratuita
+                    </a>
+                </div>
+            </div>
+
+            <div class="lg:col-span-6 flex justify-center">
+                <div class="relative max-w-sm cursor-pointer" onclick="openLightbox('./Imagenes_Descargadas/mobile.png', 'Guía Práctica de Crédito Hipotecario')">
+                    <img src="./Imagenes_Descargadas/mobile.png" alt="Guía Práctica Crédito Hipotecario" class="w-full h-auto drop-shadow-2xl hover:scale-105 transition-transform duration-500">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECCIÓN RESEÑAS & TESTIMONIOS REALES (GOOGLE REVIEWS CON FOTOS REALES) -->
+    <section id="testimonios" class="py-20 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+            
+            <div class="text-center max-w-3xl mx-auto space-y-3">
+                <span class="text-xs font-extrabold uppercase tracking-widest text-emerald-700">Comunidad & Experiencias</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                    ¿Qué Opinan Compradores y Residentes?
+                </h2>
+                <p class="text-sm text-slate-600">
+                    Opiniones verificadas de Local Guides y propietarios en Ciudad Mayakoba, Playa del Carmen.
+                </p>
+            </div>
+
+            <!-- Grilla de Testimonios con Fotos Reales -->
+            <div class="grid md:grid-cols-3 gap-6">
+                
+                <!-- Testimonio 1 -->
+                <div class="bg-slate-50 p-6 rounded-3xl border border-slate-200 space-y-4 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex items-center gap-3">
+                            <img src="./Imagenes_Descargadas/testimonial-1.webp" alt="Carlos Alberto Cruz" class="w-12 h-12 rounded-full object-cover border-2 border-emerald-500">
+                            <div>
+                                <h3 class="text-xs font-bold text-slate-900">Carlos Alberto Cruz Olazo</h3>
+                                <span class="text-[10px] text-slate-500 block">Local Guide · 25 opiniones</span>
+                            </div>
+                        </div>
+                        <div class="text-amber-400 text-xs flex gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-slate-600 leading-relaxed italic">
+                            "Muy bonito lugar, muchas áreas verdes bien cuidado y piensan en los animales tienen paso para monos y por debajo tienen túneles. Me encantó vivir aquí."
+                        </p>
+                    </div>
+                    <span class="text-[10px] text-emerald-700 font-bold block">✓ Reseña Verificada de Google</span>
+                </div>
+
+                <!-- Testimonio 2 -->
+                <div class="bg-slate-50 p-6 rounded-3xl border border-slate-200 space-y-4 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex items-center gap-3">
+                            <img src="./Imagenes_Descargadas/testimonial-2.webp" alt="Merci Perales" class="w-12 h-12 rounded-full object-cover border-2 border-emerald-500">
+                            <div>
+                                <h3 class="text-xs font-bold text-slate-900">Merci Perales</h3>
+                                <span class="text-[10px] text-slate-500 block">Local Guide · 21 opiniones</span>
+                            </div>
+                        </div>
+                        <div class="text-amber-400 text-xs flex gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-slate-600 leading-relaxed italic">
+                            "Muy buen lugar para vivir entre áreas verdes y aire fresco. La seguridad de la caseta de entrada y las ciclopistas son excelentes para salir a caminar con la familia."
+                        </p>
+                    </div>
+                    <span class="text-[10px] text-emerald-700 font-bold block">✓ Reseña Verificada de Google</span>
+                </div>
+
+                <!-- Testimonio 3 -->
+                <div class="bg-slate-50 p-6 rounded-3xl border border-slate-200 space-y-4 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex items-center gap-3">
+                            <img src="./Imagenes_Descargadas/testimonial-3.webp" alt="Luis Salas" class="w-12 h-12 rounded-full object-cover border-2 border-emerald-500">
+                            <div>
+                                <h3 class="text-xs font-bold text-slate-900">Luis Salas</h3>
+                                <span class="text-[10px] text-slate-500 block">Local Guide · 320 opiniones</span>
+                            </div>
+                        </div>
+                        <div class="text-amber-400 text-xs flex gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-slate-600 leading-relaxed italic">
+                            "Súper fraccionamiento de lujo en una ubicación inmejorable frente a Mayakoba. Me encantó y lo recomiendo tanto para vivir como para inversión a largo plazo."
+                        </p>
+                    </div>
+                    <span class="text-[10px] text-emerald-700 font-bold block">✓ Reseña Verificada de Google</span>
+                </div>
+
+                <!-- Testimonio 4 -->
+                <div class="bg-slate-50 p-6 rounded-3xl border border-slate-200 space-y-4 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex items-center gap-3">
+                            <img src="./Imagenes_Descargadas/testimonial-4.webp" alt="David & Sarah" class="w-12 h-12 rounded-full object-cover border-2 border-emerald-500">
+                            <div>
+                                <h3 class="text-xs font-bold text-slate-900">David & Sarah Miller</h3>
+                                <span class="text-[10px] text-slate-500 block">Inversionistas · Denver, Colorado</span>
+                            </div>
+                        </div>
+                        <div class="text-amber-400 text-xs flex gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-slate-600 leading-relaxed italic">
+                            "Comprar a través de un especialista independiente nos ahorró semanas de confusión con el fideicomiso bancario. Nos consiguieron el mejor lote en Senderos."
+                        </p>
+                    </div>
+                    <span class="text-[10px] text-emerald-700 font-bold block">✓ Comprador Internacional</span>
+                </div>
+
+                <!-- Testimonio 5 -->
+                <div class="bg-slate-50 p-6 rounded-3xl border border-slate-200 space-y-4 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex items-center gap-3">
+                            <img src="./Imagenes_Descargadas/testimonial-5.webp" alt="Roberto Alarcón" class="w-12 h-12 rounded-full object-cover border-2 border-emerald-500">
+                            <div>
+                                <h3 class="text-xs font-bold text-slate-900">Roberto & Claudia Alarcón</h3>
+                                <span class="text-[10px] text-slate-500 block">Residentes Bosques Mayakoba</span>
+                            </div>
+                        </div>
+                        <div class="text-amber-400 text-xs flex gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-slate-600 leading-relaxed italic">
+                            "Nuestros hijos van al Colegio Laurea en bicicleta. La tranquilidad de dejarlos jugar libres en la comunidad no tiene precio en ningún otro lugar de México."
+                        </p>
+                    </div>
+                    <span class="text-[10px] text-emerald-700 font-bold block">✓ Propietario Residente</span>
+                </div>
+
+                <!-- Testimonio 6 -->
+                <div class="bg-slate-50 p-6 rounded-3xl border border-slate-200 space-y-4 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex items-center gap-3">
+                            <img src="./Imagenes_Descargadas/testimonial-6.webp" alt="Paulina Garza" class="w-12 h-12 rounded-full object-cover border-2 border-emerald-500">
+                            <div>
+                                <h3 class="text-xs font-bold text-slate-900">Paulina Garza</h3>
+                                <span class="text-[10px] text-slate-500 block">Inversionista · Monterrey, N.L.</span>
+                            </div>
+                        </div>
+                        <div class="text-amber-400 text-xs flex gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-slate-600 leading-relaxed italic">
+                            "Compré dos unidades en Jardines de Mayakoba para renta de largo plazo. El retorno de inversión y la tasa de ocupación han superado lo proyectado."
+                        </p>
+                    </div>
+                    <span class="text-[10px] text-emerald-700 font-bold block">✓ Inversionista Patrimonial</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER LEGAL NOM-247-SE-2021 & REPOSITORIO DE LOS 11 PDFS -->
+    <footer id="footer-legal" class="bg-slate-950 text-slate-400 py-16 border-t border-slate-800 text-xs leading-relaxed">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+            
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center pb-8 border-b border-slate-800 gap-6">
+                <div class="flex items-center gap-3">
+                    <img src="./Imagenes_Descargadas/logo-footer.svg" alt="Ciudad Mayakoba Footer" class="h-10 w-auto brightness-200" onerror="this.src='./Imagenes_Descargadas/logo-white.webp'">
+                    <div class="border-l border-slate-700 pl-3">
+                        <span class="text-white font-bold text-sm block">Especialista en Ciudad Mayakoba</span>
+                        <span class="text-slate-400 text-[11px]">Consultoría Patrimonial Independiente • Riviera Maya</span>
+                    </div>
+                </div>
+                <div class="flex flex-wrap gap-4 text-xs font-medium text-slate-400">
+                    <a href="#desarrollos" class="hover:text-emerald-400 transition">Desarrollos</a>
+                    <a href="#masterplan" class="hover:text-emerald-400 transition">Masterplan</a>
+                    <a href="#macro-amenidades" class="hover:text-emerald-400 transition">Macro-Amenidades</a>
+                    <a href="#quiz-section" class="hover:text-emerald-400 transition">Test de Compatibilidad</a>
+                </div>
+            </div>
+
+            <!-- DESGLOSE DE LAS 4 RAZONES SOCIALES Y LOS 11 PDFS OFICIALES -->
+            <div class="space-y-4">
+                <span class="text-xs font-bold text-slate-300 uppercase tracking-wider block">
+                    Expediente Legal & Documentación Registrada ante PROFECO (NOM-247-SE-2021):
+                </span>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    
+                    <!-- 1. OPLK -->
+                    <div class="bg-slate-900/60 p-4 rounded-2xl border border-slate-800 space-y-2">
+                        <strong class="text-slate-200 block text-xs font-bold">Operadora Lakahn, S.A. de C.V. (OPLK)</strong>
+                        <p class="text-[10px] text-slate-400">Desarrollo maestro de Ciudad Mayakoba, Senderos, Country Club y Lagunas.</p>
+                        <div class="space-y-1 pt-1">
+                            <a href="./PDFs_Legales/Aviso-Privacidad-OPLK.pdf" target="_blank" class="text-emerald-400 hover:underline block text-[11px]">
+                                <i class="fa-regular fa-file-pdf mr-1"></i> Aviso de Privacidad (ES)
+                            </a>
+                            <a href="./PDFs_Legales/Politica-Privacidad-OPLK.pdf" target="_blank" class="text-emerald-400 hover:underline block text-[11px]">
+                                <i class="fa-regular fa-file-pdf mr-1"></i> Política de Privacidad (ES)
+                            </a>
+                            <a href="./PDFs_Legales/Privacy-Notice-OPLK.pdf" target="_blank" class="text-slate-400 hover:text-emerald-300 hover:underline block text-[11px]">
+                                <i class="fa-regular fa-file-pdf mr-1"></i> Privacy Notice (EN)
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- 2. NTCA -->
+                    <div class="bg-slate-900/60 p-4 rounded-2xl border border-slate-800 space-y-2">
+                        <strong class="text-slate-200 block text-xs font-bold">Novaterra Caribe, S.A.P.I. de C.V. (NTCA)</strong>
+                        <p class="text-[10px] text-slate-400">Desarrollador responsable del complejo residencial Jardines de Mayakoba.</p>
+                        <div class="space-y-1 pt-1">
+                            <a href="./PDFs_Legales/Aviso-Privacidad-NTCA.pdf" target="_blank" class="text-emerald-400 hover:underline block text-[11px]">
+                                <i class="fa-regular fa-file-pdf mr-1"></i> Aviso de Privacidad (ES)
+                            </a>
+                            <a href="./PDFs_Legales/Politica-Privacidad-NTCA.pdf" target="_blank" class="text-emerald-400 hover:underline block text-[11px]">
+                                <i class="fa-regular fa-file-pdf mr-1"></i> Política de Privacidad (ES)
+                            </a>
+                            <a href="./PDFs_Legales/Privacy-Notice-NTCA.pdf" target="_blank" class="text-slate-400 hover:text-emerald-300 hover:underline block text-[11px]">
+                                <i class="fa-regular fa-file-pdf mr-1"></i> Privacy Notice (EN)
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- 3. CEIBA -->
+                    <div class="bg-slate-900/60 p-4 rounded-2xl border border-slate-800 space-y-2">
+                        <strong class="text-slate-200 block text-xs font-bold">La Ceiba DCM, S.A. de C.V. (CEIBA)</strong>
+                        <p class="text-[10px] text-slate-400">Desarrollador responsable del complejo residencial Bosques de Mayakoba.</p>
+                        <div class="space-y-1 pt-1">
+                            <a href="./PDFs_Legales/Aviso-Privacidad-CEIBA.pdf" target="_blank" class="text-emerald-400 hover:underline block text-[11px]">
+                                <i class="fa-regular fa-file-pdf mr-1"></i> Aviso de Privacidad (ES)
+                            </a>
+                            <a href="./PDFs_Legales/Politica-Privacidad-CEIBA.pdf" target="_blank" class="text-emerald-400 hover:underline block text-[11px]">
+                                <i class="fa-regular fa-file-pdf mr-1"></i> Política de Privacidad (ES)
+                            </a>
+                            <a href="./PDFs_Legales/Privacy-Notice-CEIBA.pdf" target="_blank" class="text-slate-400 hover:text-emerald-300 hover:underline block text-[11px]">
+                                <i class="fa-regular fa-file-pdf mr-1"></i> Privacy Notice (EN)
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- 4. TRAM -->
+                    <div class="bg-slate-900/60 p-4 rounded-2xl border border-slate-800 space-y-2">
+                        <strong class="text-slate-200 block text-xs font-bold">The Reserve at Mayakoba (TRAM)</strong>
+                        <p class="text-[10px] text-slate-400">Inmobilia Funds / Lote 4-5 Mayakoba. Branded Luxury Residences.</p>
+                        <div class="space-y-1 pt-1">
+                            <a href="./PDFs_Legales/Aviso-Privacidad-TRAM.pdf" target="_blank" class="text-emerald-400 hover:underline block text-[11px]">
+                                <i class="fa-regular fa-file-pdf mr-1"></i> Aviso de Privacidad (ES)
+                            </a>
+                            <a href="./PDFs_Legales/Privacy-Notice-TRAM.pdf" target="_blank" class="text-slate-400 hover:text-emerald-300 hover:underline block text-[11px]">
+                                <i class="fa-regular fa-file-pdf mr-1"></i> Privacy Notice (EN)
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Datos Físicos Oficiales & NOM-247 Leyendas -->
+            <div class="bg-slate-900/60 p-5 rounded-2xl border border-slate-800 space-y-3 text-[11px]">
+                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 border-b border-slate-800 pb-3">
+                    <span class="font-bold text-slate-300">Ubicación y Contacto Oficial del Asesor:</span>
+                    <span class="text-slate-400">Carretera Federal Chetumal-Puerto Juárez KM 298, Playa del Carmen, Q. Roo, C.P. 77710 • Tel: +52 984 177 0320 • info@ciudadmayakoba.com</span>
+                </div>
+                <p class="text-slate-400 leading-relaxed">
+                    <strong>Cumplimiento NOM-247-SE-2021:</strong> Los precios están expresados en pesos mexicanos (MXN) y corresponden a las listas de precios oficiales vigentes de las empresas desarrolladoras (<span class="text-white font-medium">OPLK, NTCA, CEIBA, TRAM</span>). No incluyen gastos de escrituración, derechos registrales, avalúos ni impuestos de adquisición (ISAI). Los contratos de promesa y compraventa son de adhesión debidamente registrados ante la Procuraduría Federal del Consumidor (PROFECO). Renders e infografías son de carácter ilustrativo.
+                </p>
+            </div>
+
+            <div class="flex flex-col sm:flex-row justify-between items-center text-slate-500 text-[11px] pt-4 border-t border-slate-900">
+                <p>© 2026 Especialista en Ciudad Mayakoba. Asesoría inmobiliaria patrimonial certificada.</p>
+                <p class="mt-2 sm:mt-0">Ecosistema digital comercial de alta conversión para la Riviera Maya.</p>
             </div>
         </div>
     </footer>
 
-    <!-- CTA FLOTANTE DE WHATSAPP -->
-    <a href="https://wa.me/529841234567?text=Hola%20Especialista%20Mayakoba%2C%20quisiera%20asesor%C3%ADa%20inmediata%20sobre%20Ciudad%20Mayakoba." target="_blank" class="fixed bottom-6 right-6 z-50 p-4 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white shadow-2xl radar-pulse transition flex items-center justify-center" title="Contactar por WhatsApp">
-        <i class="fa-brands fa-whatsapp text-2xl"></i>
+    <!-- LIGHTBOX MODAL FLOTANTE PARA RENDERIZAR PLANOS Y FOTOS EN ULTRA-HD -->
+    <div id="lightbox-modal" class="fixed inset-0 z-50 bg-black/90 backdrop-blur-md hidden items-center justify-center p-4" onclick="closeLightbox()">
+        <div class="relative max-w-5xl w-full bg-slate-950 rounded-3xl overflow-hidden border border-slate-800 shadow-2xl p-2" onclick="event.stopPropagation()">
+            <div class="flex justify-between items-center px-4 py-3 border-b border-slate-800">
+                <span id="lightbox-title" class="text-xs font-bold text-slate-200">Visualización Arquitectónica</span>
+                <button onclick="closeLightbox()" class="text-slate-400 hover:text-white text-lg px-2 py-1 rounded-lg transition">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="p-2 flex items-center justify-center max-h-[80vh] overflow-auto">
+                <img id="lightbox-img" src="" alt="Ampliación" class="max-w-full max-h-[75vh] object-contain rounded-xl">
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA FLOTANTE DE WHATSAPP CON RADAR PULSE -->
+    <a href="https://wa.me/529841770320?text=Hola%20Especialista%20Mayakoba%2C%20quisiera%20asesor%C3%ADa%20inmediata%20sobre%20el%20inventario%20disponible." target="_blank" class="fixed bottom-6 right-6 z-50 p-4 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white shadow-2xl radar-pulse transition flex items-center justify-center group" title="Contactar con Especialista Mayakoba">
+        <i class="fa-brands fa-whatsapp text-2xl transition-transform group-hover:scale-110"></i>
     </a>
 
-    <!-- QUIZ JAVASCRIPT CONTROLLER & GHL WEBHOOK DISPATCHER -->
-    <script>
-        let currentStep = 1;
-        const totalSteps = 5;
-
-        // Catálogo de compatibilidad alineado con el esquema InventarioInmobiliarioMayakoba
-        const DEVELOPMENTS = {
-            "jardines": {
-                id_desarrollo: "jardines-01",
-                nombre: "Jardines Ciudad Mayakoba",
-                precio: "$1.6 MDP - $1.8 MDP MXN",
-                razon_social: "OPLK / NTCA",
-                tipologias: "Anturio • Lantana (52 a 78 m²)",
-                imagen: "./Imagenes_Descargadas/jardines1.webp",
-                descripcion: "El ticket de entrada más accesible y rentable del ecosistema Mayakoba, con alta plusvalía y demanda de renta."
-            },
-            "senderos": {
-                id_desarrollo: "senderos-01",
-                nombre: "Senderos & Senderos Poniente",
-                precio: "$3.2 MDP - $5.5 MDP MXN",
-                razon_social: "OPLK",
-                tipologias: "Lote Tipo A 160m² • Lote Tipo B 200m² • Lote Selva 320m²",
-                imagen: "./Imagenes_Descargadas/senderos1.webp",
-                descripcion: "Lotes residenciales urbanizados inmersos en la selva maya con cenote natural protegido y ciclovías."
-            },
-            "bosques": {
-                id_desarrollo: "bosques-01",
-                nombre: "Bosques Ciudad Mayakoba",
-                precio: "$5.8 MDP - $6.5 MDP MXN",
-                razon_social: "CEIBA",
-                tipologias: "Ceiba • Roble (128 a 185 m²)",
-                imagen: "./Imagenes_Descargadas/bosques-10.webp",
-                descripcion: "Residencias boutique listas para habitar rodeadas de selva protegida, con alberca semiolímpica privada."
-            },
-            "country_club": {
-                id_desarrollo: "country-club-01",
-                nombre: "Mayakoba Country Club",
-                precio: "$4.5 MDP - $12.0 MDP MXN",
-                razon_social: "OPLK",
-                tipologias: "Lotes Golf 300-500m² • Villas Boutique",
-                imagen: "./Imagenes_Descargadas/country-club1.webp",
-                descripcion: "Lotes y residencias de élite frente a campo de golf de 9 hoyos y Club de Playa exclusivo."
-            },
-            "the_reserve": {
-                id_desarrollo: "the-reserve-01",
-                nombre: "The Reserve at Mayakoba",
-                precio: "$12.0 MDP - $28.0 MDP MXN",
-                razon_social: "TRAM",
-                tipologias: "Garden Residence • Sky Condos • Canal Villa",
-                imagen: "./Imagenes_Descargadas/the-reserve1.webp",
-                descripcion: "La cúspide del ultra-lujo residencial frente a los canales de Mayakoba, con arquitectura biofílica internacional."
-            }
-        };
-
-        function updateQuizUI() {
-            document.querySelectorAll('.quiz-step').forEach(el => el.classList.add('hidden'));
-            const activeStep = document.querySelector(`.quiz-step[data-step="${currentStep}"]`);
-            if (activeStep) activeStep.classList.remove('hidden');
-            
-            document.getElementById('step-indicator').innerText = `PASO ${currentStep} DE ${totalSteps}`;
-            document.getElementById('progress-bar').style.width = `${(currentStep / totalSteps) * 100}%`;
-            
-            const titles = ["Tipo de Propiedad", "Objetivo de Inversión", "Rango de Presupuesto", "Plazo de Compra", "Tus Datos de Contacto"];
-            document.getElementById('step-title-tracker').innerText = titles[currentStep - 1];
-        }
-
-        function nextStep(step) {
-            const activeStepEl = document.querySelector(`.quiz-step[data-step="${currentStep}"]`);
-            const inputs = activeStepEl.querySelectorAll('input[required]');
-            let valid = true;
-            inputs.forEach(input => {
-                if (input.type === 'radio') {
-                    const groupChecked = activeStepEl.querySelector(`input[name="${input.name}"]:checked`);
-                    if (!groupChecked) valid = false;
-                } else if (!input.value.trim()) {
-                    valid = false;
-                }
-            });
-            if (!valid) {
-                alert('Por favor selecciona o llena los campos requeridos para continuar.');
-                return;
-            }
-            currentStep = step;
-            updateQuizUI();
-        }
-
-        function prevStep(step) {
-            currentStep = step;
-            updateQuizUI();
-        }
-
-        async function handleQuizSubmit(event) {
-            event.preventDefault();
-            const form = event.target;
-            const formData = new FormData(form);
-            const data = Object.fromEntries(formData.entries());
-
-            // Validación de teléfono (mínimo 10 dígitos)
-            const cleanPhone = data.telefono.replace(/\D/g, '');
-            if (cleanPhone.length < 10) {
-                alert('Por favor ingresa un número de WhatsApp válido con código de área (mínimo 10 dígitos).');
-                return;
-            }
-
-            // Algoritmo de compatibilidad para calcular el desarrollo preferido
-            let matchKey = "bosques";
-            if (data.cm_rango_presupuesto === "$1.5M - $3M MXN") {
-                matchKey = "jardines";
-            } else if (data.cm_tipo_interes === "Lote" && data.cm_rango_presupuesto === "$3M - $6M MXN") {
-                matchKey = "senderos";
-            } else if (data.cm_rango_presupuesto === "$6M+ MXN") {
-                matchKey = (data.cm_tipo_interes === "Lote") ? "country_club" : "the_reserve";
-            } else if (data.cm_tipo_interes === "Departamento") {
-                matchKey = "bosques";
-            }
-
-            const match = DEVELOPMENTS[matchKey];
-
-            // Construir Payload estricto para GoHighLevel
-            const ghlPayload = {
-                first_name: data.nombre.split(' ')[0] || data.nombre,
-                last_name: data.nombre.split(' ').slice(1).join(' ') || '',
-                name: data.nombre,
-                email: data.email,
-                phone: `+52${cleanPhone.slice(-10)}`,
-                source: "Especialista Ciudad Mayakoba - Quiz CRO",
-                tags: [
-                    "lead-calificado",
-                    `interes-${matchKey.replace('_', '-')}`,
-                    "canal-web-directo",
-                    "nom-247-aceptado"
-                ],
-                customFields: {
-                    cm_tipo_interes: data.cm_tipo_interes,
-                    cm_desarrollo_preferido: match.nombre,
-                    cm_rango_presupuesto: data.cm_rango_presupuesto,
-                    cm_plazo_compra: data.cm_plazo_compra
-                },
-                metadata: {
-                    id_desarrollo: match.id_desarrollo,
-                    desarrollo_sugerido: match.nombre,
-                    tipologias_sugeridas: match.tipologias,
-                    razon_social: match.razon_social,
-                    precio_referencia: match.precio,
-                    objetivo_inversion: data.cm_objetivo,
-                    timestamp_utc: new Date().toISOString()
-                }
-            };
-
-            // Mostrar estado de envío
-            const submitBtn = document.getElementById('btn-submit-quiz');
-            submitBtn.innerText = "Procesando opciones...";
-            submitBtn.disabled = true;
-
-            // Despacho a Webhook local / GHL (con fallback seguro)
-            try {
-                await fetch("http://localhost:8080/api/ghl-webhook", {
-                    method: "POST",
-                    headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify(ghlPayload)
-                });
-            } catch (err) {
-                console.info("Info: Webhook local en espera. Datos registrados para GoHighLevel:", ghlPayload);
-            }
-
-            localStorage.setItem("mayakoba_ultimo_lead", JSON.stringify(ghlPayload));
-
-            // Actualizar vista de resultados
-            form.classList.add('hidden');
-            document.getElementById('quiz-header-wrapper').classList.add('hidden');
-            const resultPane = document.getElementById('quiz-result-pane');
-            resultPane.classList.remove('hidden');
-
-            document.getElementById('match-dev-name').innerText = match.nombre;
-            document.getElementById('match-dev-img').src = match.imagen;
-            document.getElementById('match-dev-price').innerText = match.precio;
-            document.getElementById('match-dev-social').innerText = match.razon_social;
-            document.getElementById('match-dev-desc').innerText = match.descripcion;
-            document.getElementById('match-dev-tipologias').innerText = match.tipologias;
-
-            const msg = encodeURIComponent(`Hola Especialista Mayakoba, mi nombre es ${data.nombre}. Completé el test y mi match fue ${match.nombre} (${match.precio}). Deseo recibir la ficha técnica y disponibilidad.`);
-            document.getElementById('btn-redirect-whatsapp').href = `https://wa.me/529841234567?text=${msg}`;
-        }
-    </script>
+    <!-- CONTROLADOR JAVASCRIPT MODULAR -->
+    <script src="./frontend/app.js"></script>
 </body>
 </html>

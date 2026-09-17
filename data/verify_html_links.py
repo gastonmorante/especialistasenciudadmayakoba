@@ -1,22 +1,34 @@
 import os
 import re
 
-html_path = r"e:\NegocioUp Business\mayakoba\frontend\index.html"
-with open(html_path, "r", encoding="utf-8") as f:
-    content = f.read()
+def check_html(path, base_dir):
+    with open(path, "r", encoding="utf-8") as f:
+        content = f.read()
 
-links = set(re.findall(r'(\.\./(?:Imagenes_Descargadas|PDFs_Legales)/[^"\'<>]+)', content))
-print(f"Total unique assets found in index.html: {len(links)}")
-missing = []
-for link in sorted(links):
-    full_path = os.path.normpath(os.path.join(os.path.dirname(html_path), link))
-    exists = os.path.exists(full_path)
-    print(f"{'[OK]' if exists else '[MISSING]'} {link}")
-    if not exists:
-        missing.append(link)
+    srcs = re.findall(r'src=[\x22\x27]([^\x22\x27]+)[\x22\x27]', content)
+    hrefs = re.findall(r'href=[\x22\x27]([^\x22\x27]+)[\x22\x27]', content)
+    local_refs = sorted(set([r for r in (srcs + hrefs) if not r.startswith('http') and not r.startswith('#') and not r.startswith('data:')]))
+    
+    print(f"=== Verificando {path} ({len(local_refs)} referencias locales) ===")
+    missing = []
+    for ref in local_refs:
+        full_path = os.path.normpath(os.path.join(base_dir, ref))
+        if os.path.exists(full_path):
+            print(f"  [OK] {ref}")
+        else:
+            print(f"  [MISSING] {ref} -> {full_path}")
+            missing.append(ref)
+            
+    if missing:
+        print(f"\n[ERROR] Faltan {len(missing)} archivos en {path}.")
+        return False
+    else:
+        print(f"[EXITOSO] Todos los {len(local_refs)} activos de {path} existen en disco.\n")
+        return True
 
-if missing:
-    print("Missing files:", missing)
-    exit(1)
-else:
-    print("\n[SUCCESS] ALL 10 RELATIVE ASSETS (IMAGES & PDFS) IN HTML EXIST AND ARE ACCESSIBLE!")
+if __name__ == "__main__":
+    ok1 = check_html("index.html", ".")
+    ok2 = check_html("frontend/index.html", "frontend")
+    if not (ok1 and ok2):
+        exit(1)
+    print("[TODO VERIFICADO AL 100% EN DISCO]")
