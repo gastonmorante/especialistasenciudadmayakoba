@@ -362,7 +362,7 @@ async function handleQuizSubmit(event) {
     const msg = encodeURIComponent(
       `Hola Especialista Mayakoba, mi nombre es ${data.nombre}. Completé el cuestionario y mi desarrollo ideal fue ${match.nombre} (${match.precio_display}). Deseo recibir la disponibilidad de inventario y agendar una llamada.`
     );
-    if (waBtn) waBtn.href = `https://wa.me/529841770320?text=${msg}`;
+    if (waBtn) waBtn.href = `https://wa.me/5219841047963?text=${msg}`;
   }
 }
 
