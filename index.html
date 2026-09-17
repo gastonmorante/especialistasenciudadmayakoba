@@ -160,10 +160,15 @@
 
     <!-- HERO SECTION CINEMATOGRÁFICO CON LIFESTYLE HERO & CRO QUIZ -->
     <section class="relative bg-slate-950 text-white py-16 lg:py-24 overflow-hidden">
-        <!-- Fondo Fotográfico Oficial -->
+        <!-- Fondo Fotográfico Oficial: Acceso Monumental Ciudad Mayakoba -->
         <div class="absolute inset-0 z-0">
-            <img src="./Imagenes_Descargadas/lifestyle-hero.jpg" alt="Estilo de Vida Ciudad Mayakoba" class="w-full h-full object-cover object-center opacity-30 brightness-75 scale-105">
-            <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/90 to-emerald-950/80"></div>
+            <picture>
+                <source srcset="./Imagenes_Descargadas/entrada-mayakoba.webp" type="image/webp">
+                <img src="./Imagenes_Descargadas/entrada-mayakoba.jpg" alt="Acceso Monumental Ciudad Mayakoba" class="w-full h-full object-cover object-[right_center] opacity-65 brightness-100 scale-100 transition-all duration-700">
+            </picture>
+            <!-- Gradiente direccional para contraste de lectura y visibilidad del monumento -->
+            <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/80 to-slate-950/20"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-slate-950/40"></div>
         </div>
         
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid lg:grid-cols-12 gap-12 items-center">
@@ -182,52 +187,98 @@
                     Compara con total objetividad todo el inventario de <strong class="text-white font-semibold">Bosques</strong>, <strong class="text-white font-semibold">Jardines</strong>, <strong class="text-white font-semibold">Senderos</strong>, <strong class="text-white font-semibold">Mayakoba Country Club</strong>, <strong class="text-white font-semibold">Lagunas</strong> y <strong class="text-white font-semibold">The Reserve</strong>. Asesoría inmobiliaria imparcial, 0% comisión cobrada al comprador y estricta certeza jurídica NOM-247.
                 </p>
 
-                <!-- Distintivos de Desarrollos -->
+                <!-- Distintivos de Desarrollos del Ecosistema con Estética Luxury -->
                 <div class="pt-2">
-                    <span class="text-xs uppercase tracking-[0.2em] text-slate-400 font-bold block mb-3">Desarrollos del Ecosistema:</span>
-                    <div class="flex flex-wrap items-center gap-2.5 sm:gap-3">
-                        <a href="#desarrollos" class="bg-white/10 hover:bg-white/20 border border-white/20 px-3.5 py-1.5 rounded-xl text-xs font-semibold flex items-center gap-2 transition backdrop-blur-sm">
-                            <img src="./Imagenes_Descargadas/bosques.png" class="h-4 w-auto brightness-200" alt="Bosques"> Bosques
+                    <div class="flex items-center gap-2 mb-3">
+                        <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                        <span class="text-[11px] uppercase tracking-[0.22em] text-emerald-300/90 font-bold">Desarrollos del Ecosistema Oficial:</span>
+                        <span class="h-px flex-1 bg-gradient-to-r from-emerald-500/30 to-transparent"></span>
+                    </div>
+                    <div class="flex flex-wrap items-center gap-2 sm:gap-2.5">
+                        <!-- Bosques -->
+                        <a href="#desarrollos" class="group flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-slate-900/80 hover:bg-slate-800/95 border border-slate-700/70 hover:border-emerald-400/60 backdrop-blur-md transition-all duration-300 shadow-sm hover:shadow-emerald-950/40 hover:-translate-y-0.5">
+                            <div class="w-6 h-6 rounded-full bg-white flex items-center justify-center p-0.5 shadow-sm overflow-hidden flex-shrink-0">
+                                <img src="./Imagenes_Descargadas/bosques.png" class="h-3.5 w-auto object-contain" alt="Bosques">
+                            </div>
+                            <span class="text-xs font-semibold text-slate-200 group-hover:text-white tracking-wide">Bosques</span>
                         </a>
-                        <a href="#desarrollos" class="bg-white/10 hover:bg-white/20 border border-white/20 px-3.5 py-1.5 rounded-xl text-xs font-semibold flex items-center gap-2 transition backdrop-blur-sm">
-                            <img src="./Imagenes_Descargadas/jardines.png" class="h-4 w-auto brightness-200" alt="Jardines"> Jardines
+                        <!-- Jardines -->
+                        <a href="#desarrollos" class="group flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-slate-900/80 hover:bg-slate-800/95 border border-slate-700/70 hover:border-emerald-400/60 backdrop-blur-md transition-all duration-300 shadow-sm hover:shadow-emerald-950/40 hover:-translate-y-0.5">
+                            <div class="w-6 h-6 rounded-full bg-white flex items-center justify-center p-0.5 shadow-sm overflow-hidden flex-shrink-0">
+                                <img src="./Imagenes_Descargadas/jardines.png" class="h-3.5 w-auto object-contain" alt="Jardines">
+                            </div>
+                            <span class="text-xs font-semibold text-slate-200 group-hover:text-white tracking-wide">Jardines</span>
                         </a>
-                        <a href="#desarrollos" class="bg-white/10 hover:bg-white/20 border border-white/20 px-3.5 py-1.5 rounded-xl text-xs font-semibold flex items-center gap-2 transition backdrop-blur-sm">
-                            <img src="./Imagenes_Descargadas/senderos.png" class="h-4 w-auto brightness-200" alt="Senderos"> Senderos
+                        <!-- Senderos -->
+                        <a href="#desarrollos" class="group flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-slate-900/80 hover:bg-slate-800/95 border border-slate-700/70 hover:border-emerald-400/60 backdrop-blur-md transition-all duration-300 shadow-sm hover:shadow-emerald-950/40 hover:-translate-y-0.5">
+                            <div class="w-6 h-6 rounded-full bg-white flex items-center justify-center p-0.5 shadow-sm overflow-hidden flex-shrink-0">
+                                <img src="./Imagenes_Descargadas/senderos.png" class="h-3.5 w-auto object-contain" alt="Senderos">
+                            </div>
+                            <span class="text-xs font-semibold text-slate-200 group-hover:text-white tracking-wide">Senderos</span>
                         </a>
-                        <a href="#desarrollos" class="bg-white/10 hover:bg-white/20 border border-white/20 px-3.5 py-1.5 rounded-xl text-xs font-semibold flex items-center gap-2 transition backdrop-blur-sm">
-                            <img src="./Imagenes_Descargadas/country-club.png" class="h-4 w-auto brightness-200" alt="Country Club"> Country Club
+                        <!-- Country Club -->
+                        <a href="#desarrollos" class="group flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-slate-900/80 hover:bg-slate-800/95 border border-slate-700/70 hover:border-emerald-400/60 backdrop-blur-md transition-all duration-300 shadow-sm hover:shadow-emerald-950/40 hover:-translate-y-0.5">
+                            <div class="w-6 h-6 rounded-full bg-white flex items-center justify-center p-0.5 shadow-sm overflow-hidden flex-shrink-0">
+                                <img src="./Imagenes_Descargadas/country-club.png" class="h-3.5 w-auto object-contain" alt="Country Club">
+                            </div>
+                            <span class="text-xs font-semibold text-slate-200 group-hover:text-white tracking-wide">Country Club</span>
                         </a>
-                        <a href="#desarrollos" class="bg-white/10 hover:bg-white/20 border border-white/20 px-3.5 py-1.5 rounded-xl text-xs font-semibold flex items-center gap-2 transition backdrop-blur-sm">
-                            <img src="./Imagenes_Descargadas/the-reserve.png" class="h-4 w-auto brightness-200" alt="The Reserve"> The Reserve
+                        <!-- The Reserve -->
+                        <a href="#desarrollos" class="group flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-slate-900/80 hover:bg-slate-800/95 border border-slate-700/70 hover:border-emerald-400/60 backdrop-blur-md transition-all duration-300 shadow-sm hover:shadow-emerald-950/40 hover:-translate-y-0.5">
+                            <div class="w-6 h-6 rounded-full bg-white flex items-center justify-center p-0.5 shadow-sm overflow-hidden flex-shrink-0">
+                                <img src="./Imagenes_Descargadas/the-reserve.png" class="h-3.5 w-auto object-contain" alt="The Reserve">
+                            </div>
+                            <span class="text-xs font-semibold text-slate-200 group-hover:text-white tracking-wide">The Reserve</span>
                         </a>
                     </div>
                 </div>
 
-                <!-- Métricas Clave de Confianza -->
-                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-slate-800/80">
-                    <div>
-                        <div class="text-2xl sm:text-3xl lg:text-4xl font-normal text-emerald-300 font-serif tracking-tight">+4,000</div>
-                        <div class="text-[11px] sm:text-xs text-slate-400 uppercase tracking-wider font-medium mt-0.5">Familias e Inversionistas</div>
-                    </div>
-                    <div>
-                        <div class="text-2xl sm:text-3xl lg:text-4xl font-normal text-emerald-300 font-serif tracking-tight">+1,000,000 m²</div>
-                        <div class="text-[11px] sm:text-xs text-slate-400 uppercase tracking-wider font-medium mt-0.5">Áreas Verdes y Selva</div>
-                    </div>
-                    <div>
-                        <div class="text-2xl sm:text-3xl lg:text-4xl font-normal text-emerald-300 font-serif tracking-tight">+16%</div>
-                        <div class="text-[11px] sm:text-xs text-slate-400 uppercase tracking-wider font-medium mt-0.5">Plusvalía Anual Promedio</div>
-                    </div>
-                    <div>
-                        <div class="text-2xl sm:text-3xl lg:text-4xl font-normal text-emerald-300 font-serif tracking-tight">0%</div>
-                        <div class="text-[11px] sm:text-xs text-slate-400 uppercase tracking-wider font-medium mt-0.5">Comisión al Comprador</div>
+                <!-- Métricas Clave de Confianza y Respaldo (Sin colisiones ni solapamientos) -->
+                <div class="pt-4 border-t border-slate-800/80">
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-3.5">
+                        <!-- Métrica 1 -->
+                        <div class="bg-slate-900/70 hover:bg-slate-900/90 border border-slate-800/90 hover:border-emerald-500/40 rounded-2xl p-3.5 sm:p-4 backdrop-blur-md transition duration-200 flex flex-col justify-between shadow-sm">
+                            <div class="text-2xl sm:text-3xl font-serif text-emerald-300 font-semibold tracking-tight leading-none mb-1">+4,000</div>
+                            <div class="text-[10px] sm:text-[11px] text-slate-400 uppercase tracking-wider font-semibold leading-tight">Familias e Inversionistas</div>
+                        </div>
+                        
+                        <!-- Métrica 2 -->
+                        <div class="bg-slate-900/70 hover:bg-slate-900/90 border border-slate-800/90 hover:border-emerald-500/40 rounded-2xl p-3.5 sm:p-4 backdrop-blur-md transition duration-200 flex flex-col justify-between shadow-sm">
+                            <div class="flex items-baseline gap-1 mb-1 leading-none flex-wrap">
+                                <span class="text-xl sm:text-2xl lg:text-3xl font-serif text-emerald-300 font-semibold tracking-tight">+1,000,000</span>
+                                <span class="text-xs sm:text-sm font-sans text-emerald-400 font-normal">m²</span>
+                            </div>
+                            <div class="text-[10px] sm:text-[11px] text-slate-400 uppercase tracking-wider font-semibold leading-tight">Áreas Verdes y Selva</div>
+                        </div>
+
+                        <!-- Métrica 3 -->
+                        <div class="bg-slate-900/70 hover:bg-slate-900/90 border border-slate-800/90 hover:border-emerald-500/40 rounded-2xl p-3.5 sm:p-4 backdrop-blur-md transition duration-200 flex flex-col justify-between shadow-sm">
+                            <div class="flex items-baseline gap-1 mb-1 leading-none flex-wrap">
+                                <span class="text-2xl sm:text-3xl font-serif text-emerald-300 font-semibold tracking-tight">+16%</span>
+                                <span class="text-[10px] sm:text-xs font-sans text-emerald-400/80 uppercase font-semibold">anual</span>
+                            </div>
+                            <div class="text-[10px] sm:text-[11px] text-slate-400 uppercase tracking-wider font-semibold leading-tight">Plusvalía Promedio</div>
+                        </div>
+
+                        <!-- Métrica 4 -->
+                        <div class="bg-slate-900/70 hover:bg-slate-900/90 border border-slate-800/90 hover:border-emerald-500/40 rounded-2xl p-3.5 sm:p-4 backdrop-blur-md transition duration-200 flex flex-col justify-between shadow-sm">
+                            <div class="text-2xl sm:text-3xl font-serif text-emerald-300 font-semibold tracking-tight leading-none mb-1">0%</div>
+                            <div class="text-[10px] sm:text-[11px] text-slate-400 uppercase tracking-wider font-semibold leading-tight">Comisión al Comprador</div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="pt-2 flex flex-wrap items-center gap-4 text-xs text-slate-400">
-                    <span class="flex items-center"><i class="fa-solid fa-check text-emerald-400 mr-1.5"></i> Precios Oficiales de Lista</span>
-                    <span class="flex items-center"><i class="fa-solid fa-check text-emerald-400 mr-1.5"></i> Asesoría Imparcial</span>
-                    <span class="flex items-center"><i class="fa-solid fa-check text-emerald-400 mr-1.5"></i> Respaldo NOM-247</span>
+                <!-- Sellos de Certeza y Garantía Oficial -->
+                <div class="pt-2 flex flex-wrap items-center gap-2.5 sm:gap-3 text-xs">
+                    <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-emerald-950/70 border border-emerald-500/30 text-emerald-300 text-[11px] sm:text-xs font-medium backdrop-blur-sm shadow-sm">
+                        <i class="fa-solid fa-circle-check text-emerald-400 text-xs"></i> Precios Oficiales de Lista
+                    </span>
+                    <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-emerald-950/70 border border-emerald-500/30 text-emerald-300 text-[11px] sm:text-xs font-medium backdrop-blur-sm shadow-sm">
+                        <i class="fa-solid fa-circle-check text-emerald-400 text-xs"></i> Asesoría Imparcial y Certificada
+                    </span>
+                    <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-emerald-950/70 border border-emerald-500/30 text-emerald-300 text-[11px] sm:text-xs font-medium backdrop-blur-sm shadow-sm">
+                        <i class="fa-solid fa-circle-check text-emerald-400 text-xs"></i> Respaldo Jurídico NOM-247
+                    </span>
                 </div>
             </div>
 
