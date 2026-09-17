@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "InventarioInmobiliarioMayakoba",
+  "description": "Esquema de validación estricto para el catálogo comercial unificado de proyectos en Ciudad Mayakoba, garantizando cumplimiento normativo NOM-247-SE-2021, consistencia de precios y trazabilidad legal de desarrolladores.",
+  "type": "object",
+  "properties": {
+    "desarrollos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id_desarrollo": { "type": "string" },
+          "nombre": { "type": "string" },
+          "tipo_producto": { "enum": ["Vivienda", "Inversión", "Lote Residencial", "Lote Comercial"] },
+          "estatus_precio": { "enum": ["Vigente", "Por confirmar", "Preventa"] },
+          "rango_precio_mxn": {
+            "type": "object",
+            "properties": {
+              "min": { "type": "number" },
+              "max": { "type": "number" }
+            },
+            "required": ["min", "max"]
+          },
+          "tipologias": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "razon_social": { "enum": ["OPLK", "NTCA", "CEIBA", "TRAM"] },
+          "apto_credito": { "type": "boolean" },
+          "tags_segmentacion": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        },
+        "required": ["id_desarrollo", "nombre", "tipo_producto", "estatus_precio", "rango_precio_mxn", "razon_social"]
+      }
+    }
+  },
+  "required": ["desarrollos"]
+}

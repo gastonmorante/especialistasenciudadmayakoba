@@ -1,0 +1,121 @@
+{
+  "desarrollos": [
+    {
+      "id_desarrollo": "bosques-01",
+      "nombre": "Bosques Ciudad Mayakoba",
+      "tipo_producto": "Vivienda",
+      "estatus_precio": "Vigente",
+      "rango_precio_mxn": {
+        "min": 5800000,
+        "max": 6500000
+      },
+      "tipologias": [
+        "Ceiba",
+        "Roble"
+      ],
+      "razon_social": "CEIBA",
+      "apto_credito": true,
+      "tags_segmentacion": [
+        "lujo",
+        "departamentos",
+        "renta-vacacional",
+        "alberca-semiolimpica",
+        "familia"
+      ]
+    },
+    {
+      "id_desarrollo": "jardines-01",
+      "nombre": "Jardines Ciudad Mayakoba",
+      "tipo_producto": "Vivienda",
+      "estatus_precio": "Vigente",
+      "rango_precio_mxn": {
+        "min": 1600000,
+        "max": 1800000
+      },
+      "tipologias": [
+        "Anturio",
+        "Lantana"
+      ],
+      "razon_social": "OPLK",
+      "apto_credito": true,
+      "tags_segmentacion": [
+        "familiar",
+        "infonavit",
+        "residencial",
+        "primer-inversionista",
+        "renta-largo-plazo"
+      ]
+    },
+    {
+      "id_desarrollo": "senderos-01",
+      "nombre": "Senderos & Senderos Poniente",
+      "tipo_producto": "Lote Residencial",
+      "estatus_precio": "Vigente",
+      "rango_precio_mxn": {
+        "min": 3200000,
+        "max": 5500000
+      },
+      "tipologias": [
+        "Lote Tipo A 160m²",
+        "Lote Tipo B 200m²",
+        "Lote Selva 320m²"
+      ],
+      "razon_social": "OPLK",
+      "apto_credito": true,
+      "tags_segmentacion": [
+        "lotes-residenciales",
+        "urbanizado",
+        "cenote-natural",
+        "ciclovias",
+        "patrimonio"
+      ]
+    },
+    {
+      "id_desarrollo": "country-club-01",
+      "nombre": "Mayakoba Country Club",
+      "tipo_producto": "Lote Residencial",
+      "estatus_precio": "Vigente",
+      "rango_precio_mxn": {
+        "min": 4500000,
+        "max": 12000000
+      },
+      "tipologias": [
+        "Lotes Golf 300-500m²",
+        "Lotes Country 600-900m²",
+        "Villas Boutique Golf"
+      ],
+      "razon_social": "OPLK",
+      "apto_credito": true,
+      "tags_segmentacion": [
+        "golf-country-club",
+        "club-de-playa",
+        "alta-gama",
+        "inversion-patrimonial"
+      ]
+    },
+    {
+      "id_desarrollo": "the-reserve-01",
+      "nombre": "The Reserve at Mayakoba",
+      "tipo_producto": "Vivienda",
+      "estatus_precio": "Vigente",
+      "rango_precio_mxn": {
+        "min": 12000000,
+        "max": 28000000
+      },
+      "tipologias": [
+        "Garden Residence 2 Rec",
+        "Sky Condos 3 Rec",
+        "Canal Villa 4 Rec"
+      ],
+      "razon_social": "TRAM",
+      "apto_credito": false,
+      "tags_segmentacion": [
+        "ultra-luxury",
+        "canales-navegables",
+        "branded-residences",
+        "inmobilia",
+        "lifestyle"
+      ]
+    }
+  ]
+}

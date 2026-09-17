@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: especialista-mayakoba
+    env: python
+    buildCommand: ""
+    startCommand: python server.py
+    plan: free
+    autoDeploy: true
+    healthCheckPath: /healthz
+    envVars:
+      - key: PORT
+        value: 10000

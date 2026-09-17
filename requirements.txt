@@ -1,0 +1,2 @@
+# Servidor de producción nativo sin dependencias externas pesadas
+# Utiliza la librería estándar de Python (http.server, json, os, mimetypes)

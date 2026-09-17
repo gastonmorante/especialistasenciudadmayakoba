@@ -1,0 +1,46 @@
+{
+  "$comment": "Estructura POST exacta generada por el Quiz de Especialista en Ciudad Mayakoba para GoHighLevel (Inbound Webhook)",
+  "first_name": "Alejandro",
+  "last_name": "García Villaseñor",
+  "name": "Alejandro García Villaseñor",
+  "email": "alejandro.garcia@inversionespatrimoniales.mx",
+  "phone": "+529841558899",
+  "address1": "Playa del Carmen",
+  "city": "Playa del Carmen",
+  "state": "Quintana Roo",
+  "country": "MX",
+  "postalCode": "77710",
+  "source": "Especialista Ciudad Mayakoba - Quiz CRO",
+  "tags": [
+    "lead-calificado",
+    "interes-bosques",
+    "presupuesto-5m-8m",
+    "timeline-1-3-meses",
+    "canal-web-directo",
+    "nom-247-aceptado"
+  ],
+  "customFields": {
+    "cm_tipo_interes": "Casa",
+    "cm_desarrollo_preferido": "Bosques",
+    "cm_rango_presupuesto": "$5M - $8M",
+    "cm_plazo_compra": "1-3 meses"
+  },
+  "metadata": {
+    "desarrollo_id_match": "bosques-de-mayakoba",
+    "id_desarrollo": "bosques-01",
+    "desarrollo_nombre_match": "Bosques Ciudad Mayakoba",
+    "tipologias_sugeridas": ["Ceiba", "Roble"],
+    "apto_credito": true,
+    "razon_social_asociada": "CEIBA",
+    "precio_referencia": "$5.8 MDP - $6.5 MDP",
+    "objetivo_inversion": "Vivir",
+    "match_score": 96,
+    "consentimiento_nom247": true,
+    "utm_source": "google_search",
+    "utm_medium": "cpc",
+    "utm_campaign": "mayakoba_bosques_high_intent",
+    "ip_address": "189.217.45.12",
+    "timestamp_utc": "2026-09-17T15:20:00Z",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
+  }
+}

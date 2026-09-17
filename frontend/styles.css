@@ -1,0 +1,133 @@
+/* Estilos Complementarios de Alta Conversión (CRO) - Especialista en Ciudad Mayakoba */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap');
+
+:root {
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --mayakoba-green: #0d382d;
+  --mayakoba-dark: #071f19;
+  --mayakoba-gold: #c59b48;
+  --mayakoba-gold-light: #e5be70;
+  --mayakoba-emerald: #10b981;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: #1e293b;
+  background-color: #f8fafc;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+/* Glassmorphism & Luxury Cards */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.glass-dark {
+  background: rgba(7, 31, 25, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(197, 155, 72, 0.25);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #dfb66b 0%, #c59b48 50%, #9e7529 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-bg {
+  background: linear-gradient(135deg, #e5be70 0%, #c59b48 50%, #b0842d 100%);
+}
+
+.gold-gradient-bg:hover {
+  background: linear-gradient(135deg, #ebd193 0%, #d4a754 50%, #bf9237 100%);
+}
+
+/* Quiz Option Card States */
+.quiz-option-card {
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 2px solid #e2e8f0;
+}
+
+.quiz-option-card:hover {
+  border-color: #c59b48;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px rgba(197, 155, 72, 0.15);
+}
+
+.quiz-option-card.selected {
+  border-color: #0d382d;
+  background-color: #f0fdf4;
+  box-shadow: 0 12px 25px -4px rgba(13, 56, 45, 0.2);
+}
+
+.quiz-option-card.selected .check-circle {
+  border-color: #0d382d;
+  background-color: #0d382d;
+  color: white;
+}
+
+/* Floating Elements & Micro-Interactions */
+.pulse-radar {
+  box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  animation: radar-pulse 2s infinite;
+}
+
+@keyframes radar-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+/* Custom Scrollbar for Smooth Showcase */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Hero Background Blend */
+.hero-bg-overlay {
+  background: linear-gradient(180deg, rgba(7, 31, 25, 0.85) 0%, rgba(13, 56, 45, 0.92) 100%);
+}
+
+/* Step transition animations */
+.step-fade-in {
+  animation: fadeInUp 0.35s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
