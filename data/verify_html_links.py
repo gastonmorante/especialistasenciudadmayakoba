@@ -7,7 +7,7 @@ def check_html(path, base_dir):
 
     srcs = re.findall(r'src=[\x22\x27]([^\x22\x27]+)[\x22\x27]', content)
     hrefs = re.findall(r'href=[\x22\x27]([^\x22\x27]+)[\x22\x27]', content)
-    local_refs = sorted(set([r for r in (srcs + hrefs) if not r.startswith('http') and not r.startswith('#') and not r.startswith('data:')]))
+    local_refs = sorted(set([r for r in (srcs + hrefs) if not r.startswith('http') and not r.startswith('#') and not r.startswith('data:') and not r.startswith('tel:') and not r.startswith('mailto:')]))
     
     print(f"=== Verificando {path} ({len(local_refs)} referencias locales) ===")
     missing = []

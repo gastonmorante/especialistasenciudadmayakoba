@@ -6,8 +6,39 @@
     <title>Especialista en Ciudad Mayakoba | Asesoría Inmobiliaria Certificada Riviera Maya</title>
     <meta name="description" content="Asesoría patrimonial independiente en Ciudad Mayakoba. Accede al inventario oficial de Bosques, Jardines, Senderos, Country Club y The Reserve con certeza jurídica NOM-247 y cero comisión al comprador.">
     <link rel="icon" type="image/webp" href="../Imagenes_Descargadas/logo.webp">
+    
+    <!-- Google Fonts Preconnect & Stylesheet -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'Georgia', 'serif'],
+                        luxury: ['Cinzel', 'Georgia', 'serif']
+                    },
+                    colors: {
+                        mayakoba: {
+                            deep: '#021812',
+                            forest: '#064e3b',
+                            emerald: '#047857',
+                            accent: '#10b981',
+                            gold: '#c59b48',
+                            goldLight: '#e5be70',
+                            goldDark: '#9e7529'
+                        }
+                    }
+                }
+            }
+        };
+    </script>
+    
     <!-- FontAwesome 6 CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Estilos de Lujo y Microinteracciones -->
@@ -16,42 +47,94 @@
 <body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-emerald-100 selection:text-emerald-900">
 
     <!-- TOPBAR DE TRANSPARENCIA, NOM-247 & CONTACTO DIRECTO -->
-    <div class="bg-slate-950 text-slate-400 text-xs py-2 px-4 border-b border-emerald-900/40">
-        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
-            <div class="flex items-center gap-2 text-[11px] sm:text-xs">
-                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
-                <span class="font-semibold text-emerald-300">Asesoría Patrimonial Independiente Certificada</span>
-                <span class="text-slate-600">|</span>
-                <span>Contratos Adheridos ante PROFECO & NOM-247-SE-2021</span>
+    <div class="bg-[#021812] text-slate-300 text-xs py-2.5 px-4 border-b border-emerald-900/60 relative z-50">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
+            <div class="flex flex-wrap items-center justify-center md:justify-start gap-2 sm:gap-3 text-[11px] sm:text-xs text-center md:text-left">
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-950 border border-emerald-500/30 text-emerald-400 font-semibold">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                    Asesoría Patrimonial Certificada
+                </span>
+                <span class="hidden sm:inline text-emerald-800">•</span>
+                <span class="text-slate-300 font-medium">0% Comisión al Comprador</span>
+                <span class="hidden sm:inline text-emerald-800">•</span>
+                <span class="text-slate-400">NOM-247-SE-2021 & Contratos PROFECO</span>
             </div>
-            <div class="flex items-center gap-4 text-[11px] text-slate-400">
-                <span><i class="fa-solid fa-phone text-emerald-400 mr-1"></i> +52 1 984 104 7963</span>
-                <span><i class="fa-solid fa-location-dot text-emerald-400 mr-1"></i> Playa del Carmen, Riviera Maya</span>
+            <div class="flex items-center gap-4 text-[11px] sm:text-xs">
+                <a href="https://wa.me/5219841047963?text=Hola%2C%20deseo%20asesor%C3%ADa%20personalizada%20sobre%20Ciudad%20Mayakoba" target="_blank" class="text-emerald-400 hover:text-emerald-300 font-semibold transition flex items-center gap-1.5">
+                    <i class="fa-brands fa-whatsapp text-sm text-emerald-400"></i> +52 1 984 104 7963
+                </a>
+                <span class="hidden lg:inline text-emerald-800">|</span>
+                <span class="hidden lg:flex items-center gap-1.5 text-slate-400">
+                    <i class="fa-solid fa-location-dot text-emerald-400"></i> Playa del Carmen, Riviera Maya
+                </span>
             </div>
         </div>
     </div>
 
     <!-- HEADER / NAVBAR CON IDENTIDAD PROPIA & LOGO OFICIAL -->
-    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm">
+    <header class="sticky top-0 z-50 glass-header transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <a href="#" class="flex items-center space-x-3 group">
-                <img src="../Imagenes_Descargadas/logo.svg" alt="Ciudad Mayakoba" class="h-10 sm:h-12 w-auto object-contain transition-transform group-hover:scale-105" onerror="this.src='../Imagenes_Descargadas/logo.webp'">
-                <div class="border-l border-slate-300 pl-3">
-                    <span class="block font-extrabold text-slate-900 leading-tight text-sm sm:text-base tracking-tight">Especialista Independiente</span>
-                    <span class="text-[10px] sm:text-xs text-emerald-700 font-bold uppercase tracking-wider block">Riviera Maya • 0% Comisión</span>
+            <!-- Brand Lockup -->
+            <a href="#" class="flex items-center space-x-3 sm:space-x-4 group shrink-0">
+                <img src="../Imagenes_Descargadas/logo.webp" alt="Ciudad Mayakoba" class="h-10 sm:h-11 w-auto object-contain transition-transform duration-300 group-hover:scale-105">
+                <div class="hidden sm:block h-8 w-[1px] bg-slate-300/80"></div>
+                <div class="leading-tight">
+                    <span class="block font-bold text-slate-900 text-xs sm:text-[13.5px] tracking-[0.06em] uppercase whitespace-nowrap">
+                        Especialista en Ciudad Mayakoba
+                    </span>
+                    <span class="block text-[10px] sm:text-[11px] text-emerald-700 font-semibold tracking-wider uppercase whitespace-nowrap">
+                        Asesoría Imparcial • 0% Comisión
+                    </span>
                 </div>
             </a>
-            <nav class="hidden xl:flex space-x-6 text-xs sm:text-sm font-semibold text-slate-600">
-                <a href="#desarrollos" class="hover:text-emerald-700 transition">Desarrollos</a>
-                <a href="#masterplan" class="hover:text-emerald-700 transition">Masterplan</a>
-                <a href="#macro-amenidades" class="hover:text-emerald-700 transition">Macro-Amenidades</a>
-                <a href="#amenidades-catalogo" class="hover:text-emerald-700 transition">21 Amenidades</a>
-                <a href="#expat-hub" class="hover:text-emerald-700 transition">Expat & Inversión</a>
-                <a href="#testimonios" class="hover:text-emerald-700 transition">Reseñas</a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden lg:flex items-center space-x-5 xl:space-x-7 text-xs sm:text-[13.5px] font-semibold text-slate-700">
+                <a href="#desarrollos" class="nav-link hover:text-emerald-800 py-1 transition whitespace-nowrap">Desarrollos</a>
+                <a href="#masterplan" class="nav-link hover:text-emerald-800 py-1 transition whitespace-nowrap">Masterplan</a>
+                <a href="#macro-amenidades" class="nav-link hover:text-emerald-800 py-1 transition whitespace-nowrap">Macro-Amenidades</a>
+                <a href="#amenidades-catalogo" class="nav-link hover:text-emerald-800 py-1 transition whitespace-nowrap">21 Amenidades</a>
+                <a href="#expat-hub" class="nav-link hover:text-emerald-800 py-1 transition whitespace-nowrap">Inversión Expat</a>
+                <a href="#testimonios" class="nav-link hover:text-emerald-800 py-1 transition whitespace-nowrap">Reseñas</a>
             </nav>
-            <div class="flex items-center gap-3">
-                <a href="#quiz-section" class="bg-emerald-700 hover:bg-emerald-800 text-white px-4 sm:px-5 py-2.5 rounded-xl font-bold text-xs sm:text-sm transition shadow-lg shadow-emerald-700/20 flex items-center">
-                    <i class="fa-solid fa-compass mr-2 text-sm"></i> Test de Compatibilidad
+
+            <!-- Actions -->
+            <div class="flex items-center gap-2.5 sm:gap-3">
+                <!-- WhatsApp Quick Pill (Desktop) -->
+                <a href="https://wa.me/5219841047963?text=Hola%2C%20solicito%20asesor%C3%ADa%20personalizada%20sobre%20Ciudad%20Mayakoba" target="_blank" class="hidden xl:inline-flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-bold text-emerald-900 bg-emerald-50 hover:bg-emerald-100 border border-emerald-200/80 transition shadow-sm whitespace-nowrap">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                    <i class="fa-brands fa-whatsapp text-emerald-600 text-sm"></i> WhatsApp
+                </a>
+
+                <!-- Test de Compatibilidad Button -->
+                <a href="#quiz-section" class="btn-luxury bg-gradient-to-r from-emerald-800 to-emerald-700 hover:from-emerald-700 hover:to-emerald-600 text-white px-4 sm:px-5 py-2.5 rounded-xl font-bold text-xs sm:text-sm tracking-wide transition flex items-center gap-2 whitespace-nowrap shadow-md">
+                    <i class="fa-solid fa-compass text-emerald-300"></i>
+                    <span>Test de Compatibilidad</span>
+                </a>
+
+                <!-- Mobile Hamburger Button -->
+                <button id="mobile-menu-btn" type="button" aria-label="Abrir Menú" class="lg:hidden p-2 rounded-xl text-slate-700 hover:bg-slate-100 focus:outline-none transition">
+                    <i id="mobile-menu-icon" class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-200 bg-white/98 backdrop-blur-xl px-4 pt-3 pb-6 space-y-3 shadow-xl">
+            <nav class="flex flex-col space-y-2 text-sm font-semibold text-slate-700">
+                <a href="#desarrollos" class="mobile-nav-link px-3 py-2 rounded-lg hover:bg-emerald-50 hover:text-emerald-800 transition">Desarrollos</a>
+                <a href="#masterplan" class="mobile-nav-link px-3 py-2 rounded-lg hover:bg-emerald-50 hover:text-emerald-800 transition">Masterplan 409 Ha</a>
+                <a href="#macro-amenidades" class="mobile-nav-link px-3 py-2 rounded-lg hover:bg-emerald-50 hover:text-emerald-800 transition">Macro-Amenidades</a>
+                <a href="#amenidades-catalogo" class="mobile-nav-link px-3 py-2 rounded-lg hover:bg-emerald-50 hover:text-emerald-800 transition">Catálogo 21 Amenidades</a>
+                <a href="#expat-hub" class="mobile-nav-link px-3 py-2 rounded-lg hover:bg-emerald-50 hover:text-emerald-800 transition">Inversión Expat & ROI</a>
+                <a href="#testimonios" class="mobile-nav-link px-3 py-2 rounded-lg hover:bg-emerald-50 hover:text-emerald-800 transition">Reseñas Verificadas</a>
+            </nav>
+            <div class="pt-3 border-t border-slate-100 flex flex-col gap-2">
+                <a href="https://wa.me/5219841047963?text=Hola%2C%20solicito%20asesor%C3%ADa%20personalizada%20sobre%20Ciudad%20Mayakoba" target="_blank" class="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs tracking-wide transition shadow">
+                    <i class="fa-brands fa-whatsapp text-base"></i> Contactar por WhatsApp (+52 1 984 104 7963)
+                </a>
+                <a href="tel:+5219841047963" class="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-xs tracking-wide transition">
+                    <i class="fa-solid fa-phone text-emerald-700"></i> Llamar al Asesor Especialista
                 </a>
             </div>
         </div>
@@ -68,65 +151,65 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid lg:grid-cols-12 gap-12 items-center">
             
             <div class="lg:col-span-7 space-y-6">
-                <div class="inline-flex items-center space-x-2 bg-emerald-500/20 border border-emerald-500/40 text-emerald-300 text-xs font-bold px-3.5 py-1.5 rounded-full backdrop-blur-md">
+                <div class="inline-flex items-center space-x-2 bg-emerald-950/80 border border-emerald-500/40 text-emerald-300 text-xs font-semibold px-4 py-1.5 rounded-full backdrop-blur-md shadow-inner">
                     <i class="fa-solid fa-shield-halved text-emerald-400"></i> 
                     <span>Inventario Verificado • Precios Oficiales Directos de Desarrollador</span>
                 </div>
                 
-                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight">
-                    Tu Nuevo Patrimonio o Inversión en <span class="text-emerald-400">Ciudad Mayakoba</span>
+                <h1 class="font-serif text-3xl sm:text-5xl lg:text-[56px] font-normal tracking-tight text-white leading-[1.12]">
+                    El Arte de Vivir e Invertir en <span class="italic font-normal text-emerald-300 block sm:inline">Ciudad Mayakoba</span>
                 </h1>
                 
-                <p class="text-sm sm:text-base text-slate-300 max-w-2xl leading-relaxed">
-                    Compara con total objetividad todo el inventario de <strong class="text-white">Bosques</strong>, <strong class="text-white">Jardines</strong>, <strong class="text-white">Senderos</strong>, <strong class="text-white">Mayakoba Country Club</strong>, <strong class="text-white">Lagunas</strong> y <strong class="text-white">The Reserve</strong>. Asesoría inmobiliaria imparcial, 0% comisión cobrada al comprador y estricta certeza jurídica NOM-247.
+                <p class="text-base sm:text-lg text-slate-200 max-w-2xl leading-relaxed font-sans font-light">
+                    Compara con total objetividad todo el inventario de <strong class="text-white font-semibold">Bosques</strong>, <strong class="text-white font-semibold">Jardines</strong>, <strong class="text-white font-semibold">Senderos</strong>, <strong class="text-white font-semibold">Mayakoba Country Club</strong>, <strong class="text-white font-semibold">Lagunas</strong> y <strong class="text-white font-semibold">The Reserve</strong>. Asesoría inmobiliaria imparcial, 0% comisión cobrada al comprador y estricta certeza jurídica NOM-247.
                 </p>
 
                 <!-- Distintivos de Desarrollos -->
                 <div class="pt-2">
-                    <span class="text-xs uppercase tracking-wider text-slate-400 font-bold block mb-3">Desarrollos del Ecosistema:</span>
-                    <div class="flex flex-wrap items-center gap-3">
-                        <a href="#desarrollos" class="bg-white/10 hover:bg-white/20 border border-white/20 px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-2 transition">
+                    <span class="text-xs uppercase tracking-[0.2em] text-slate-400 font-bold block mb-3">Desarrollos del Ecosistema:</span>
+                    <div class="flex flex-wrap items-center gap-2.5 sm:gap-3">
+                        <a href="#desarrollos" class="bg-white/10 hover:bg-white/20 border border-white/20 px-3.5 py-1.5 rounded-xl text-xs font-semibold flex items-center gap-2 transition backdrop-blur-sm">
                             <img src="../Imagenes_Descargadas/bosques.png" class="h-4 w-auto brightness-200" alt="Bosques"> Bosques
                         </a>
-                        <a href="#desarrollos" class="bg-white/10 hover:bg-white/20 border border-white/20 px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-2 transition">
+                        <a href="#desarrollos" class="bg-white/10 hover:bg-white/20 border border-white/20 px-3.5 py-1.5 rounded-xl text-xs font-semibold flex items-center gap-2 transition backdrop-blur-sm">
                             <img src="../Imagenes_Descargadas/jardines.png" class="h-4 w-auto brightness-200" alt="Jardines"> Jardines
                         </a>
-                        <a href="#desarrollos" class="bg-white/10 hover:bg-white/20 border border-white/20 px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-2 transition">
+                        <a href="#desarrollos" class="bg-white/10 hover:bg-white/20 border border-white/20 px-3.5 py-1.5 rounded-xl text-xs font-semibold flex items-center gap-2 transition backdrop-blur-sm">
                             <img src="../Imagenes_Descargadas/senderos.png" class="h-4 w-auto brightness-200" alt="Senderos"> Senderos
                         </a>
-                        <a href="#desarrollos" class="bg-white/10 hover:bg-white/20 border border-white/20 px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-2 transition">
+                        <a href="#desarrollos" class="bg-white/10 hover:bg-white/20 border border-white/20 px-3.5 py-1.5 rounded-xl text-xs font-semibold flex items-center gap-2 transition backdrop-blur-sm">
                             <img src="../Imagenes_Descargadas/country-club.png" class="h-4 w-auto brightness-200" alt="Country Club"> Country Club
                         </a>
-                        <a href="#desarrollos" class="bg-white/10 hover:bg-white/20 border border-white/20 px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-2 transition">
+                        <a href="#desarrollos" class="bg-white/10 hover:bg-white/20 border border-white/20 px-3.5 py-1.5 rounded-xl text-xs font-semibold flex items-center gap-2 transition backdrop-blur-sm">
                             <img src="../Imagenes_Descargadas/the-reserve.png" class="h-4 w-auto brightness-200" alt="The Reserve"> The Reserve
                         </a>
                     </div>
                 </div>
 
                 <!-- Métricas Clave de Confianza -->
-                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-slate-800">
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-slate-800/80">
                     <div>
-                        <div class="text-2xl sm:text-3xl font-extrabold text-emerald-400 font-mono">+4,000</div>
-                        <div class="text-[11px] text-slate-400 font-medium">Familias e Inversionistas</div>
+                        <div class="text-2xl sm:text-3xl lg:text-4xl font-normal text-emerald-300 font-serif tracking-tight">+4,000</div>
+                        <div class="text-[11px] sm:text-xs text-slate-400 uppercase tracking-wider font-medium mt-0.5">Familias e Inversionistas</div>
                     </div>
                     <div>
-                        <div class="text-2xl sm:text-3xl font-extrabold text-emerald-400 font-mono">+1,000,000 m²</div>
-                        <div class="text-[11px] text-slate-400 font-medium">Áreas Verdes y Selva</div>
+                        <div class="text-2xl sm:text-3xl lg:text-4xl font-normal text-emerald-300 font-serif tracking-tight">+1,000,000 m²</div>
+                        <div class="text-[11px] sm:text-xs text-slate-400 uppercase tracking-wider font-medium mt-0.5">Áreas Verdes y Selva</div>
                     </div>
                     <div>
-                        <div class="text-2xl sm:text-3xl font-extrabold text-emerald-400 font-mono">+16%</div>
-                        <div class="text-[11px] text-slate-400 font-medium">Plusvalía Anual Promedio</div>
+                        <div class="text-2xl sm:text-3xl lg:text-4xl font-normal text-emerald-300 font-serif tracking-tight">+16%</div>
+                        <div class="text-[11px] sm:text-xs text-slate-400 uppercase tracking-wider font-medium mt-0.5">Plusvalía Anual Promedio</div>
                     </div>
                     <div>
-                        <div class="text-2xl sm:text-3xl font-extrabold text-emerald-400 font-mono">0%</div>
-                        <div class="text-[11px] text-slate-400 font-medium">Comisión al Comprador</div>
+                        <div class="text-2xl sm:text-3xl lg:text-4xl font-normal text-emerald-300 font-serif tracking-tight">0%</div>
+                        <div class="text-[11px] sm:text-xs text-slate-400 uppercase tracking-wider font-medium mt-0.5">Comisión al Comprador</div>
                     </div>
                 </div>
 
                 <div class="pt-2 flex flex-wrap items-center gap-4 text-xs text-slate-400">
-                    <span><i class="fa-solid fa-check text-emerald-400 mr-1"></i> Precios Oficiales de Lista</span>
-                    <span><i class="fa-solid fa-check text-emerald-400 mr-1"></i> Asesoría Imparcial</span>
-                    <span><i class="fa-solid fa-check text-emerald-400 mr-1"></i> Respaldo NOM-247</span>
+                    <span class="flex items-center"><i class="fa-solid fa-check text-emerald-400 mr-1.5"></i> Precios Oficiales de Lista</span>
+                    <span class="flex items-center"><i class="fa-solid fa-check text-emerald-400 mr-1.5"></i> Asesoría Imparcial</span>
+                    <span class="flex items-center"><i class="fa-solid fa-check text-emerald-400 mr-1.5"></i> Respaldo NOM-247</span>
                 </div>
             </div>
 
@@ -378,11 +461,11 @@
     <section id="autoridad" class="py-20 bg-white border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
-                <span class="text-xs font-extrabold uppercase tracking-widest text-emerald-700">Garantía & Transparencia</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-                    ¿Por Qué Comprar a Través de un Especialista Independiente?
+                <span class="text-xs font-bold uppercase tracking-[0.25em] text-emerald-700 block">Garantía & Transparencia</span>
+                <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-normal text-slate-900 tracking-tight">
+                    ¿Por Qué Comprar a Través de un <span class="italic text-emerald-800">Especialista Independiente</span>?
                 </h2>
-                <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
+                <p class="text-base sm:text-lg text-slate-600 leading-relaxed font-light">
                     Un asesor independiente no responde a la cuota de ventas de una sola constructora: analiza tu perfil patrimonial con total imparcialidad para asegurar tu dinero en el proyecto que realmente te conviene.
                 </p>
             </div>
@@ -437,12 +520,12 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-16">
             
             <div class="text-center max-w-3xl mx-auto space-y-3">
-                <span class="text-xs font-extrabold uppercase tracking-widest text-emerald-400">Plan Maestro Integral</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">
-                    Infraestructura Urbana de Primer Mundo en la Riviera Maya
+                <span class="text-xs font-bold uppercase tracking-[0.25em] text-emerald-400 block">Plan Maestro 409 Hectáreas</span>
+                <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-normal tracking-tight text-white">
+                    Infraestructura Urbana & <span class="italic text-emerald-300">Conectividad de Primer Mundo</span>
                 </h2>
-                <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
-                    Una comunidad integralmente planeada de más de 400 hectáreas donde la arquitectura y el confort coexisten en equilibrio con la selva tropical nativa.
+                <p class="text-base sm:text-lg text-slate-300 leading-relaxed font-light">
+                    Una comunidad integralmente planeada de más de 400 hectáreas donde la arquitectura y el confort coexisten en perfecto equilibrio con la selva tropical nativa.
                 </p>
             </div>
 
@@ -508,17 +591,17 @@
             <!-- Conectividad y Distancias Estratégicas -->
             <div class="bg-emerald-950/60 border border-emerald-800/60 rounded-3xl p-8 grid md:grid-cols-3 gap-8 text-center">
                 <div class="space-y-2">
-                    <div class="text-3xl font-extrabold text-emerald-400 font-mono">10 min (6 km)</div>
+                    <div class="text-3xl font-extrabold text-emerald-400 font-serif">10 min (6 km)</div>
                     <h4 class="text-sm font-bold text-white">Playa del Carmen & 5ta Avenida</h4>
                     <p class="text-xs text-slate-400">Restaurantes de clase mundial, vida nocturna y clubes de playa.</p>
                 </div>
                 <div class="space-y-2 border-y md:border-y-0 md:border-x border-emerald-800/60 py-4 md:py-0">
-                    <div class="text-3xl font-extrabold text-emerald-400 font-mono">35 min (50 km)</div>
+                    <div class="text-3xl font-extrabold text-emerald-400 font-serif">35 min (50 km)</div>
                     <h4 class="text-sm font-bold text-white">Aeropuerto Cancún (CUN)</h4>
                     <p class="text-xs text-slate-400">Conexión internacional directa con más de 120 ciudades del mundo.</p>
                 </div>
                 <div class="space-y-2">
-                    <div class="text-3xl font-extrabold text-emerald-400 font-mono">45 min (65 km)</div>
+                    <div class="text-3xl font-extrabold text-emerald-400 font-serif">45 min (65 km)</div>
                     <h4 class="text-sm font-bold text-white">Tulum & Zona Arqueológica</h4>
                     <p class="text-xs text-slate-400">Acceso expedito por autopista federal hacia la costa sur del Caribe.</p>
                 </div>
@@ -532,11 +615,11 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
             
             <div class="text-center max-w-3xl mx-auto space-y-3">
-                <span class="text-xs font-extrabold uppercase tracking-widest text-emerald-700">Equipamiento de Nivel Internacional</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-                    Las 4 Macro-Amenidades de Ciudad Mayakoba
+                <span class="text-xs font-bold uppercase tracking-[0.25em] text-emerald-700 block">Ecosistema de Clase Mundial</span>
+                <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-normal text-slate-900 tracking-tight">
+                    Las 4 <span class="italic text-emerald-800">Macro-Amenidades</span> de Ciudad Mayakoba
                 </h2>
-                <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
+                <p class="text-base sm:text-lg text-slate-600 leading-relaxed font-light">
                     Más allá de las amenidades de cada privada, Ciudad Mayakoba ofrece un ecosistema de servicios de clase mundial que maximizan el estilo de vida y la plusvalía inmobiliaria.
                 </p>
             </div>
@@ -657,21 +740,21 @@
             
             <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
                 <div class="space-y-3">
-                    <span class="text-xs font-extrabold uppercase tracking-widest text-emerald-700">Inventario Oficial Actualizado</span>
-                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-                        Catálogo de Desarrollos en Ciudad Mayakoba
+                    <span class="text-xs font-bold uppercase tracking-[0.25em] text-emerald-700 block">Inventario Oficial Actualizado</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-normal text-slate-900 tracking-tight">
+                        Catálogo de <span class="italic text-emerald-800">Desarrollos Residenciales</span>
                     </h2>
-                    <p class="text-xs sm:text-sm text-slate-500">
-                        Precios de lista vigentes normalizados en pesos mexicanos (MXN) con desglose de razón social y tipologías.
+                    <p class="text-base sm:text-lg text-slate-600 font-light max-w-2xl">
+                        Precios de lista vigentes directos de desarrollador en pesos mexicanos (MXN) con certeza jurídica NOM-247.
                     </p>
                 </div>
 
                 <!-- Tabs de Filtro de Proyectos -->
                 <div class="flex flex-wrap gap-2">
-                    <button onclick="filterProjects('all')" class="filter-tab-btn px-4 py-2 rounded-xl text-xs font-bold bg-emerald-700 text-white transition shadow-sm" data-category="all">Todos (6)</button>
-                    <button onclick="filterProjects('vivienda')" class="filter-tab-btn px-4 py-2 rounded-xl text-xs font-bold bg-slate-100 text-slate-600 hover:bg-slate-200 transition" data-category="vivienda">Departamentos & Casas</button>
-                    <button onclick="filterProjects('lotes')" class="filter-tab-btn px-4 py-2 rounded-xl text-xs font-bold bg-slate-100 text-slate-600 hover:bg-slate-200 transition" data-category="lotes">Lotes Residenciales</button>
-                    <button onclick="filterProjects('lujo')" class="filter-tab-btn px-4 py-2 rounded-xl text-xs font-bold bg-slate-100 text-slate-600 hover:bg-slate-200 transition" data-category="lujo">Ultra-Lujo</button>
+                    <button onclick="filterProjects('all')" class="filter-tab-btn btn-luxury px-4 py-2.5 rounded-xl text-xs font-bold bg-emerald-700 text-white transition shadow-sm" data-category="all">Todos (6)</button>
+                    <button onclick="filterProjects('vivienda')" class="filter-tab-btn px-4 py-2.5 rounded-xl text-xs font-bold bg-slate-100 text-slate-600 hover:bg-slate-200 transition" data-category="vivienda">Departamentos & Casas</button>
+                    <button onclick="filterProjects('lotes')" class="filter-tab-btn px-4 py-2.5 rounded-xl text-xs font-bold bg-slate-100 text-slate-600 hover:bg-slate-200 transition" data-category="lotes">Lotes Residenciales</button>
+                    <button onclick="filterProjects('lujo')" class="filter-tab-btn px-4 py-2.5 rounded-xl text-xs font-bold bg-slate-100 text-slate-600 hover:bg-slate-200 transition" data-category="lujo">Ultra-Lujo</button>
                 </div>
             </div>
 
@@ -994,11 +1077,11 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
             
             <div class="text-center max-w-3xl mx-auto space-y-3">
-                <span class="text-xs font-extrabold uppercase tracking-widest text-emerald-700">Equipamiento Exclusivo</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-                    Catálogo de 21 Amenidades Integradas
+                <span class="text-xs font-bold uppercase tracking-[0.25em] text-emerald-700 block">Equipamiento Exclusivo</span>
+                <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-normal text-slate-900 tracking-tight">
+                    Catálogo de <span class="italic text-emerald-800">21 Amenidades Integradas</span>
                 </h2>
-                <p class="text-sm text-slate-600 leading-relaxed">
+                <p class="text-base sm:text-lg text-slate-600 leading-relaxed font-light">
                     Diseñadas para promover el bienestar, el deporte de alto rendimiento y la convivencia familiar en un entorno biofílico seguro.
                 </p>
             </div>
@@ -1141,11 +1224,11 @@
             
             <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
                 <div class="space-y-3">
-                    <span class="text-xs font-extrabold uppercase tracking-widest text-emerald-400">International Buyers Desk</span>
-                    <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">
-                        Certeza Jurídica para Inversionistas Nacionales y Extranjeros
+                    <span class="text-xs font-bold uppercase tracking-[0.25em] text-emerald-400 block">International Buyers Desk</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-normal tracking-tight text-white">
+                        Certeza Jurídica para Inversionistas <span class="italic text-emerald-300">Nacionales y Extranjeros</span>
                     </h2>
-                    <p class="text-xs sm:text-sm text-slate-300 max-w-2xl leading-relaxed">
+                    <p class="text-base sm:text-lg text-slate-300 max-w-2xl leading-relaxed font-light">
                         Acompañamiento especializado en fideicomisos bancarios (Bank Trust), contratos bilingües y optimización fiscal para compradores de EE.UU., Canadá y el mundo.
                     </p>
                 </div>
@@ -1247,14 +1330,14 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid lg:grid-cols-12 gap-12 items-center">
             
             <div class="lg:col-span-6 space-y-6">
-                <span class="bg-emerald-800 text-emerald-300 border border-emerald-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                <span class="bg-emerald-950 text-emerald-300 border border-emerald-500/40 text-xs font-bold px-3.5 py-1.5 rounded-full uppercase tracking-[0.2em] shadow-inner">
                     Financiamiento Patrimonial
                 </span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">
-                    Precalifica tu Crédito Hipotecario en 3 Sencillos Pasos
+                <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-normal tracking-tight text-white">
+                    Precalifica tu Crédito Hipotecario en <span class="italic text-emerald-200">3 Sencillos Pasos</span>
                 </h2>
-                <p class="text-sm sm:text-base text-emerald-100 leading-relaxed">
-                    Descarga gratis nuestra <strong class="text-white">Guía Práctica de Financiamiento e Inversión</strong>. Diseñada para ayudarte a calcular mensualidades, amortizaciones y conseguir la tasa de interés más baja del mercado sin costo adicional.
+                <p class="text-base sm:text-lg text-emerald-100 leading-relaxed font-light">
+                    Descarga gratis nuestra <strong class="text-white font-semibold">Guía Práctica de Financiamiento e Inversión</strong>. Diseñada para ayudarte a calcular mensualidades, amortizaciones y conseguir la tasa de interés más baja del mercado sin costo adicional.
                 </p>
 
                 <div class="space-y-4 text-xs sm:text-sm text-emerald-100">
@@ -1302,11 +1385,11 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
             
             <div class="text-center max-w-3xl mx-auto space-y-3">
-                <span class="text-xs font-extrabold uppercase tracking-widest text-emerald-700">Comunidad & Experiencias</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-                    ¿Qué Opinan Compradores y Residentes?
+                <span class="text-xs font-bold uppercase tracking-[0.25em] text-emerald-700 block">Comunidad & Experiencias</span>
+                <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-normal text-slate-900 tracking-tight">
+                    ¿Qué Opinan <span class="italic text-emerald-800">Compradores y Residentes</span>?
                 </h2>
-                <p class="text-sm text-slate-600">
+                <p class="text-base sm:text-lg text-slate-600 font-light">
                     Opiniones verificadas de Local Guides y propietarios en Ciudad Mayakoba, Playa del Carmen.
                 </p>
             </div>
@@ -1438,30 +1521,34 @@
         </div>
     </section>
 
-    <!-- FOOTER LEGAL NOM-247-SE-2021 & REPOSITORIO DE LOS 11 PDFS -->
-    <footer id="footer-legal" class="bg-slate-950 text-slate-400 py-16 border-t border-slate-800 text-xs leading-relaxed">
+    <!-- FOOTER LEGAL NOM-247-SE-2021 -->
+    <footer id="footer-legal" class="bg-[#021812] text-slate-400 py-16 border-t border-emerald-950 text-xs leading-relaxed">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
             
-            <div class="flex flex-col md:flex-row justify-between items-start md:items-center pb-8 border-b border-slate-800 gap-6">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center pb-8 border-b border-emerald-900/60 gap-6">
                 <div class="flex items-center gap-3">
-                    <img src="../Imagenes_Descargadas/logo-footer.svg" alt="Ciudad Mayakoba Footer" class="h-10 w-auto brightness-200" onerror="this.src='../Imagenes_Descargadas/logo-white.webp'">
-                    <div class="border-l border-slate-700 pl-3">
-                        <span class="text-white font-bold text-sm block">Especialista en Ciudad Mayakoba</span>
-                        <span class="text-slate-400 text-[11px]">Consultoría Patrimonial Independiente • Riviera Maya</span>
+                    <img src="../Imagenes_Descargadas/logo-white.webp" alt="Ciudad Mayakoba Footer" class="h-10 w-auto object-contain">
+                    <div class="border-l border-emerald-800/80 pl-3">
+                        <span class="text-white font-bold text-sm block tracking-wide font-sans">Especialista en Ciudad Mayakoba</span>
+                        <span class="text-slate-400 text-[11px]">Asesoría Patrimonial Imparcial • Riviera Maya • 0% Comisión</span>
                     </div>
                 </div>
-                <div class="flex flex-wrap gap-4 text-xs font-medium text-slate-400">
+                <div class="flex flex-wrap items-center gap-4 sm:gap-6 text-xs font-medium text-slate-300">
                     <a href="#desarrollos" class="hover:text-emerald-400 transition">Desarrollos</a>
                     <a href="#masterplan" class="hover:text-emerald-400 transition">Masterplan</a>
                     <a href="#macro-amenidades" class="hover:text-emerald-400 transition">Macro-Amenidades</a>
-                    <a href="#quiz-section" class="hover:text-emerald-400 transition">Test de Compatibilidad</a>
+                    <a href="#amenidades-catalogo" class="hover:text-emerald-400 transition">21 Amenidades</a>
+                    <a href="#expat-hub" class="hover:text-emerald-400 transition">Inversión Expat</a>
+                    <a href="#testimonios" class="hover:text-emerald-400 transition">Reseñas</a>
+                    <a href="https://wa.me/5219841047963?text=Hola%2C%20deseo%20asesor%C3%ADa%20personalizada%20sobre%20Ciudad%20Mayakoba" target="_blank" class="text-emerald-400 hover:text-emerald-300 font-bold flex items-center gap-1.5 transition">
+                        <i class="fa-brands fa-whatsapp text-sm"></i> +52 1 984 104 7963
+                    </a>
                 </div>
             </div>
 
-
-            <div class="flex flex-col sm:flex-row justify-between items-center text-slate-500 text-[11px] pt-4 border-t border-slate-900">
-                <p>© 2026 Especialista en Ciudad Mayakoba. Asesoría inmobiliaria patrimonial certificada.</p>
-                <p class="mt-2 sm:mt-0">Ecosistema digital comercial de alta conversión para la Riviera Maya.</p>
+            <div class="flex flex-col sm:flex-row justify-between items-center text-slate-400 text-[11px] pt-4 border-t border-emerald-950/80">
+                <p>© 2026 Especialista en Ciudad Mayakoba. Asesoría inmobiliaria patrimonial certificada bajo la NOM-247-SE-2021.</p>
+                <p class="mt-2 sm:mt-0 text-slate-400">Playa del Carmen, Quintana Roo, México.</p>
             </div>
         </div>
     </footer>

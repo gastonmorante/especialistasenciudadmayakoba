@@ -439,4 +439,30 @@ document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') closeLightbox();
   });
+
+  // Mobile menu drawer toggle
+  const mobileBtn = document.getElementById('mobile-menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const mobileIcon = document.getElementById('mobile-menu-icon');
+
+  if (mobileBtn && mobileMenu) {
+    mobileBtn.addEventListener('click', () => {
+      const isHidden = mobileMenu.classList.contains('hidden');
+      if (isHidden) {
+        mobileMenu.classList.remove('hidden');
+        if (mobileIcon) mobileIcon.className = 'fa-solid fa-xmark text-xl';
+      } else {
+        mobileMenu.classList.add('hidden');
+        if (mobileIcon) mobileIcon.className = 'fa-solid fa-bars text-xl';
+      }
+    });
+
+    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        if (mobileIcon) mobileIcon.className = 'fa-solid fa-bars text-xl';
+      });
+    });
+  }
 });
+
