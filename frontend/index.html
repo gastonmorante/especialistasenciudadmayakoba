@@ -2,7 +2,10 @@
 <html lang="es" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+    <meta name="theme-color" content="#021812">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <title>Especialista en Ciudad Mayakoba | Asesoría Inmobiliaria Certificada Riviera Maya</title>
     <meta name="description" content="Asesoría patrimonial independiente en Ciudad Mayakoba. Accede al inventario oficial de Bosques, Jardines, Senderos, Country Club y The Reserve con certeza jurídica NOM-247 y cero comisión al comprador.">
     <link rel="icon" type="image/webp" href="../Imagenes_Descargadas/logo.webp">
@@ -47,21 +50,20 @@
 <body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-emerald-100 selection:text-emerald-900">
 
     <!-- TOPBAR DE TRANSPARENCIA, NOM-247 & CONTACTO DIRECTO -->
-    <div class="bg-[#021812] text-slate-300 text-xs py-2 px-4 border-b border-emerald-900/60 relative z-50">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
-            <div class="flex flex-wrap items-center justify-center md:justify-start gap-2 sm:gap-3 text-[11px] sm:text-xs text-center md:text-left">
-                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-950 border border-emerald-500/30 text-emerald-400 font-semibold">
+    <div class="bg-[#021812] text-slate-300 text-xs py-1.5 sm:py-2 px-3 sm:px-4 border-b border-emerald-900/60 relative z-50">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-1 sm:gap-2">
+            <div class="flex flex-wrap items-center justify-center sm:justify-start gap-1.5 sm:gap-3 text-[10px] sm:text-xs text-center sm:text-left">
+                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-emerald-950 border border-emerald-500/30 text-emerald-400 font-semibold">
                     <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-                    Asesoría Certificada • Lic. Julio Chacón
+                    Lic. Julio Chacón
                 </span>
-                <span class="hidden sm:inline text-emerald-800">•</span>
-                <span class="text-slate-300 font-medium">0% Comisión al Comprador</span>
-                <span class="hidden sm:inline text-emerald-800">•</span>
-                <span class="text-slate-400">NOM-247-SE-2021 & Contratos PROFECO</span>
+                <span class="text-slate-300 font-medium">0% Comisión</span>
+                <span class="hidden md:inline text-emerald-800">•</span>
+                <span class="hidden md:inline text-slate-400">NOM-247-SE-2021 & Contratos PROFECO</span>
             </div>
-            <div class="flex items-center gap-4 text-[11px] sm:text-xs">
-                <a href="https://wa.me/5219841047963?text=Hola%20Julio%20Chac%C3%B3n%2C%20deseo%20asesor%C3%ADa%20personalizada%20sobre%20Ciudad%20Mayakoba" target="_blank" class="text-emerald-400 hover:text-emerald-300 font-semibold transition flex items-center gap-1.5">
-                    <i class="fa-brands fa-whatsapp text-sm text-emerald-400"></i> +52 1 984 104 7963
+            <div class="flex items-center gap-3 text-[10px] sm:text-xs">
+                <a href="https://wa.me/5219841047963?text=Hola%20Julio%20Chac%C3%B3n%2C%20deseo%20asesor%C3%ADa%20personalizada%20sobre%20Ciudad%20Mayakoba" target="_blank" class="text-emerald-400 hover:text-emerald-300 font-semibold transition flex items-center gap-1">
+                    <i class="fa-brands fa-whatsapp text-xs sm:text-sm text-emerald-400"></i> +52 1 984 104 7963
                 </a>
                 <span class="hidden lg:inline text-emerald-800">|</span>
                 <span class="hidden lg:flex items-center gap-1.5 text-slate-400">
@@ -73,23 +75,14 @@
 
     <!-- HEADER / NAVBAR CON IDENTIDAD PROPIA, LOGO OFICIAL & ASESOR EXPERTO -->
     <header class="sticky top-0 z-50 glass-header transition-all duration-300">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
-            <!-- Brand Lockup -->
-            <a href="#" class="flex items-center space-x-3 sm:space-x-3.5 group shrink-0">
-                <img src="../Imagenes_Descargadas/logo.webp" alt="Ciudad Mayakoba" class="h-10 sm:h-11 w-auto object-contain transition-transform duration-300 group-hover:scale-105">
-                <div class="hidden sm:block h-8 w-[1px] bg-slate-300/80"></div>
-                <div class="leading-tight">
-                    <span class="block font-bold text-slate-900 text-xs sm:text-[13.5px] tracking-[0.06em] uppercase whitespace-nowrap">
-                        Especialista en Ciudad Mayakoba
-                    </span>
-                    <span class="block text-[10px] sm:text-[11px] text-emerald-700 font-semibold tracking-wider uppercase whitespace-nowrap">
-                        Asesoría Imparcial • 0% Comisión
-                    </span>
-                </div>
+        <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between gap-2 sm:gap-4">
+            <!-- Brand Lockup: Logotipo Puro Oficial -->
+            <a href="#" class="flex items-center group shrink-0 transition-opacity hover:opacity-95" title="Ciudad Mayakoba - Asesoría Patrimonial">
+                <img src="../Imagenes_Descargadas/logo.webp" alt="Ciudad Mayakoba" class="h-8 sm:h-11 lg:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105 drop-shadow-sm">
             </a>
 
             <!-- Desktop Navigation -->
-            <nav class="hidden xl:flex items-center space-x-6 2xl:space-x-7 text-[13.5px] font-semibold text-slate-700">
+            <nav class="hidden lg:flex items-center space-x-6 xl:space-x-8 text-[13.5px] font-semibold text-slate-700">
                 <a href="#desarrollos" class="nav-link hover:text-emerald-800 py-1 transition whitespace-nowrap">Desarrollos</a>
                 <a href="#masterplan" class="nav-link hover:text-emerald-800 py-1 transition whitespace-nowrap">Masterplan</a>
                 <a href="#macro-amenidades" class="nav-link hover:text-emerald-800 py-1 transition whitespace-nowrap">Macro-Amenidades</a>
@@ -98,37 +91,37 @@
                 <a href="#testimonios" class="nav-link hover:text-emerald-800 py-1 transition whitespace-nowrap">Reseñas</a>
             </nav>
 
-            <!-- Actions: Asesor Experto Julio Chacón CTA -->
-            <div class="flex items-center gap-2.5 sm:gap-3">
+            <!-- Actions: Asesor Experto Julio Chacón CTA & Hamburger -->
+            <div class="flex items-center gap-1.5 sm:gap-3 shrink-0">
                 <!-- Tarjeta / Botón Interactivo de Julio Chacón -->
-                <a href="https://wa.me/5219841047963?text=Hola%20Julio%20Chac%C3%B3n%2C%20solicito%20asesor%C3%ADa%20personalizada%20sobre%20el%20inventario%20de%20Ciudad%20Mayakoba." target="_blank" class="group flex items-center gap-2.5 sm:gap-3 pl-1.5 pr-3 sm:pr-4 py-1.5 rounded-full bg-slate-50 hover:bg-emerald-50/90 border border-slate-200/90 hover:border-emerald-400 transition-all duration-300 shadow-sm hover:shadow-md shrink-0" title="Contactar al Asesor Experto Julio Chacón por WhatsApp">
-                    <div class="relative">
-                        <img src="../Imagenes_Descargadas/julio-chacon.jpg" alt="Julio Chacón - Asesor Experto Ciudad Mayakoba" class="w-9 h-9 sm:w-10 sm:h-10 rounded-full object-cover border-2 border-emerald-600 shadow-sm transition-transform duration-300 group-hover:scale-105">
-                        <span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-emerald-500 border-2 border-white ring-1 ring-emerald-400"></span>
+                <a href="https://wa.me/5219841047963?text=Hola%20Julio%20Chac%C3%B3n%2C%20solicito%20asesor%C3%ADa%20personalizada%20sobre%20el%20inventario%20de%20Ciudad%20Mayakoba." target="_blank" class="group flex items-center gap-1.5 sm:gap-3 pl-1 pr-2.5 sm:pr-4 py-1 sm:py-1.5 rounded-full bg-slate-50 hover:bg-emerald-50/90 border border-slate-200/90 hover:border-emerald-400 transition-all duration-300 shadow-sm hover:shadow-md shrink-0" title="Contactar al Asesor Experto Julio Chacón por WhatsApp">
+                    <div class="relative flex-shrink-0">
+                        <img src="../Imagenes_Descargadas/julio-chacon.jpg" alt="Julio Chacón - Asesor Experto Ciudad Mayakoba" class="w-7 h-7 sm:w-10 sm:h-10 rounded-full object-cover border-2 border-emerald-600 shadow-sm transition-transform duration-300 group-hover:scale-105">
+                        <span class="absolute bottom-0 right-0 w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-emerald-500 border-2 border-white ring-1 ring-emerald-400"></span>
                     </div>
                     <div class="text-left leading-tight hidden sm:block">
                         <div class="flex items-center gap-1.5">
-                            <span class="text-xs sm:text-[13px] font-bold text-slate-900 group-hover:text-emerald-900 transition-colors whitespace-nowrap">Julio Chacón</span>
-                            <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-ping"></span>
+                            <span class="text-xs sm:text-[13px] font-bold text-slate-900 group-hover:text-emerald-900 transition-colors whitespace-nowrap">Lic. Julio Chacón</span>
+                            <i class="fa-solid fa-circle-check text-emerald-600 text-xs" title="Asesor Verificado"></i>
                         </div>
                         <span class="text-[10px] sm:text-[11px] text-emerald-700 font-semibold tracking-wide uppercase whitespace-nowrap flex items-center gap-1">
                             <i class="fa-brands fa-whatsapp text-emerald-600"></i> Asesor Experto
                         </span>
                     </div>
-                    <span class="sm:hidden px-2 py-1 rounded-lg bg-emerald-600 text-white text-[11px] font-bold flex items-center gap-1">
-                        <i class="fa-brands fa-whatsapp"></i> Chat
+                    <span class="sm:hidden text-[11px] font-bold text-emerald-700 flex items-center gap-1 pr-0.5">
+                        <i class="fa-brands fa-whatsapp text-emerald-600 text-xs"></i> Asesor
                     </span>
                 </a>
 
                 <!-- Mobile Hamburger Button -->
-                <button id="mobile-menu-btn" type="button" aria-label="Abrir Menú" class="xl:hidden p-2 rounded-xl text-slate-700 hover:bg-slate-100 focus:outline-none transition">
-                    <i id="mobile-menu-icon" class="fa-solid fa-bars text-xl"></i>
+                <button id="mobile-menu-btn" type="button" aria-label="Abrir Menú" class="lg:hidden p-1.5 sm:p-2 rounded-xl text-slate-700 hover:bg-slate-100 focus:outline-none transition shrink-0">
+                    <i id="mobile-menu-icon" class="fa-solid fa-bars text-lg sm:text-xl"></i>
                 </button>
             </div>
         </div>
 
         <!-- Mobile Drawer Menu -->
-        <div id="mobile-menu" class="hidden xl:hidden border-t border-slate-200 bg-white/98 backdrop-blur-xl px-4 pt-3 pb-6 space-y-3 shadow-xl">
+        <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-200 bg-white/98 backdrop-blur-xl px-4 pt-3 pb-6 space-y-3 shadow-xl">
             <!-- Ficha de Asesor en Móvil -->
             <div class="p-3 bg-slate-50 rounded-2xl border border-slate-200 flex items-center gap-3">
                 <img src="../Imagenes_Descargadas/julio-chacon.jpg" alt="Julio Chacón" class="w-12 h-12 rounded-full object-cover border-2 border-emerald-600">
@@ -174,9 +167,9 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid lg:grid-cols-12 gap-12 items-center">
             
             <div class="lg:col-span-7 space-y-6">
-                <div class="inline-flex items-center space-x-2 bg-emerald-950/80 border border-emerald-500/40 text-emerald-300 text-xs font-semibold px-4 py-1.5 rounded-full backdrop-blur-md shadow-inner">
-                    <i class="fa-solid fa-shield-halved text-emerald-400"></i> 
-                    <span>Inventario Verificado • Precios Oficiales Directos de Desarrollador</span>
+                <div class="inline-flex items-center space-x-2 bg-emerald-950/80 border border-emerald-500/40 text-emerald-300 text-[11px] sm:text-xs font-semibold px-3 sm:px-4 py-1.5 rounded-full backdrop-blur-md shadow-inner max-w-full">
+                    <i class="fa-solid fa-shield-halved text-emerald-400 shrink-0"></i> 
+                    <span class="truncate sm:whitespace-normal">Inventario Verificado • Precios Oficiales Directos</span>
                 </div>
                 
                 <h1 class="font-serif text-3xl sm:text-5xl lg:text-[56px] font-normal tracking-tight text-white leading-[1.12]">
@@ -498,9 +491,9 @@
                     </div>
 
                     <div class="space-y-2 text-xs">
-                        <div class="p-3 bg-slate-50 rounded-xl border border-slate-100">
-                            <span class="block text-slate-400 text-[10px] uppercase font-bold">Razón Social Responsable:</span>
-                            <span class="font-bold text-slate-800" id="match-dev-social">La Ceiba DCM, S.A. de C.V. (CEIBA)</span>
+                        <div class="p-3 bg-slate-50 rounded-xl border border-slate-100 flex items-center justify-between">
+                            <span class="text-slate-400 text-[10px] uppercase font-bold">Estatus y Certeza:</span>
+                            <span class="font-semibold text-emerald-800 text-[11px] bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">Inventario Oficial Directo • Respaldo NOM-247</span>
                         </div>
                         <div class="p-3 bg-slate-50 rounded-xl border border-slate-100">
                             <span class="block text-slate-400 text-[10px] uppercase font-bold">Tipologías Recomendadas:</span>
@@ -861,7 +854,6 @@
                                 <h3 class="text-lg font-bold text-slate-900">Bosques de Mayakoba</h3>
                                 <span class="text-xs px-2.5 py-1 rounded-md font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200">✓ Apto Crédito</span>
                             </div>
-                            <p class="text-xs text-slate-500">Razón Social: <strong class="text-slate-800">La Ceiba DCM, S.A. de C.V. (CEIBA)</strong></p>
                             <p class="text-xs text-slate-600 leading-relaxed">
                                 Departamentos premium de 3 recámaras rodeados de 36,000 m² de selva protegida, con alberca semiolímpica y 3 canchas de pádel.
                             </p>
@@ -913,7 +905,6 @@
                                 <h3 class="text-lg font-bold text-slate-900">Jardines de Mayakoba</h3>
                                 <span class="text-xs px-2.5 py-1 rounded-md font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200">✓ Infonavit / Banco</span>
                             </div>
-                            <p class="text-xs text-slate-500">Razón Social: <strong class="text-slate-800">Novaterra Caribe (NTCA) / OPLK</strong></p>
                             <p class="text-xs text-slate-600 leading-relaxed">
                                 El ticket de entrada más accesible del desarrollo. Alta demanda de arrendamiento para residentes y trabajadores de la zona hotelera.
                             </p>
@@ -964,7 +955,6 @@
                                 <h3 class="text-lg font-bold text-slate-900">Senderos & Senderos Poniente</h3>
                                 <span class="text-xs px-2.5 py-1 rounded-md font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200">✓ Apto Crédito</span>
                             </div>
-                            <p class="text-xs text-slate-500">Razón Social: <strong class="text-slate-800">Operadora Lakahn, S.A. de C.V. (OPLK)</strong></p>
                             <p class="text-xs text-slate-600 leading-relaxed">
                                 Lotes residenciales urbanizados con cenote natural privado protegido, casa club, alberca y conexión directa a 5 km de ciclovías.
                             </p>
@@ -1015,7 +1005,6 @@
                                 <h3 class="text-lg font-bold text-slate-900">Mayakoba Country Club</h3>
                                 <span class="text-xs px-2.5 py-1 rounded-md font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200">✓ Apto Crédito</span>
                             </div>
-                            <p class="text-xs text-slate-500">Razón Social: <strong class="text-slate-800">Operadora Lakahn, S.A. de C.V. (OPLK)</strong></p>
                             <p class="text-xs text-slate-600 leading-relaxed">
                                 Lotes residenciales de élite frente a campo de golf Nick Price y Club de Playa privado. Membresía a Casa Club de 4,000 m².
                             </p>
@@ -1066,7 +1055,6 @@
                                 <h3 class="text-lg font-bold text-slate-900">The Reserve at Mayakoba</h3>
                                 <span class="text-xs px-2.5 py-1 rounded-md font-semibold bg-amber-50 text-amber-900 border border-amber-200">Branded Residence</span>
                             </div>
-                            <p class="text-xs text-slate-500">Razón Social: <strong class="text-slate-800">Inmobilia Funds / Lote 4-5 (TRAM)</strong></p>
                             <p class="text-xs text-slate-600 leading-relaxed">
                                 Cúspide del ultra-lujo residencial sobre canales de agua turquesa diseñados por Sordo Madaleno Arquitectos con privilegios en hoteles Mayakoba.
                             </p>
@@ -1117,7 +1105,6 @@
                                 <h3 class="text-lg font-bold text-slate-900">Lagunas de Mayakoba</h3>
                                 <span class="text-xs px-2.5 py-1 rounded-md font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200">✓ Apto Crédito</span>
                             </div>
-                            <p class="text-xs text-slate-500">Razón Social: <strong class="text-slate-800">Operadora Lakahn, S.A. de C.V. (OPLK)</strong></p>
                             <p class="text-xs text-slate-600 leading-relaxed">
                                 Condominios familiares rodeados de lagunas de agua dulce cristalina, albercas infinity, fitness center y kayaks para navegación recreativa.
                             </p>
@@ -1310,11 +1297,11 @@
                 </div>
 
                 <!-- Selector de Audiencia -->
-                <div class="flex gap-2">
-                    <button id="expat-tab-us" onclick="toggleExpatTab('us')" class="flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold bg-emerald-700 text-white shadow-md transition">
+                <div class="flex flex-wrap sm:flex-nowrap gap-2">
+                    <button id="expat-tab-us" onclick="toggleExpatTab('us')" class="flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-2.5 rounded-xl text-xs font-bold bg-emerald-700 text-white shadow-md transition">
                         <img src="../Imagenes_Descargadas/us.webp" class="w-4 h-3 object-cover rounded-sm" alt="US Flag"> Foreign Buyers (USD)
                     </button>
-                    <button id="expat-tab-mx" onclick="toggleExpatTab('mx')" class="flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold bg-slate-100 text-slate-600 hover:bg-slate-200 transition">
+                    <button id="expat-tab-mx" onclick="toggleExpatTab('mx')" class="flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-2.5 rounded-xl text-xs font-bold bg-slate-100 text-slate-600 hover:bg-slate-200 transition">
                         <img src="../Imagenes_Descargadas/mx.webp" class="w-4 h-3 object-cover rounded-sm" alt="MX Flag"> Inversionistas México (MXN)
                     </button>
                 </div>
@@ -1645,10 +1632,10 @@
     </div>
 
     <!-- CTA FLOTANTE DE WHATSAPP CON RADAR PULSE & ASESOR JULIO CHACÓN -->
-    <a href="https://wa.me/5219841047963?text=Hola%20Julio%20Chac%C3%B3n%2C%20quisiera%20asesor%C3%ADa%20inmediata%20sobre%20el%20inventario%20de%20Ciudad%20Mayakoba." target="_blank" class="fixed bottom-6 right-6 z-50 flex items-center gap-2.5 bg-white hover:bg-emerald-50 text-slate-800 p-1.5 pr-4 rounded-full shadow-2xl border border-emerald-300 radar-pulse transition duration-300 group" title="Chatear con Julio Chacón (+52 1 984 104 7963)">
+    <a href="https://wa.me/5219841047963?text=Hola%20Julio%20Chac%C3%B3n%2C%20quisiera%20asesor%C3%ADa%20inmediata%20sobre%20el%20inventario%20de%20Ciudad%20Mayakoba." target="_blank" class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 flex items-center gap-2 sm:gap-2.5 bg-white hover:bg-emerald-50 text-slate-800 p-1 sm:p-1.5 pr-3 sm:pr-4 rounded-full shadow-2xl border border-emerald-300 radar-pulse transition duration-300 group" title="Chatear con Julio Chacón (+52 1 984 104 7963)">
         <div class="relative">
-            <img src="../Imagenes_Descargadas/julio-chacon.jpg" alt="Julio Chacón" class="w-11 h-11 rounded-full object-cover border-2 border-emerald-600">
-            <span class="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-emerald-500 border-2 border-white"></span>
+            <img src="../Imagenes_Descargadas/julio-chacon.jpg" alt="Julio Chacón" class="w-9 h-9 sm:w-11 sm:h-11 rounded-full object-cover border-2 border-emerald-600">
+            <span class="absolute bottom-0 right-0 w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-emerald-500 border-2 border-white"></span>
         </div>
         <div class="text-left leading-tight hidden sm:block">
             <span class="block text-xs font-bold text-slate-900 group-hover:text-emerald-900 transition">Julio Chacón</span>
@@ -1656,7 +1643,7 @@
                 <i class="fa-brands fa-whatsapp text-emerald-600"></i> Asesor en línea
             </span>
         </div>
-        <div class="w-8 h-8 rounded-full bg-emerald-600 text-white flex items-center justify-center text-sm ml-0.5">
+        <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-emerald-600 text-white flex items-center justify-center text-xs sm:text-sm ml-0.5">
             <i class="fa-brands fa-whatsapp"></i>
         </div>
     </a>
