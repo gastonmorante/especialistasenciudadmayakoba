@@ -418,14 +418,17 @@ function toggleExpatTab(country) {
   const usContent = document.getElementById('expat-content-us');
   const mxContent = document.getElementById('expat-content-mx');
 
+  const activeClass = "flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-2.5 rounded-xl text-xs font-bold bg-emerald-700 text-white shadow-md transition";
+  const inactiveClass = "flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-2.5 rounded-xl text-xs font-bold bg-slate-100 text-slate-600 hover:bg-slate-200 transition";
+
   if (country === 'us') {
-    if (usTab) usTab.className = "flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold bg-emerald-700 text-white shadow-md transition";
-    if (mxTab) mxTab.className = "flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold bg-slate-100 text-slate-600 hover:bg-slate-200 transition";
+    if (usTab) usTab.className = activeClass;
+    if (mxTab) mxTab.className = inactiveClass;
     if (usContent) usContent.classList.remove('hidden');
     if (mxContent) mxContent.classList.add('hidden');
   } else {
-    if (mxTab) mxTab.className = "flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold bg-emerald-700 text-white shadow-md transition";
-    if (usTab) usTab.className = "flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold bg-slate-100 text-slate-600 hover:bg-slate-200 transition";
+    if (mxTab) mxTab.className = activeClass;
+    if (usTab) usTab.className = inactiveClass;
     if (mxContent) mxContent.classList.remove('hidden');
     if (usContent) usContent.classList.add('hidden');
   }
